@@ -1,4 +1,5 @@
 <%@ page contentType="text/html; charset=utf-8"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="ui" uri="http://egovframework.gov/ctl/ui"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
@@ -217,8 +218,11 @@ function fnShowLogin(stat) {
 </head>
 <body onLoad="fnInit();">
 
+<!-- header -->
+<c:import url="../../login_head.jsp" />
+
 <!-- javascript warning tag  -->
-<noscript class="noScriptTitle"><spring:message code="common.noScriptTitle.msg" /></noscript>
+<%-- <noscript class="noScriptTitle"><spring:message code="common.noScriptTitle.msg" /></noscript> --%>
 
 
 <!-- 일반로그인 -->
@@ -227,7 +231,7 @@ function fnShowLogin(stat) {
 	<input type="hidden" id="message" name="message" value="<c:out value='${message}'/>">
 	
 	<fieldset>
-		<img src="<c:url value='/images/egovframework/com/uat/uia/login_tit.png'/>" style="margin:30px 0 0px 60px" alt="login title image"  title="login title image">
+<%-- 		<img src="<c:url value='/images/egovframework/com/uat/uia/login_tit.png'/>" style="margin:30px 0 0px 60px" alt="login title image"  title="login title image"> --%>
 		<div class="login_type">
 			<ul id="ulLoginType">
 				<li><a href="javascript:fnLoginTypeSelect('typeGnr');" id="typeGnr" title=""><spring:message code="comUatUia.loginForm.GNR"/></a></li> <!-- 일반 -->
