@@ -75,7 +75,12 @@
 </head>
 <body>
 	<!-- header -->
+<<<<<<< HEAD
 	<c:import url="../../head.jsp" />
+=======
+	<c:import url="../../login_head.jsp" />
+	
+>>>>>>> branch 'master' of https://github.com/leehenson/KDP_CMS.git
 	<form>
 		<!-- 상단 -->
 		<div id="visual-slider-solRegist">

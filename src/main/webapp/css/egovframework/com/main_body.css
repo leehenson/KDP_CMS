@@ -1,0 +1,82 @@
+/* 메인 바디 부분 css. 추후 분리 생각 */
+.l {
+	margin-left: 300px;
+}
+
+.sol_img>img {
+	width: 242px;
+	height: 270px;
+}
+
+.swiper-wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	display: flex;
+	transition-property: transform;
+	box-sizing: content-box;
+}
+
+.container-lg {
+	margin-top: 50px;
+	margin-left: 100px !important;
+	padding-right: 600px;
+}
+
+.sol_title {
+	color: #111111;
+	font-family: "NotoSansKR-Bold", sans-serif;
+	font-size: 36px;
+	text-decoration: none !important;
+}
+
+.sol_sub_title {
+	color: #111111;
+	font-family: "NotoSansKR-Bold", sans-serif;
+	font-size: 22px;
+	text-decoration: none !important;
+	padding-top: 13px;
+}
+
+.sol_bar {
+	color: #005bac;
+	font-family: "NotoSansKR-ExtraBold", sans-serif;
+	font-size: 30px;
+	text-decoration: none !important;
+	padding-top: 19px;
+}
+
+.sol_info {
+	color: #515151;
+	font-family: "NotoSansKR-Regular", sans-serif;
+	font-size: 14px;
+	text-decoration: none !important;
+	padding-top: 13px;
+}
+
+div.row > div.col-lg-4.align-self-center{
+	padding-right: 0px;
+	padding-left: 200px;
+}
+
+.box{
+	height:270px;
+	width: 242px;
+	overflow: hidden;
+	border-radius: 5%;
+}
+.box img{
+	height:100%;
+	width: 100%;
+	object-fit:cover;
+	
+	/* 마우스가 이미지를 벗어 났을 때도 자연스럽게 크기가 줄어들기 위함 */
+	transform:scale(1.0);
+	transition: transform .5s;
+}
+
+.box img:hover{ /* 마우스 호버시 */
+	transform:scale(1.05);	/* 이미지 확대 */
+	transition: transform .5s;	/* 시간 설정 */
+}
