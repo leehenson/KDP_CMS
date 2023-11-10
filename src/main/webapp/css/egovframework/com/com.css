@@ -259,7 +259,6 @@ width:100%;
 	font-weight:600;
 }
 
-
 /* table style */
 .wTableFrm {position:relative; width:730px; padding-top:20px; }
 .wTableFrm h1, .wTableFrm h2 {/* float:left;*/ color:#333; font-size:16px; font-weight:600; }
@@ -300,6 +299,47 @@ width:100%;
 .wTable input[readonly="readonly"] {height:22px; border:1px solid #d2d2d2; }
 .wTable > tbody > tr > td input[type=checkbox] {vertical-align:-3px; }
 
+/* solution table style */
+.solTableFrm { margin:3% 20%; }
+.solTableFrm h1 { text-align:center; color:#333; font-size:30px; font-weight:1000; margin:2%; }
+.solTableFrm h2 {/* float:left;*/ color:#333; font-size:16px; font-weight:600; }
+.solTableFrm h2 { margin-top:10px; margin-bottom:10px; padding-left:25px; background:url(../../../images/egovframework/com/cmm/icon/tit_icon.png) no-repeat left top; }
+.solTableFrm h3 { color:#333;  font-size:14px; font-weight:600; margin:50px 0 10px 0; }
+.solTableFrm h3 b { color:#2277d7; }
+
+.solTable { width:100%; border-top:2px solid #4688d2; }
+.solTable caption { display:none; }
+.solTable > thead > tr > th,
+.solTable > thead > tr > th { color:#222 ; font-size:13px; font-weight:400; background:#f4f4f4; padding:12px 0; border-bottom:1px solid #d9d9d9; }
+.solTable > tbody tr.odd {  }
+.solTable > tbody.ov tr:hover { background:#f9f9f9; }
+.solTable > thead > tr > th { text-align:left; padding-left:14px; }
+.solTable > thead > tr > th.vtop { vertical-align:top; }
+.solTable > thead > tr > th span.pilsu { color:#d0270b; font-weight:500; margin-left:3px; }
+.solTable > tbody > tr > th { width:120px; padding-left:14px; border-bottom:1px solid #d9d9d9; text-align:left; background:#f4f4f4; }
+.solTable > tbody > tr > th.vtop { vertical-align:top; }
+.solTable > tbody > tr > th span.pilsu { color:#d0270b; font-weight:500; margin-left:3px; }
+.solTable > tbody > tr > td { text-align:center; padding:11px 5px; border-bottom:1px solid #d9d9d9; }
+.solTable > tbody > tr > td.left { text-align:left; padding:6px 8px; }
+.solTable > tbody > tr > td.left div .error  {color :#ff0000;}
+.solTable > tbody > tr > td.cnt { text-align:left; padding:12px 10px 20px; line-height:160%; }
+.solTable > tbody > tr > td.nopd { text-align:left;}
+.solTable > tbody > tr > td.nopd div .error  {color :#ff0000; margin:0px 0px 0px 10px;}
+.solTable > tbody > tr > td.bold { text-align:left; font-size:14px; font-weight :bold;}
+.solTable > tbody > tr > td a:hover { text-decoration:underline; }
+.solTable > tbody > tr > td input[type=text] {margin:0 5px; width:99%; height:22px; }
+.solTable > tbody > tr > td input[type=file] {margin:0 5px; width:99%; height:22px; }
+.solTable > tbody > tr > td input.tmp { width:160px; }
+.solTable > tbody > tr > td.date-input-container { display: flex; align-items: center; }
+.solTable > tbody > tr > td textarea { margin:0 5px; width:99%; height:300px; }
+.solTable > tbody > tr > td textarea.txt { width:96%; height:50px; margin:8px; padding:5px; }
+.solTable > tbody > tr > td textarea.re_txt { float:left; width:80%; }
+.solTable > tbody > tr > td a.re_btn { float:right; padding:43px 30px; margin:1px 0 0 0; font-size:12px; font-weight:600; }
+.solTable > tbody > tr > td a.re_btn:hover { text-decoration:none; }
+.solTable > tbody > tr > td select {height:24px; border:1px solid #dedede; }
+.solTable > tbody > tr > td img { margin-left:7px; }
+.solTable input[readonly="readonly"] {height:22px; border:1px solid #d2d2d2; }
+.solTable > tbody > tr > td input[type=checkbox] {vertical-align:-3px; }
 
 /* toolbar */
 .toolbar { height:52px; background-color:#e5e5e5; padding-bottom:4px; border-bottom:1px solid #dedede; }
