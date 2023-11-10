@@ -219,7 +219,7 @@ function fnShowLogin(stat) {
 <body onLoad="fnInit();">
 
 <!-- header -->
-<c:import url="../../login_head.jsp" />
+<c:import url="../../head.jsp" />
 
 <!-- javascript warning tag  -->
 <%-- <noscript class="noScriptTitle"><spring:message code="common.noScriptTitle.msg" /></noscript> --%>

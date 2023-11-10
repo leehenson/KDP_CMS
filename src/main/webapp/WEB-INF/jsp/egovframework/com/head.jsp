@@ -12,7 +12,7 @@
 <script language="text/javascript" src="<c:url value='/js/egovframework/com/main.js' />"></script>
 
 <!-- 메인 페이지 헤더 css -->
-<link rel="stylesheet" type="text/css" href="<c:url value='/css/egovframework/com/style.css' />">
+<link rel="stylesheet" type="text/css" href="<c:url value='/css/egovframework/com/header_style.css' />">
 <!-- <link type="text/css" rel="stylesheet" href="<c:url value='/css/egovframework/com/main_portal.css' />"> -->
 <script type="text/javascript">
 	function fn_main_headPageMove(menuNo, url){
