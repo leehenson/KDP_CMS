@@ -1,0 +1,80 @@
+#header{
+	height: 175px;
+/* 	width: 95%; */
+	z-index: 100;
+	background-image: url("../../../images/egovframework/com/uat/uia/login_header_background.png");
+	background-size: cover;
+}
+
+#header .logo {
+	position: absolute;
+	left: 300px;
+	top: 70px;
+}
+
+#header .nav{
+	position: relative;
+	left: 150px;
+	top: 40px;
+	padding-left: 10%;
+}
+
+#header .nav li{
+	float: left;
+	width: 140px;
+}
+
+#header .nav li a {
+	margin: 5px 15px;
+}
+
+/* #visual-slider{ */
+/* 	height: 750px; */
+/* 	width: 100%; */
+/* 	background-image: url("../../../images/egovframework/com/uat/uia/login_header_background.png"); */
+/* 	background-size: cover; */
+/* } */
+
+
+.menu {
+  display: flex;
+  width: inherit;
+  /* overflow: hidden; */
+  /* margin: auto; */
+  position: relative;
+  top: 35px;
+  left: 280px;
+}
+
+.menu > li {
+  width: 20%; /*20*5=100%*/
+  float: left;
+  text-align: center;
+/*   line-height: 40px; */
+}
+
+.menu a {
+  color: #fff;
+}
+
+.submenu > li {
+/*   line-height: 50px; */
+}
+
+.submenu {
+  height: 0; /*ul의 높이를 안보이게 처리*/
+  overflow: hidden;
+}
+
+.menu > li:hover {
+  /* background-color: #94a9ff; */
+  transition-duration: 0.5s;
+}
+
+.menu > li:hover .submenu {
+  height: 200px; /*서브메뉴 li한개의 높이 50*5*/
+  text-align: center;
+  transition-duration: 1s;
+  
+
+
