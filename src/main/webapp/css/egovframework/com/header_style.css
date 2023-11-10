@@ -35,10 +35,44 @@
 	background-size: cover;
 }
 
+#visual-slider-solRegist {
+	position: relative;
+	height: 550px;
+	width: 100%;
+/* 	background-color: grey; */
+	background-image: url("../../../images/egovframework/com/uat/uia/application_header_background.png");
+	background-size: cover;
+}
+
+#visual-slider-login {
+	height: 175px;
+	width: 100%;
+/* 	background-color: grey; */
+	background-image: url("../../../images/egovframework/com/uat/uia/login_header_background.png");
+	background-size: cover;
+}
+
 .visual-txt {
 	position: absolute;
 	top: 400px;
 	left: 10%;
+}
+
+.visual-txt-solRegist {
+	position: absolute;
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+	bottom: 65px;
+	width: 100%;
+}
+
+.visual-txt-solRegist > h2 {
+	text-align: center;
+	font-size: 85px;
+	color: #fff;
+	font-weight: bold;
+	margin-bottom: 10px;
 }
 
 .menu {
