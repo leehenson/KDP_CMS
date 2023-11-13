@@ -53,6 +53,12 @@ import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
 
 @Controller
 public class KDPSolController {
+	
+	@RequestMapping("/sol/cht/addSolCht.do")
+	public String addSolCht() throws Exception {
+
+		return "egovframework/com/sol/cht/KDPSolChtRegist";
+	}
 
 	/*
 	 * @Resource(name = "EgovBBSMasterService") private EgovBBSMasterService
@@ -488,10 +494,4 @@ public class KDPSolController {
 			 * 
 			 * return "egovframework/com/cop/bbs/EgovBBSListPortlet"; }
 			 */
-
-	@RequestMapping("/sol/cht/addSolCht.do")
-	public String addSolCht() throws Exception {
-
-		return "egovframework/com/sol/cht/KDPSolChtRegist";
-	}
 }

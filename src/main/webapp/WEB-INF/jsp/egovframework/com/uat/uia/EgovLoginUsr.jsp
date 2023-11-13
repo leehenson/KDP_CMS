@@ -223,7 +223,9 @@ function fnShowLogin(stat) {
 
 <!-- javascript warning tag  -->
 <%-- <noscript class="noScriptTitle"><spring:message code="common.noScriptTitle.msg" /></noscript> --%>
-
+<!-- 상단 -->
+<div id="visual-slider-login"></div>
+<!--visual-slider end-->
 
 <!-- 일반로그인 -->
 <div class="login_form">
