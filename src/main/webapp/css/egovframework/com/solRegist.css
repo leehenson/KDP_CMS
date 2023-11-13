@@ -12,7 +12,7 @@
 	font-size:30px;
 	font-weight:bold;
 	padding-left:55px;
-	background:url(../../../images/egovframework/com/cmm/icon/신청자_정보_아이콘.png) left center no-repeat;
+	background:url(../../images/egovframework/com/cmm/icon/user_info_icon.png) left center no-repeat;
 	background-position: 5px center;
 }
 .solTableFrm h3 { color:#333;  font-size:14px; font-weight:600; margin:50px 0 10px 0; }
@@ -35,7 +35,7 @@
     align-items: center;
 }
 .solUploadBtn {
-/* 	background-image: url('../../../images/egovframework/com/cmm/icon/업로드_아이콘.png');
+/* 	background-image: url('../../../images/egovframework/com/cmm/icon/upload_icon.png');
 	background-repeat: no-repeat;
     background-size: cover;
     background-position: contain; */

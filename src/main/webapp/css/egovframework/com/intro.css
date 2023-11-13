@@ -1,0 +1,84 @@
+/* KDP 소개 - 사업 소개 */
+#tab-1 > div.inner{
+	padding-top: 93px;
+}
+
+img.introOutline{
+	padding-top: 19px;
+}
+
+#tab-2 > div.inner{
+	padding-top: 115px;
+}
+
+img.taskPurpose{
+	padding-top: 21px;
+}
+
+#tab-3 > div.inner{
+	padding-top: 120px;
+}
+
+#tab-4 > div.inner{
+	padding-top: 90px;
+}
+
+/* KDP 소개 - 업무 안내 */
+img.orgChart{
+	width:600px;
+	height:357px;
+	align-self: center;
+	padding-top: 41px;
+}
+
+img.centerCall{
+	width:800px;
+	height:100px;
+	align-self: center;
+	padding-top: 36px;
+}
+
+/* 공통 */
+.platform-section {
+    width: 100%;
+}
+
+.platform-section .inner {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.platform-section .inner h2 {
+    position: relative;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.platform-section .inner .inner2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.platform-section .inner .inner2 .contents {
+    width: 100%;
+}
+
+.inner .inner2 .contents {
+    margin-top: 10px;
+}
+
+.platform-section .inner .inner2 .contents p {
+    position: relative;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.intro_title{
+	font-family: "NotoSansKR-Bold", sans-serif;
+	font-size: 28px;
+	color: #666666;
+}

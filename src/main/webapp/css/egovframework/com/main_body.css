@@ -1,3 +1,31 @@
+@font-face {
+	font-family: NotoSansKR-Regular;
+	src: url(../../../font/NotoSansKR-Regular.ttf) format(woff);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: NotoSansKR-Medium;
+	src: url(../../../font/NotoSansKR-Medium.ttf) format(woff);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: NotoSansKR-Bold;
+	src: url(../../../font/NotoSansKR-Bold.ttf) format(woff);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: NotoSansKR-ExtraBold;
+	src: url(../../../font/NotoSansKR-ExtraBold.ttf) format(woff);
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* 메인 바디 부분 css. 추후 분리 생각 */
 .l {
 	margin-left: 300px;
@@ -24,14 +52,14 @@
 	padding-right: 600px;
 }
 
-.sol_title {
+.main_title {
 	color: #111111;
 	font-family: "NotoSansKR-Bold", sans-serif;
 	font-size: 36px;
 	text-decoration: none !important;
 }
 
-.sol_sub_title {
+.main_sub_title {
 	color: #111111;
 	font-family: "NotoSansKR-Bold", sans-serif;
 	font-size: 22px;
@@ -39,7 +67,7 @@
 	padding-top: 13px;
 }
 
-.sol_bar {
+.main_underbar {
 	color: #005bac;
 	font-family: "NotoSansKR-ExtraBold", sans-serif;
 	font-size: 30px;
@@ -47,7 +75,7 @@
 	padding-top: 19px;
 }
 
-.sol_info {
+.main_section_info {
 	color: #515151;
 	font-family: "NotoSansKR-Regular", sans-serif;
 	font-size: 14px;
@@ -55,28 +83,180 @@
 	padding-top: 13px;
 }
 
-div.row > div.col-lg-4.align-self-center{
+div.row>div.col-lg-4.align-self-center {
 	padding-right: 0px;
 	padding-left: 200px;
 }
 
-.box{
-	height:270px;
+.box {
+	height: 270px;
 	width: 242px;
 	overflow: hidden;
 	border-radius: 5%;
 }
-.box img{
-	height:100%;
+
+.box img {
+	height: 100%;
 	width: 100%;
-	object-fit:cover;
-	
+	object-fit: cover;
 	/* 마우스가 이미지를 벗어 났을 때도 자연스럽게 크기가 줄어들기 위함 */
-	transform:scale(1.0);
+	transform: scale(1.0);
 	transition: transform .5s;
 }
 
-.box img:hover{ /* 마우스 호버시 */
-	transform:scale(1.05);	/* 이미지 확대 */
-	transition: transform .5s;	/* 시간 설정 */
+.box img:hover { /* 마우스 호버시 */
+	transform: scale(1.05); /* 이미지 확대 */
+	transition: transform .5s; /* 시간 설정 */
+}
+
+/* 공지사항 */
+#index>*>.swiper-slide:not(#index-visual):not(#index-footer),
+	#index-visual .swiper-slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	overflow: hidden;
+	height: 100vh;
+	padding-top: 90px;
+}
+
+.container-lg {
+	max-width: 1440px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#index-news > div{
+	padding-top: 30px;
+}
+
+.notice_ment {
+	color: #515151;
+	font-family: "NotoSansKR-Regular", sans-serif;
+	font-size: 14px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+}
+
+.notice_ment_2 {
+	color: #515151;
+	font-family: "NotoSansKR-Regular", sans-serif;
+	font-size: 14px;
+	padding-bottom: 13px;
+}
+
+/* 공지사항 view more 버튼 */
+#index-news>div>div>div.col-lg-4>a {
+	color: #515151;
+	font-family: "NotoSansKR-Bold", sans-serif;
+	font-size: 15px;
+	text-decoration: none !important;
+	padding: 0.75em 2em;
+	border: 2px solid;
+	border-radius: 0;
+	background: none;
+}
+
+#index-news>div>div>div.col-lg-4>a:hover {
+	background-color: #bfbfbf70;
+	color: #515151;
+}
+
+#index-news>div>div>div.col-lg-4 {
+	padding-left: 200px;
+}
+
+#index-news>div>div>div.col-lg-8>ul>li>a {
+	width: 1000px;
+	padding-left: 20px;
+}
+
+.row:not(.no-gutters) {
+	margin-left: -20px;
+	margin-right: -20px;
+}
+
+#index-news > div > div > div.col-lg-8 > ul > li > a > div{
+	place-items: center;
+}
+
+/* #index-news .row>*:not(.news-thumb) { */
+/* 	padding-top: 30px; */
+/* } */
+
+#index .swiper-slide-active h2 {
+	animation: fadeIn 1s .4s both;
+}
+
+/* #index h2 { */
+/* 	font-family: "NotoSansKR-ExtraBold", sans-serif; */
+/* 	font-size: 3.8888rem; */
+/* 	line-height: 1; */
+/* } */
+
+li {
+	list-style: none;
+}
+
+#index-news li a {
+	display: block;
+	padding: 2em 0;
+	border-bottom: 1px solid #ddd;
+}
+
+#index-news > div > div > div.col-lg-8 > ul > li > a{
+	text-decoration: none;
+}
+
+#index-news li p {
+	color: #111;
+	font-family: "NotoSansKR-Regular", sans-serif;
+	max-width: 80%;
+} 
+
+#index-news strong {
+    font-size: 16px;
+}
+
+#index-news strong {
+    width: 7em;
+    font-family: "NotoSansKR-Bold", sans-serif;
+    color: #005bac;
+}
+
+#index-news h3 {
+	font-family: "NotoSansKR-Bold", sans-serif;
+	margin-bottom: 0.8em;
+	font-weight: 700;
+	font-size: 1.5em;
+	color: #111;
+}
+
+.text-truncate {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.txt-line {
+	display: -webkit-box;
+	overflow: hidden;
+	max-height: 3em;
+	line-height: 1.5;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	word-wrap: break-word;
+	word-break: break-all;
+	white-space: normal;
+}
+
+#index-news img {
+	box-shadow: 0 1em 1.5em rgba(0, 0, 0, .2);
+}
+
+img {
+	vertical-align: middle;
+	border-style: none;
 }
