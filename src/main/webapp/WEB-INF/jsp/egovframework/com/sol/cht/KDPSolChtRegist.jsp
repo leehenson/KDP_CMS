@@ -78,9 +78,9 @@
 	<c:import url="../../head.jsp" />
 	<form>
 		<!-- 상단 -->
-		<div id="visual-slider-solRegist">
+		<div class="solHeader">
 			<div class="inner">
-				<div class="visual-txt-solRegist">
+				<div class="solText">
 					<h2>
 						이용 신청
 					</h2>
@@ -93,7 +93,7 @@
 		<div class="solTableFrm">
 			<h1>Chatbot AI 이용 신청</h1>
 			<!-- 타이틀 -->
-			<h2>신청자 정보</h2>
+			<h2 class="user_info">신청자 정보</h2>
 		  
 			<!-- 등록폼 -->
 			<table class="solTable1">
@@ -125,7 +125,7 @@
 				</tbody>
 			</table>
 			
-			<h2>신청 정보</h2>
+			<h2 class="apply_info">신청 정보</h2>
 			<!-- 등록폼 -->
 			<table class="solTable2">
 				<tbody>
