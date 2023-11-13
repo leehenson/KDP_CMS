@@ -1,7 +1,52 @@
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('../../../font/GmarketSansBold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('../../../font/GmarketSansMedium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'NotoSansKR-Medium';
+    src: url('../../../font/NotoSansKR-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NotoSansKR-ExtraBold';
+    src: url('../../../font/NotoSansKR-ExtraBold.ttf') format('truetype');
+}
+
+
+.solHeader {
+	height: 550px;
+	width: 100%;
+	background-image: url("../../../images/egovframework/com/uat/uia/application_header_background.png");
+	background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.solText {
+	font-family: GmarketSansMedium;
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 65px;
+	text-align: center;
+}
+.solText > h2 {
+	font-family: GmarketSansBold;
+	font-size: 85px;
+	color: #fff;
+	margin: 10px 0px;
+}
+
 /* solution table style */
 .solTableFrm { margin:152px 300px; margin-bottom: 0px; }
-.solTableFrm h1 { text-align:center; color:#111; font-size:55px; font-weight: bold; margin-bottom: 30px; }
-.solTableFrm h2 {
+.solTableFrm h1 { text-align:center; color:#111; font-size:55px; font-weight: bold; margin-bottom: 30px; font-family: GmarketSansBold; }
+.solTableFrm h2.user_info {
+	font-family: GmarketSansBold;
 	display: flex;
     align-items: center;
 	margin: 0px;
@@ -11,20 +56,34 @@
 	color:#666;
 	font-size:30px;
 	font-weight:bold;
-	padding-left:55px;
-	background:url(../../../images/egovframework/com/cmm/icon/신청자_정보_아이콘.png) left center no-repeat;
+	padding-left:60px;
+	background:url(../../../images/egovframework/com/cmm/icon/user_info_icon.png) left center no-repeat;
+	background-position: 5px center;
+}
+.solTableFrm h2.apply_info {
+	font-family: GmarketSansBold;
+	display: flex;
+    align-items: center;
+	margin: 0px;
+	border-top: 2px solid #d2d2d2;
+	border-bottom: 2px solid #d2d2d2;
+	height: 76px;
+	color:#666;
+	font-size:30px;
+	font-weight:bold;
+	padding-left:60px;
+	background:url(../../../images/egovframework/com/cmm/icon/apply_info_icon.png) left center no-repeat;
 	background-position: 5px center;
 }
 .solTableFrm h3 { color:#333;  font-size:14px; font-weight:600; margin:50px 0 10px 0; }
 .solTableFrm h3 b { color:#2277d7; }
 
 .solTable1 { width: 100%; height:267px; padding: 50px 20px; }
-/* .solTable1 > tbody > tr, th { width: 50%; } */
-.solTable1 > tbody > tr > th { font-size: 24px; color:#666; text-align: right; padding: 0px; padding-right: 10px; }
+.solTable1 > tbody > tr > th { font-size: 24px; color:#666; text-align: right; padding: 0px; padding-right: 10px; font-family: NotoSansKR-Medium; }
 .solTable1 > tbody > tr > td input { font-size: 24px; color:#666; width: 472px; height: 44px; border: 1px solid #b4b4b4; border-radius: 10px; }
 .solTable1 > tbody > tr > td input.in { font-size: 24px; color:#666; width: 216px; height: 44px; }
 .solTable2 { width: 100%; padding: 50px 20px; }
-.solTable2 > tbody > tr > th { font-size: 24px; color:#666; text-align: right; padding: 0px; padding-right: 10px; }
+.solTable2 > tbody > tr > th { font-size: 24px; color:#666; text-align: right; padding: 0px; padding-right: 10px; font-family: NotoSansKR-Medium; }
 .solTable2 > tbody > tr > td input { font-size: 24px; color:#666; width: 1110px; height: 44px; border: 1px solid #b4b4b4; border-radius: 10px; }
 .solTable2 > tbody > tr > td textarea { resize: none; font-size: 24px; color: #666; width: 1110px; height: 300px; border: 1px solid #b4b4b4; border-radius: 10px; }
 .solTable2 > tbody > tr > td input#file-name-input { font-size: 24px; color:#666; width: 970px; height: 44px; border: 1px solid #b4b4b4; border-radius: 10px; }
@@ -35,10 +94,7 @@
     align-items: center;
 }
 .solUploadBtn {
-/* 	background-image: url('../../../images/egovframework/com/cmm/icon/업로드_아이콘.png');
-	background-repeat: no-repeat;
-    background-size: cover;
-    background-position: contain; */
+    font-family: NotoSansKR-ExtraBold;
 	background-color: #005bac;
 	padding-left: 10px;
 	width: 125px;
@@ -57,6 +113,7 @@
 	gap: 15px;
 }
 .solBtn > button.cancle {
+	font-family: NotoSansKR-ExtraBold;
 	border: none;
 	border-radius: 10px;
 	background-color: #d2d2d2;
@@ -66,6 +123,7 @@
 	color: #fff;
 }
 .solBtn> button.app {
+	font-family: NotoSansKR-ExtraBold;
 	border: none;
 	border-radius: 10px;
 	background-color: #005bac;
@@ -74,36 +132,3 @@
 	font-size: 24px;
 	color: #fff;
 }
-/* .solTable { width:100%; }
-.solTable caption { display:none; }
-.solTable > thead > tr > th,
-.solTable > thead > tr > th { color:#222 ; font-size:13px; font-weight:400; background:#f4f4f4; padding:12px 0; border-bottom:1px solid #d9d9d9; }
-.solTable > tbody tr.odd {  }
-.solTable > tbody.ov tr:hover { background:#f9f9f9; }
-.solTable > thead > tr > th { text-align:left; padding-left:14px; }
-.solTable > thead > tr > th.vtop { vertical-align:top; }
-.solTable > thead > tr > th span.pilsu { color:#d0270b; font-weight:500; margin-left:3px; }
-.solTable > tbody > tr > th { width:120px; padding-left:14px; border-bottom:1px solid #d9d9d9; text-align:left; background:#f4f4f4; }
-.solTable > tbody > tr > th.vtop { vertical-align:top; }
-.solTable > tbody > tr > th span.pilsu { color:#d0270b; font-weight:500; margin-left:3px; }
-.solTable > tbody > tr > td { text-align:center; padding:11px 5px; border-bottom:1px solid #d9d9d9; }
-.solTable > tbody > tr > td.left { text-align:left; padding:6px 8px; }
-.solTable > tbody > tr > td.left div .error  {color :#ff0000;}
-.solTable > tbody > tr > td.cnt { text-align:left; padding:12px 10px 20px; line-height:160%; }
-.solTable > tbody > tr > td.nopd { text-align:left;}
-.solTable > tbody > tr > td.nopd div .error  {color :#ff0000; margin:0px 0px 0px 10px;}
-.solTable > tbody > tr > td.bold { text-align:left; font-size:14px; font-weight :bold;}
-.solTable > tbody > tr > td a:hover { text-decoration:underline; }
-.solTable > tbody > tr > td input[type=text] {margin:0 5px; width:99%; height:22px; }
-.solTable > tbody > tr > td input[type=file] {margin:0 5px; width:99%; height:22px; }
-.solTable > tbody > tr > td input.tmp { width:160px; }
-.solTable > tbody > tr > td.date-input-container { display: flex; align-items: center; }
-.solTable > tbody > tr > td textarea { margin:0 5px; width:99%; height:300px; }
-.solTable > tbody > tr > td textarea.txt { width:96%; height:50px; margin:8px; padding:5px; }
-.solTable > tbody > tr > td textarea.re_txt { float:left; width:80%; }
-.solTable > tbody > tr > td a.re_btn { float:right; padding:43px 30px; margin:1px 0 0 0; font-size:12px; font-weight:600; }
-.solTable > tbody > tr > td a.re_btn:hover { text-decoration:none; }
-.solTable > tbody > tr > td select {height:24px; border:1px solid #dedede; }
-.solTable > tbody > tr > td img { margin-left:7px; }
-.solTable input[readonly="readonly"] {height:22px; border:1px solid #d2d2d2; }
-.solTable > tbody > tr > td input[type=checkbox] {vertical-align:-3px; } */
