@@ -8,8 +8,7 @@
 <html lang="ko">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title><spring:message
-		code="comSymMnuMpm.mainView.mainViewTitle" /></title>
+<title> 순천대학교 K-디지털 플랫폼 </title>
 
 <!-- 행정안전부 공통서비스 테스트 사이트 -->
 <script language="javascript"
