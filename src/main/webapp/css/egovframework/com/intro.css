@@ -58,6 +58,7 @@ img.centerCall {
 img.lectureRoom{
 	width: 620px;
 	height: 400px;	
+	box-shadow: 0 1em 1.5em rgba(0, 0, 0, .2);
 }
 
 /* 오픈오피스 */
@@ -69,6 +70,7 @@ img.openOffice {
 	padding-top: 22px;
 	width: 620px;
 	height: 400px;
+	box-shadow: 0 1em 1.5em rgba(0, 0, 0, .2);
 }
 
 /* 장비 소개 - 이미지 썸네일 */
@@ -85,11 +87,12 @@ img.openOffice {
 	margin-left: 0px !important;
 }
 
-.image-box {
+.img-box {
 	width: 310px;
 	height: 250px;
-	overflow: hidden;
+/* 	overflow: hidden; */
 	margin: 0 auto;
+	box-shadow: 0 1em 1.5em rgba(0, 0, 0, .2);
 }
 
 /* 공통 */

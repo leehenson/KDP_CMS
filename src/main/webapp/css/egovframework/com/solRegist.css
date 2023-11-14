@@ -18,7 +18,7 @@
     src: url('../../../font/NotoSansKR-ExtraBold.ttf') format('truetype');
 }
 
-body{
+body {
 	margin: 0px !important;
 }
 
@@ -127,6 +127,7 @@ body{
 	height: 48px;
 	font-size: 24px;
 	color: #fff;
+	cursor: pointer;
 }
 .solBtn> button.app {
 	font-family: NotoSansKR-ExtraBold;
@@ -137,4 +138,5 @@ body{
 	height: 48px;
 	font-size: 24px;
 	color: #fff;
+	cursor: pointer;
 }

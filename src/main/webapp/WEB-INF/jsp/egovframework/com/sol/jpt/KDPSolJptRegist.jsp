@@ -8,7 +8,7 @@
 <head>
 	<title>순천대학교 K-디지털 플랫폼</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<link type="text/css" rel="stylesheet" href="<c:url value='/css/egovframework/com/solRegist.css?after' />">
+	<link rel="stylesheet" type="text/css" href="<c:url value='/css/egovframework/com/solRegist.css?after' />">
 	<link type="text/css" rel="stylesheet" href="<c:url value='/css/egovframework/com/solIntro.css?after' />">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -71,6 +71,10 @@
             
             document.getElementById('file-input').click();
         }
+        
+        function showAlert() {
+            alert('신청되었습니다.');
+        }
 	</script>
 </head>
 <body>
@@ -91,7 +95,7 @@
 		<!--visual-slider end-->
 		
 		<div class="solTableFrm">
-			<h1>Chatbot AI 이용 신청</h1>
+			<h1>Jupyter Notebook 이용 신청</h1>
 			<!-- 타이틀 -->
 			<h2 class="user_info">신청자 정보</h2>
 		  
@@ -151,7 +155,7 @@
 						        <input type="file" id="file-input" style="display:none;" onchange="displayFileName()">
 						        <input type="text" id="file-name-input" readonly>
 						        <button class="solUploadBtn" onclick="triggerFileInput(event)">
-						        	<img src="<c:url value='/images/egovframework/com/cmm/icon/upload_icon.png' />" alt=""> 업로드 
+						        	<img src="<c:url value='/images/egovframework/com/cmm/icon/upload_icon.png' />" alt=""> 업로드
 						        </button>
 						    </div>
 						</td>
@@ -159,17 +163,16 @@
 				</tbody>
 			</table>
 		</div>
-
+		
 		<!-- 하단 버튼 -->
 		<div class="solBtn">
-			<button type="reset" class="cancle" onclick="history.back()"> 취소 </button>
-			<button class="app">신청</button>
+			<button type="reset" class="cancle" onclick="history.back()">취소</button>
+			<button class="app" onclick="showAlert()">제출</button>
 		</div>
-		
 	</form>
-
+	
 	<!-- bottom -->
 	<c:import url="../../main_bottom.jsp" />
-
+	
 </body>
 </html>

@@ -63,6 +63,7 @@ body::-webkit-scrollbar {
 	left: 300px;
 	top: 50%;
 	padding-left: 10%;
+	z-index: -1;
 }
 
 #header .nav li {
@@ -74,6 +75,52 @@ body::-webkit-scrollbar {
 	margin: 5px 15px;
 }
 
+/* .header_login_container { */
+/*   position: absolute; */
+/*   top: 70px; */
+/*   right: 300px; */
+/*   display: flex; */
+/*   align-items: center; */
+/* } */
+
+.header_login_btn {
+  width: 96px;
+  height: 30px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.header_login_btn span {
+  color: #fff;
+  font-family: "NotoSansKR-ExtraBold", sans-serif;
+}
+
+.header_icon_container{
+    display: flex;
+    min-width: 180px;
+    height: 26px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header_lang_btn{
+	align-self: self-start;	
+}
+
+/* img { */
+/*   width: 24px; */
+/*   height: 24px; */
+/*   margin-left: 10px; */
+/* } */
+
+/* 페이지별 헤더쪽 배너 이미지 */
 #visual-slider-main {
 	height: 750px;
 	width: 100%;
@@ -145,6 +192,7 @@ body::-webkit-scrollbar {
 	/*   float: left; */
 	text-align: center;
 	line-height: 40px;
+	cursor: pointer;
 }
 
 .menu a {
@@ -153,6 +201,25 @@ body::-webkit-scrollbar {
 	font-size: 17px;
 	text-decoration: none !important;
 }
+
+/* .header_login_btn { */
+/* 	height: 26px; */
+/*     width: 96px; */
+/*     border: 2px solid white; */
+/*     border-radius: 20px; */
+/*     margin-top: 10px; */
+/* } */
+
+/* .header_lang_icon{ */
+/* 	padding-right: 300px; */
+/* 	padding-top: 10px; */
+/* 	z-index: 3; */
+/* } */
+
+/* .header_login_btn > a { */
+/* 	position: relative; */
+/*     bottom: 7px; */
+/* } */
 
 .submenu>li {
 	line-height: 50px; /* 서브메뉴 간 사이 간격 */
@@ -177,12 +244,12 @@ body::-webkit-scrollbar {
 }
 
 .menu>li>a:hover {
-	color: #111111;
+	color: #10101080;
 	transition-duration: 0.3s;
 }
 
 .submenu>li>a:hover {
-	color: #111111;
+	color: #366893;
 	transition-duration: 0.3s;
 }
 
@@ -190,5 +257,5 @@ body::-webkit-scrollbar {
 	height: fit-content; /*서브메뉴 li한개의 높이 50*5*/
 	text-align: center;
 	transition-duration: 0.5s;
-	background-color: #005bac75;
+	background-color: #10101063;
 }

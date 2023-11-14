@@ -26,12 +26,16 @@
 	font-style: normal;
 }
 
-/* 메인 바디 부분 css. 추후 분리 생각 */
+/* 메인 바디 부분 css */
 .l {
 	margin-left: 300px;
 }
 
-.sol_img>img {
+.box {
+	box-shadow: 0 1em 1.5em rgba(0, 0, 0, .2);
+}
+
+.sol_img > img {
 	width: 242px;
 	height: 270px;
 }
@@ -168,7 +172,7 @@ div.row>div.col-lg-4.align-self-center {
 }
 
 #index-news>div>div>div.col-lg-8>ul>li>a {
-	width: 1000px;
+	width: 1040px;
 	padding-left: 20px;
 }
 
@@ -212,7 +216,7 @@ li {
 #index-news li p {
 	color: #111;
 	font-family: "NotoSansKR-Regular", sans-serif;
-	max-width: 80%;
+	max-width: 90%;
 } 
 
 #index-news strong {
