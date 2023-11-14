@@ -18,6 +18,9 @@
     src: url('../../../font/NotoSansKR-ExtraBold.ttf') format('truetype');
 }
 
+body{
+	margin: 0px !important;
+}
 
 .solHeader {
 	height: 550px;

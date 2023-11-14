@@ -1,83 +1,137 @@
 /* KDP 소개 - 사업 소개 */
-#tab-1 > div.inner{
+#tab-1>div.inner {
 	padding-top: 93px;
 }
 
-img.introOutline{
+img.introOutline {
 	padding-top: 19px;
 }
 
-#tab-2 > div.inner{
+#tab-2>div.inner {
 	padding-top: 115px;
 }
 
-img.taskPurpose{
+img.taskPurpose {
 	padding-top: 21px;
 }
 
-#tab-3 > div.inner{
+#tab-3>div.inner {
 	padding-top: 120px;
 }
 
-#tab-4 > div.inner{
+#tab-4>div.inner {
 	padding-top: 90px;
 }
 
 /* KDP 소개 - 업무 안내 */
-img.orgChart{
-	width:600px;
-	height:357px;
+img.orgChart {
+	width: 600px;
+	height: 357px;
 	align-self: center;
 	padding-top: 41px;
 }
 
-img.centerCall{
-	width:800px;
-	height:100px;
+img.centerCall {
+	width: 800px;
+	height: 100px;
 	align-self: center;
 	padding-top: 36px;
 }
 
+/* 장비 소개 - 강의실 */
+.equip_inner{
+	width: 100%;
+	max-width: 1000px;
+	margin-left: 300px;
+	margin-right: 300px;
+}
+
+.lecture_inner {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 80px;
+	grid-row-gap: 25px;
+	padding-top: 22px;
+	margin-left: 0px !important;
+}
+
+img.lectureRoom{
+	width: 620px;
+	height: 400px;	
+}
+
+/* 오픈오피스 */
+.office_inner{
+	padding-top: 65px !important;
+}
+
+img.openOffice {
+	padding-top: 22px;
+	width: 620px;
+	height: 400px;
+}
+
+/* 장비 소개 - 이미지 썸네일 */
+.equip_inner{
+	padding-top: 85px !important;
+}
+#tab-3 > div > div.row2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-column-gap: 27px;
+	grid-row-gap: 25px;
+	padding-top: 22px;
+	margin-left: 0px !important;
+}
+
+.image-box {
+	width: 310px;
+	height: 250px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
 /* 공통 */
 .platform-section {
-    width: 100%;
+	width: 100%;
 }
 
 .platform-section .inner {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 .platform-section .inner h2 {
-    position: relative;
-    font-weight: 700;
-    letter-spacing: 0.5px;
+	position: relative;
+	font-weight: 700;
+	letter-spacing: 0.5px;
 }
 
 .platform-section .inner .inner2 {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
 }
 
-.platform-section .inner .inner2 .contents {
-    width: 100%;
+.platform-section .inner .inner2 .inner3 .contents {
+	width: 100%;
 }
 
-.inner .inner2 .contents {
-    margin-top: 10px;
+.inner .inner2 .inner3 .contents {
+	margin-top: 10px;
 }
 
 .platform-section .inner .inner2 .contents p {
-    position: relative;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-bottom: 10px;
+	position: relative;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.5;
+	margin-bottom: 10px;
 }
 
-.intro_title{
+.intro_title {
 	font-family: "NotoSansKR-Bold", sans-serif;
 	font-size: 28px;
 	color: #666666;

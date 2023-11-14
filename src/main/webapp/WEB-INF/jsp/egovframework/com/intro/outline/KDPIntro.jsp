@@ -92,7 +92,7 @@
 				<h2 class="intro_title">| 사업개요</h2>
 				<div class="inner2">
 					<img class="introOutline"
-						src="<c:url value='/images/egovframework/com/uat/uia/outline_3x.png' />"
+						src="<c:url value='/images/egovframework/com/uat/intro/outline_3x.png' />"
 						alt="사업개요" />
 				</div>
 			</div>
@@ -103,7 +103,7 @@
 				<h2 class="intro_title">| 사업목적</h2>
 				<div class="inner2">
 					<img class="taskPurpose"
-						src="<c:url value='/images/egovframework/com/uat/uia/task_purpose_3x.png' />"
+						src="<c:url value='/images/egovframework/com/uat/intro/task_purpose_3x.png' />"
 						alt="사업목적" />
 				</div>
 			</div>
@@ -114,7 +114,7 @@
 				<h2 class="intro_title">| 사업방향</h2>
 				<div class="inner2">
 					<img
-						src="<c:url value='/images/egovframework/com/uat/uia/task_dir_3x.png' />"
+						src="<c:url value='/images/egovframework/com/uat/intro/task_dir_3x.png' />"
 						alt="사업방향" />
 				</div>
 			</div>
@@ -125,7 +125,7 @@
 				<h2 class="intro_title">| 추진전략</h2>
 				<div class="inner2">
 					<img
-						src="<c:url value='/images/egovframework/com/uat/uia/strategy_3x.png' />"
+						src="<c:url value='/images/egovframework/com/uat/intro/strategy_3x.png' />"
 						alt="추진전략" />
 				</div>
 			</div>
