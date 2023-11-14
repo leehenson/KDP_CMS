@@ -49,9 +49,9 @@
 					      <li>
 					        <a href="#"> KDP 소개 </a>
 					        <ul class="submenu">
-					          <li><a href="#"> 사업 소개 </a></li>
-					          <li><a href="#"> 업무 안내 </a></li>
-					          <li><a href="#"> 시설 및 장비 </a></li>
+					          <li><a href="<c:url value='/intro/outline/KDPIntro.do'/>"> 사업 소개 </a></li>
+					          <li><a href="<c:url value='/intro/outline/taskInfo.do'/>"> 업무 안내 </a></li>
+					          <li><a href="<c:url value='/intro/outline/equipInfo.do'/>"> 시설 및 장비 </a></li>
 					        </ul>
 					      </li>
 					      

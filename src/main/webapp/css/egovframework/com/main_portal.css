@@ -3,6 +3,7 @@
 
 /* 공통선언 ▼*/
 body {
+	height:100%;
 	margin:0px 0px 0px 0px;
 	padding:0px;
 	background-color:#fff;
@@ -18,9 +19,6 @@ img { border:none; vertical-align:top; }
 fieldset { border:none;}
 legend { display:none; margin:0; padding:0;}
 form {padding: 0px 0px;}
-
-
-
 
 /* 공통선언 ▲*/
 
@@ -48,9 +46,85 @@ form {padding: 0px 0px;}
 #new_container #contents {width:760px;float:left; padding:28px 0 0 0;}
 /* 좌측메뉴 ▲*/
 /* 하단 ▼*/
-#new_footer { background:url(../../../images/egovframework/com/bottom_bg.gif) repeat-x; width:941px; height:60px; clear:both; padding:12px 0 0 40px}
-#new_footer li.gap {padding:0 0 0 50px;}
-#new_footer li { display:inline; }
+/* #new_footer { background:url(../../../images/egovframework/com/bottom_bg.gif) repeat-x; width:941px; height:60px; clear:both; padding:12px 0 0 40px} */
+/* #new_footer li.gap {padding:0 0 0 50px;} */
+/* #new_footer li { display:inline; } */
+
+.area_footer {
+    position: absolute;
+/*     top: 50px; */
+/*     bottom: 0px; */
+    width: 100%;
+    font-family: 'NotoSansKR-Regular';
+    background: url(../../../images/egovframework/com/uat/uia/footer_bg.png) repeat-x left top #f9f9f9;
+    margin-top: 50px;
+}
+
+ul.footer_link > li > a {
+	text-decoration: none !important;
+	color: #515151;
+}
+
+.footer_link{
+	display: block;
+    list-style-type: disc;
+    margin-block-start: 1.5em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.box_footer {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+.box_footer .f_logo {
+    position: absolute;
+    left: 0;
+    top: 90px;
+}
+.box_footer .footer_link {
+    line-height: 30 px;
+    overflow: hidden;
+}
+.box_footer .footer_link li {
+    float: left;
+    margin-right: 20px;
+}
+.box_footer {
+    margin: 25px 0 0 230px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #555;
+}
+.box_info{
+	display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    align-items: center;
+}
+address {
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+.box_footer .box_info address span {
+    margin-left: 20px;
+}
+.box_footer .box_info .copyright {
+    color: #999;
+}
+.btn_top {
+    position: fixed;
+    right: 55px;
+    bottom: 127px;
+    z-index: 100;
+}
+
+
 /* 하단 ▲*/
 /* 하단_login ▼*/
 /* #new_footer_login { background:url(../../../1.gif) repeat-x; width:700px; height:60px; clear:both; padding:12px 0 0 40px} */
@@ -63,7 +137,7 @@ form {padding: 0px 0px;}
 .mp_top {width:940px; }
 .mp_top:after {content:""; display:block; height:0; clear:both; visibility:hidden; }
 .mp_top > div {float:left; }
-.mp_top > div.l {width:465px; margin-right:10px; }
+.mp_top > div.l {width:465px; margin-right:10px;}
 .mp_top > div.r {width:465px; }
 .mp_top > div > div {overflow:auto; padding:10px; border:1px solid #ddd; box-sizing:border-box; }
 .mp_top > div > div input[type=submit] {border:none; background:transparent; cursor:pointer; }

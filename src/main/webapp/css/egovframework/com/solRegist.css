@@ -74,8 +74,8 @@ body {
 	color:#666;
 	font-size:30px;
 	font-weight:bold;
-	padding-left:60px;
-	background:url(../../../images/egovframework/com/cmm/icon/apply_info_icon.png) left center no-repeat;
+	padding-left:55px;
+	background:url(../../images/egovframework/com/cmm/icon/user_info_icon.png) left center no-repeat;
 	background-position: 5px center;
 }
 .solTableFrm h3 { color:#333;  font-size:14px; font-weight:600; margin:50px 0 10px 0; }
@@ -97,7 +97,10 @@ body {
     align-items: center;
 }
 .solUploadBtn {
-    font-family: NotoSansKR-ExtraBold;
+/* 	background-image: url('../../../images/egovframework/com/cmm/icon/upload_icon.png');
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: contain; */
 	background-color: #005bac;
 	padding-left: 10px;
 	width: 125px;
