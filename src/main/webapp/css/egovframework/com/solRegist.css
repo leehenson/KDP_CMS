@@ -18,6 +18,9 @@
     src: url('../../../font/NotoSansKR-ExtraBold.ttf') format('truetype');
 }
 
+body {
+	margin: 0px !important;
+}
 
 .solHeader {
 	height: 550px;
@@ -112,7 +115,7 @@
 	display: flex;
 	gap: 15px;
 }
-.solBtn > button.cancle {
+/* .solBtn > button.cancle {
 	font-family: NotoSansKR-ExtraBold;
 	border: none;
 	border-radius: 10px;
@@ -121,7 +124,23 @@
 	height: 48px;
 	font-size: 24px;
 	color: #fff;
+} */
+
+.solBtn > a.cancle {
+    display: inline-block;
+    font-family: NotoSansKR-ExtraBold;
+    border: none;
+    border-radius: 10px;
+    background-color: #d2d2d2;
+    width: 125px;
+    height: 48px;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none; /* 링크에 밑줄 제거 */
+    line-height: 48px; /* 버튼의 높이와 일치시켜 가운데 정렬 */
 }
+
 .solBtn> button.app {
 	font-family: NotoSansKR-ExtraBold;
 	border: none;
@@ -131,4 +150,19 @@
 	height: 48px;
 	font-size: 24px;
 	color: #fff;
+}
+
+.solBtn > a.app {
+    display: inline-block;
+    font-family: NotoSansKR-ExtraBold;
+    border: none;
+    border-radius: 10px;
+    background-color: #005bac;
+    width: 125px;
+    height: 48px;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none; /* 링크에 밑줄 제거 */
+    line-height: 48px; /* 버튼의 높이와 일치시켜 가운데 정렬 */
 }

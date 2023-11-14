@@ -54,12 +54,54 @@ import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
 @Controller
 public class KDPSolController {
 	
+	@RequestMapping("/sol/cht/showSolCht.do")
+	public String showSolCht() throws Exception {
+
+		return "egovframework/com/sol/cht/KDPSolChtIntro";
+	}
+	
 	@RequestMapping("/sol/cht/addSolCht.do")
 	public String addSolCht() throws Exception {
 
 		return "egovframework/com/sol/cht/KDPSolChtRegist";
 	}
+	
+	@RequestMapping("/sol/vsn/showSolVsn.do")
+	public String showSolVsn() throws Exception {
 
+		return "egovframework/com/sol/vsn/KDPSolVsnIntro";
+	}
+	
+	@RequestMapping("/sol/vsn/addSolVsn.do")
+	public String addSolVsn() throws Exception {
+
+		return "egovframework/com/sol/vsn/KDPSolVsnRegist";
+	}
+	
+	@RequestMapping("/sol/sd/showSolSd.do")
+	public String showSolSd() throws Exception {
+
+		return "egovframework/com/sol/sd/KDPSolSdIntro";
+	}
+
+	@RequestMapping("/sol/sd/addSolSd.do")
+	public String addSolSd() throws Exception {
+
+		return "egovframework/com/sol/sd/KDPSolSdRegist";
+	}
+	
+	@RequestMapping("/sol/jpt/showSolJpt.do")
+	public String showSolJpt() throws Exception {
+
+		return "egovframework/com/sol/jpt/KDPSolJptIntro";
+	}
+
+	@RequestMapping("/sol/jpt/addSolJpt.do")
+	public String addSolJpt() throws Exception {
+
+		return "egovframework/com/sol/jpt/KDPSolJptRegist";
+	}
+	
 	/*
 	 * @Resource(name = "EgovBBSMasterService") private EgovBBSMasterService
 	 * egovBBSMasterService;

@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Chatbot AI 이용 신청</title>
+	<title>Stable Diffusion 이용 신청</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<link type="text/css" rel="stylesheet" href="/css/egovframework/com/solRegist.css?after">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -94,7 +94,7 @@
 		<!--visual-slider end-->
 		
 		<div class="solTableFrm">
-			<h1>Chatbot AI 이용 신청</h1>
+			<h1>Stable Diffusion 이용 신청</h1>
 			<!-- 타이틀 -->
 			<h2 class="user_info">신청자 정보</h2>
 		  
@@ -162,7 +162,7 @@
 		</div>
 		<!-- 하단 버튼 -->
 		<div class="solBtn">
-			<a href="<c:url value='/sol/cht/showSolCht.do' />" class="cancle">취소</a>
+			<a href="<c:url value='/sol/sd/showSolSd.do' />" class="cancle">취소</a>
 			<button class="app" onclick="showAlert()">제출</button>
 		</div>
 	</form>

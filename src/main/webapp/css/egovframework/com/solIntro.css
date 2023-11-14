@@ -1,0 +1,320 @@
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('../../../font/GmarketSansBold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('../../../font/GmarketSansMedium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'NotoSansKR-Medium';
+    src: url('../../../font/NotoSansKR-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NotoSansKR-ExtraBold';
+    src: url('../../../font/NotoSansKR-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NotoSansKR-Regular';
+    src: url('../../../font/NotoSansKR-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NotoSansKR-Bold';
+    src: url('../../../font/NotoSansKR-Bold.ttf') format('truetype');
+}
+
+
+.solHeader {
+	height: 550px;
+	width: 100%;
+	background-image: url("../../../images/egovframework/com/uat/uia/solution_header_background.png");
+	background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.solText {
+	font-family: GmarketSansMedium;
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 65px;
+	text-align: center;
+}
+.solText > h2 {
+	font-family: GmarketSansBold;
+	font-size: 85px;
+	color: #fff;
+	margin: 10px 0px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "NotoSansKR-ExtraBold", sans-serif;
+  background-image: url(./img/scu_symbol.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+header {
+  position: relative;
+}
+
+.header-bg {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .header-bg .header-bg img .logo-container .nav .menu-box {
+    margin-top: 50px;
+  }
+}
+
+.header-bg img {
+  width: 100%;
+  height: auto;
+}
+
+.logo-container {
+  position: absolute;
+  top: 75px;
+  left: 300px;
+}
+
+nav {
+  position: absolute;
+  top: 52px;
+  left: 660px;
+  display: flex;
+}
+
+.menu-box {
+  width: 140px;
+  height: 63px;
+  margin-right: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.menu-box a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: "NotoSansKR-Regular", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #000;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  flex-direction: row;
+}
+
+.menu-box:hover .submenu {
+  display: block;
+}
+
+.submenu a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  padding: 12px 16px;
+  display: block;
+}
+
+.adjust-left1 {
+  margin-left: -9px;
+}
+
+.adjust-left2 {
+  margin-left: -17px;
+}
+
+.login-container {
+  position: absolute;
+  top: 70px;
+  right: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.login-button {
+  width: 96px;
+  height: 26px;
+  background-color: transparent;
+  border: 3px solid #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.login-button span {
+  color: #fff;
+  font-family: "NotoSansKR-ExtraBold", sans-serif;
+}
+
+.login-container img {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.header-text {
+  position: absolute;
+  top: 251px;
+  left: 0;
+  text-align: center;
+  margin-left: 600px;
+  margin-top: 40px;
+}
+
+.header-text1 {
+  color: #fff;
+  font-size: 85px;
+  font-family: GmarketSansBold;
+  margin-bottom: 0;
+}
+
+.header-text2 {
+  color: #fff;
+  font-size: 20px;
+  font-family: GmarketSansMedium;
+  margin-top: 5px;
+}
+
+.container {
+  margin-top: 118px;
+  text-align: center;
+}
+
+.vision-ai-text {
+  position: relative;
+  top: 50px;
+  text-align: center;
+  margin-left: 0px;
+  font-family: GmarketSansBold;
+  font-size: 75px;
+  color: #111111;
+}
+
+.additional-text {
+  text-align: center;
+  font-family: NotoSansKR-Medium;
+  font-size: 20px;
+  margin-left: 0px;
+  color: #111111;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 0px;
+}
+
+.button-style {
+  display: inline-block;
+  width: 180px;
+  height: 50px;
+  background-color: #005bac;
+  color: #fff;
+  font-family: "NotoSansKR-ExtraBold", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.button-style:hover {
+  background-color: #003366;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-top: 50px;
+  }
+}
+
+.content-container {
+  display: flex;
+  margin: 0 300px;
+  margin-top: 150px;
+}
+
+.content-description {
+  max-width: 500px;
+  padding-right: 20px;
+}
+
+.content-description1 {
+  font-family: NotoSansKR-Bold;
+  font-size: 28px;
+}
+
+.content-description2 {
+  font-family: NotoSansKR-Regular;
+  font-size: 17px;
+}
+
+.image-boxes {
+  display: flex;
+  margin-left: 50px;
+}
+
+.image-box {
+  width: 390px;
+  height: 260px;
+  margin-right: 20px;
+  background-color: #005bac;
+  margin-top: 28px;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #fff;
+  color: #666666;
+  padding: 20px;
+  text-align: center;
+  font-family: GmarketSansBold;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}

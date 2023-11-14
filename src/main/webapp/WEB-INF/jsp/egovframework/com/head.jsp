@@ -58,10 +58,10 @@
 					      <li>
 					        <a href="#"> 솔루션 </a>
 					        <ul class="submenu">
-					          <li><a href="#"> Vision AI </a></li>
-					          <li><a href="#"> ChatBot AI </a></li>
-					          <li><a href="#"> Stable Diffusion </a></li>
-					          <li><a href="#"> Jupyter Notebook </a></li>
+					          <li><a href="<c:url value='/sol/vsn/showSolVsn.do' />"> Vision AI </a></li>
+					          <li><a href="<c:url value='/sol/cht/showSolCht.do' />"> ChatBot AI </a></li>
+					          <li><a href="<c:url value='/sol/sd/showSolSd.do' />"> Stable Diffusion </a></li>
+					          <li><a href="<c:url value='/sol/jpt/showSolJpt.do' />"> Jupyter Notebook </a></li>
 					        </ul>
 					      </li>
 					      
