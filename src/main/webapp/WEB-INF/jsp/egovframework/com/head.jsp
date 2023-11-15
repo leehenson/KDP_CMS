@@ -103,7 +103,7 @@
 						<li style="padding-top: 8px;">
 							<div class="header_icon_container">
 								<div class="header_login_btn">
-									<a href="<c:url value='/uat/uia/egovLoginUsr.do'/>">
+									<a href="<c:url value='/uat/uia/KDPLogin.do'/>">
 									<span style="font-size: 16px"> 로그인 </span>
 									</a>
 								</div>

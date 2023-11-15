@@ -199,5 +199,11 @@ public class EgovIndvdlPgeController {
           return "forward:/uss/mpe/selectIndvdlPgeList.do";
 
       }
+      
+      @RequestMapping("/uss/mpe/myPage.do")
+      public String myPage() throws Exception{
+    	  
+    	  return "egovframework/com/uss/mpe/KDPMyPage";
+      }
 	
 }
