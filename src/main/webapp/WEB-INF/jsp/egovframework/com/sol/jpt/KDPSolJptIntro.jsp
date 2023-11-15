@@ -34,41 +34,80 @@
 		<!--visual-slider end-->
 		
 		<div class="container">
-	      	<div class="vision-ai-text">Jupyter Notebook</div>
-	      	<div class="additional-text">
-			        김또개 아리아 컴퓨터 아슬라 별하 함초롱하다 우리는 컴퓨터 컴퓨터 나비잠
-			        아슬라 미리내 미리내 노트북 <br />포도 포도 옅구름 이플 미쁘다 도서관
-			        미쁘다 바라꽃 함초롱하다 소로소록
-	      	</div>
+	    	<h2 class="vision-ai-text"> Jupyter NoteBook </h2> 
+		      	<div class="additional-text">
+				        인공지능 모델을 개발할 수 있는 환경을 다양한 인프라에서 실행 가능하도록 제공
+		      	</div>
 	    </div>
-	    <div class="button-container">
-      		<a href="<c:url value='/sol/jpt/addSolJpt.do' />" class="button-style">이용 신청하기</a>
-	    </div>
+		    
+		    <div class="button-container">
+	      		<a href="<c:url value='/sol/vsn/addSolVsn.do' />" class="button-style">이용 신청하기</a>
+		    </div>
 		
-	    <div class="content-container">
-     		<div class="content-description">
-	        	<h2 class="content-description1">비즈니스를 위한 AI</h2>
-	        	<p class="underbar">ㅡ</p>
-		        <p class="content-description2">
-		          NVIDIA AI 플랫폼을 구동하는 엔터프라이즈급 소프트웨어인 NVIDIA AI
-		          Enterprise는 데이터 사이언스를 가속화하고 프로덕션 준비를 마친 생성형
-		          AI, 컴퓨터 비전, 음성 AI 등의 개발 및 배포를 간소화합니다. AI에서
-				    비즈니스를 운영하는 엔터프라이즈는 NVIDIA AI Enterprise를 사용하여 AI
-				    팀의 생산성을 향상하고 비즈니스 인사이트를 더 빠르게 얻습니다.
-	       		</p>
+			<div class="subTitle-container">
+	    			<h2 class="subTitle-text"> AI 개발 가속화 및 단순화 </h2> 
+				       <p class="sub-add-text"> K-디지털플랫폼 서버 내에 구축된 주피터 시스템을 사용하여 개인 브라우저에서 인공지능 모델 개발 환경을 구축할 수 있습니다. </p>
+	   	 	</div>
+		
+	    	<div class="content-container">
+				<div class="image-boxes">
+				  	<div class="image-box">
+					    <img src="<c:url value='/images/egovframework/com/uat/sol/Jupyter noteBook_01.png' />" alt="Jupyter noteBook_01" />
+		  			</div>
+	      		</div>
+	     		<div class="content-description">
+		        	<h2 class="content-description1"> 편리한 웹 환경 제공 </h2>
+		        	<p class="underbar">ㅡ</p>
+			        <p class="content-description2">
+			        	Jupyter NoteBook 원본 웹 애플리케이션으로
+			        	<br>
+			        	프로그래밍 언어 코드를 반복, 구현 및 문서화 할 수 있는
+			        	<br>
+			        	환경을 제공합니다.
+			       	</p>
+	    		</div>
     		</div>
 
-			<div class="image-boxes">
-			  	<div class="image-box">
-				    <img src="image_1.jpg" alt="Image 1" />
-				    <p>이미지 1</p>
-	  			</div>
-		        <div class="image-box">
-					<img src="image_2.jpg" alt="Image 2" />
-					<p>이미지 2</p>
-		        </div>
-      		</div>
-    	</div>
+	    	<div class="content-container">
+				<div class="image-boxes">
+				  	<div class="image-box">
+					    <img src="<c:url value='/images/egovframework/com/uat/sol/Jupyter noteBook_02.png' />" alt="Jupyter noteBook_02" />
+		  			</div>
+	      		</div>
+	     		<div class="content-description">
+		        	<h2 class="content-description1"> 다양한 AI 응용을 위한 파이썬 주피터 노트북</h2>
+		        	<p class="underbar">ㅡ</p>
+			        <p class="content-description2">
+			        	탐색적 데이터 분석(EDA), 데이터 정리 및 변환,
+			        	<br>
+			        	데이터 시각화, 통계 모델링, 기계학습(ML), 딥러닝(DL) 등
+			        	<br>
+			        	모든 종류의 데이터 과학 작업에 사용할 수 있습니다.
+			       	</p>
+	    		</div>
+    		</div>
+    		
+    		<div class="content-container">
+				<div class="image-boxes">
+				  	<div class="image-box">
+					    <img src="<c:url value='/images/egovframework/com/uat/sol/Jupyter noteBook_03.png' />" alt="Jupyter noteBook_03" />
+		  			</div>
+	      		</div>
+	     		<div class="content-description">
+		        	<h2 class="content-description1"> 컨테이너 친화적 환경 </h2>
+		        	<p class="underbar">ㅡ</p>
+			        <p class="content-description2">
+			        	다중 이용자가 동시에 Oauth, PAM 등 다양한 인증 방식을 통해
+			        	<br>
+			        	개인 브라우저로 접근하여 인공지능 모델을 개발할 수 있습니다.
+			        	<br>
+			        	Kubernetes를 통한 Scalable 컨테이너 친화적 환경을 제공하여
+			        	<br>
+			        	다양한 인프라에서 실행 가능합니다.
+			       	</p>
+	    		</div>
+    		</div>
+    		
 	</form>
 
 	<!-- bottom -->

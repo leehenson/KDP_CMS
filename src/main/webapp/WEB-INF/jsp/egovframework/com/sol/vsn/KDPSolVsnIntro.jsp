@@ -34,44 +34,137 @@
 		<!--visual-slider end-->
 		
 		<div class="container">
-	    	<div class="vision-ai-text"> Vision AI </div>
+	    	<h2 class="vision-ai-text">Vision AI</h2> 
 		      	<div class="additional-text">
-				        김또개 아리아 컴퓨터 아슬라 별하 함초롱하다 우리는 컴퓨터 컴퓨터 나비잠
-				        아슬라 미리내 미리내 노트북 <br />포도 포도 옅구름 이플 미쁘다 도서관
-				        미쁘다 바라꽃 함초롱하다 소로소록
+				        이미지 속 사람 및 사물 등 객체를 인지하고 분석하는 서비스
 		      	</div>
-	    	</div>
+	    </div>
 		    
 		    <div class="button-container">
 	      		<a href="<c:url value='/sol/vsn/addSolVsn.do' />" class="button-style">이용 신청하기</a>
 		    </div>
 		
+			<div class="subTitle-container">
+	    			<h2 class="subTitle-text"> 이미지 속 얼굴과 관련된 다양한 정보 제공 </h2> 
+				       <p class="sub-add-text"> 이미지 속 사람의 얼굴을 감지하고, 특징 값을 추출하여 다양하게 활용할 수 있습니다. </p>
+	   	 	</div>
+		
 	    	<div class="content-container">
-	     		<div class="content-description">
-		        	<h2 class="content-description1">비즈니스를 위한 AI</h2>
-		        	<p class="underbar">ㅡ</p>
-			        <p class="content-description2">
-			          NVIDIA AI 플랫폼을 구동하는 엔터프라이즈급 소프트웨어인 NVIDIA AI
-			          Enterprise는 데이터 사이언스를 가속화하고 프로덕션 준비를 마친 생성형
-			          AI, 컴퓨터 비전, 음성 AI 등의 개발 및 배포를 간소화합니다. AI에서
-					    비즈니스를 운영하는 엔터프라이즈는 NVIDIA AI Enterprise를 사용하여 AI
-					    팀의 생산성을 향상하고 비즈니스 인사이트를 더 빠르게 얻습니다.
-		       		</p>
-	    		</div>
-
 				<div class="image-boxes">
 				  	<div class="image-box">
-					    <img src="image_1.jpg" alt="Image 1" />
-					    <p>이미지 1</p>
+					    <img src="<c:url value='/images/egovframework/com/uat/sol/Vison AI_01.png' />" alt="Vison AI_01" />
 		  			</div>
-			        <div class="image-box">
-						<img src="image_2.jpg" alt="Image 2" />
-						<p>이미지 2</p>
-			        </div>
 	      		</div>
+	     		<div class="content-description">
+		        	<h2 class="content-description1"> 다양한 객체 식별 </h2>
+		        	<p class="underbar">ㅡ</p>
+			        <p class="content-description2">
+			        	이미지나 영상 속의 사람뿐만 아니라
+			        	<br>
+			        	동물과 사물 같은 다양한 객체를 식별할 수 있습니다.
+			        	<br>
+			        	객체를 식별한 후 결괏값으로
+			        	<br>
+			        	객체 이름과 탐지 정확도(%)를 제공하고
+			        	<br>
+			        	이미지 속 객체에 바운딩 박스를 표시합니다.
+			       	</p>
+	    		</div>
+    		</div>
+
+	    	<div class="content-container">
+				<div class="image-boxes">
+				  	<div class="image-box">
+					    <img src="<c:url value='/images/egovframework/com/uat/sol/Vison AI_02.png' />" alt="Vison AI_02" />
+		  			</div>
+	      		</div>
+	     		<div class="content-description">
+		        	<h2 class="content-description1"> 서버 없이 사용 가능한 간편 설치 </h2>
+		        	<p class="underbar">ㅡ</p>
+			        <p class="content-description2">
+			        	Vision AI 모델을 사용하기 위해서는
+			        	<br>
+			        	설치 과정이 번거롭고 고가의 GPU 서버 혹은
+			        	<br>
+			        	고사양 서버가 필요합니다.
+			        	<br>
+			        	K-디지털플랫폼에서 제공하는 Vision AI 솔루션은
+			        	<br>
+			        	별도로 서버를 구매하지 않아도 사용할 수 있습니다.
+			       	</p>
+	    		</div>
+    		</div>
+    		
+    		<div class="content-container">
+				<div class="image-boxes">
+				  	<div class="image-box">
+					    <img src="<c:url value='/images/egovframework/com/uat/sol/Vison AI_03.png' />" alt="Vison AI_03" />
+		  			</div>
+	      		</div>
+	     		<div class="content-description">
+		        	<h2 class="content-description1"> 간편한 통합 모니터링 및 </h2>
+		        	<h2 class="content-description1"> RESTful API 지원 </h2>
+		        	<p class="underbar">ㅡ</p>
+			        <p class="content-description2">
+			        	Vision AI 모델을 사용하기 위해서는
+			        	<br>
+			        	설치 과정이 번거롭고 고가의 GPU 서버 혹은
+			        	<br>
+			        	고사양 서버가 필요합니다.
+			        	<br>
+			        	K-디지털플랫폼에서 제공하는 Vision AI 솔루션은
+			        	<br>
+			        	별도로 서버를 구매하지 않아도 사용할 수 있습니다.
+			       	</p>
+	    		</div>
+    		</div>
+    		
+    		<div class="subTitle-container">
+	    			<h2 class="subTitle-text"> 이미지 속 객체 식별 및 관련 정보 제공 </h2> 
+				       <p class="sub-add-text"> 이미지 속 사람, 동물, 물건 등 다양한 객체를 식별하고 객체의 정보를 확인할 수 있습니다. </p>
+	   	 	</div>
+    		
+    		<div class="content-container">
+				<div class="image-boxes">
+				  	<div class="image-box">
+					    <img src="<c:url value='/images/egovframework/com/uat/sol/Vison AI_04.png' />" alt="Vison AI_04" />
+		  			</div>
+	      		</div>
+	     		<div class="content-description">
+		        	<h2 class="content-description1"> 정확한 얼굴 감지 기능 </h2>
+		        	<p class="underbar">ㅡ</p>
+			        <p class="content-description2">
+			        	방대한 이미지 데이터베이스(Database)를 기반으로
+			        	<br>
+			        	정확한 얼굴 감지 기능을 제공합니다.
+			        	<br>
+			        	컴퓨터 비전(Vision) 정보를 활용하여
+			        	<br>
+			        	새로운 인터페이스로 사용할 수 있습니다.
+			       	</p>
+	    		</div>
+    		</div>
+    		
+    		<div class="content-container">
+				<div class="image-boxes">
+				  	<div class="image-box">
+					    <img src="<c:url value='/images/egovframework/com/uat/sol/Vison AI_05.png' />" alt="Vison AI_05" />
+		  			</div>
+	      		</div>
+	     		<div class="content-description">
+		        	<h2 class="content-description1"> 지속적인 성능 개선 </h2>
+		        	<p class="underbar">ㅡ</p>
+			        <p class="content-description2">
+			        	성능을 자동으로 개선하는
+			        	<br>
+			        	머신 러닝(Machine Learning) 방법이 적용되어
+			        	<br>
+			        	서비스 성능이 지속적으로 개선됩니다.
+			       	</p>
+	    		</div>
     		</div>
 		</form>
-	
+
 	<!-- bottom -->
 	<c:import url="../../main_bottom.jsp" />
 	
