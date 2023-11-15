@@ -238,10 +238,11 @@
 									<div class="row">
 										<strong class="col-auto">뉴스레터</strong>
 										<div class="col">
-											<h3 class="text-truncate">디지털 사이니지 설치사례 10월호</h3>
-											<p class="txt-line">시스메이트의 디지털 사이니지 설치사례 월간 레퍼런스 2023년
-												9월호가&nbsp;발행 되었습니다. 많은 관심 부탁 드립니다. 시스메이트의 디지털 사이니지 설치사례 월간
-												레퍼런스 2023년 10월호가&nbsp;발행 되었습니다. 많은 관심 부탁 드립니다.</p>
+											<h3 class="text-truncate">K-디지털플랫폼 이용 사례 10월호</h3>
+											<p class="txt-line">K-디지털플랫폼의 월간 레퍼런스 2023년
+												9월호가&nbsp;발행 되었습니다. 많은 관심 부탁 드립니다.
+												K-디지털플랫폼의 월간 레퍼런스 2023년
+												9월호가&nbsp;발행 되었습니다. 많은 관심 부탁 드립니다.</p>
 										</div>
 										<div class="col-auto">
 											<img
@@ -254,9 +255,9 @@
 									<div class="row">
 										<strong class="col-auto">뉴스레터</strong>
 										<div class="col">
-											<h3 class="text-truncate">뉴스레터 2023년 10월호</h3>
-											<p class="txt-line">시스메이트의 2023년 10월 뉴스레터가 발행 되었습니다. 서울시
-												금천구 감사장 수상 소식 및 나라장터종합쇼핑몰 제품 라인업 소개 내용입니다. 많은 관심 부탁 드립니다.</p>
+											<h3 class="text-truncate">뉴스레터 2023년 11월호</h3>
+											<p class="txt-line">KDP의 2023년 10월 뉴스레터가 발행 되었습니다. 순천시
+												감사장 수상 소식 및 나라장터종합쇼핑몰 제품 라인업 소개 내용입니다. 많은 관심 부탁 드립니다.</p>
 										</div>
 										<div class="col-auto">
 											<img
@@ -269,10 +270,9 @@
 									<div class="row">
 										<strong class="col-auto">기업공지</strong>
 										<div class="col">
-											<h3 class="text-truncate">시스메이트, 서울시 금천구 감사장 수상 "정신건강 증진
-												실천 기여"</h3>
-											<p class="txt-line">안녕하세요. 디지털사이니지 전문기업, 시스메이트 입니다.&nbsp;
-												시스메이트가 서울시 금천구 (유성훈 금천구청장)으로부터&nbsp; 학생 및 교직원의 정신건강 증진 실천에
+											<h3 class="text-truncate">순천대학교, K-디지털플랫폼 출시 "지역 디지털 특화 기여"</h3>
+											<p class="txt-line">안녕하세요. 순천대학교 K-디지털플랫폼입니다.&nbsp;
+												순천대학교가 순천시로부터&nbsp; 학생 및 교직원의 정신건강 증진 실천에
 												적극 기여한 공로를 인정받아 감사장을 받았습니다.&nbsp; 정신건강 진단 교육 키오스크(MENTAL
 												CARE KIOSK Series)&nbsp; 시스메이트와 사단법인 대한정신의료기관협회가 협력하여 개발한 멘탈
 												헬스케어 서비스로 △기관 안내 △마음건강 자가 검진 △질환별 정보 △두뇌교육게임 △병원 안내 △관리자 페이지

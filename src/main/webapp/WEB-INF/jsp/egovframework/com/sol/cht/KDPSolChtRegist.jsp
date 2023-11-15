@@ -6,9 +6,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Chatbot AI 이용 신청</title>
+	<title>순천대학교 K-디지털 플랫폼</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<link type="text/css" rel="stylesheet" href="/css/egovframework/com/solRegist.css?after">
+	<link type="text/css" rel="stylesheet" href="<c:url value='/css/egovframework/com/solRegist.css?after' />">
+	<link type="text/css" rel="stylesheet" href="<c:url value='/css/egovframework/com/solIntro.css?after' />">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -70,10 +71,6 @@
             
             document.getElementById('file-input').click();
         }
-        
-        function showAlert() {
-            alert('신청되었습니다.');
-        }
 	</script>
 </head>
 <body>
@@ -87,7 +84,7 @@
 					<h2>
 						이용 신청
 					</h2>
-					원하는 솔루션을 신청하세요
+					<p> 원하는 솔루션을 신청하세요 </p>
 				</div>
 			</div>
 		</div>
@@ -153,18 +150,26 @@
 						    <div style="display: flex; align-items: center;">
 						        <input type="file" id="file-input" style="display:none;" onchange="displayFileName()">
 						        <input type="text" id="file-name-input" readonly>
-						        <button class="solUploadBtn" onclick="triggerFileInput(event)"><img src="../../../images/egovframework/com/cmm/icon/업로드_아이콘.png" alt="">업로드</button>
+						        <button class="solUploadBtn" onclick="triggerFileInput(event)">
+						        	<img src="<c:url value='/images/egovframework/com/cmm/icon/upload_icon.png' />" alt=""> 업로드 
+						        </button>
 						    </div>
 						</td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
+
 		<!-- 하단 버튼 -->
 		<div class="solBtn">
-			<a href="<c:url value='/sol/cht/showSolCht.do' />" class="cancle">취소</a>
-			<button class="app" onclick="showAlert()">제출</button>
+			<button type="reset" class="cancle" onclick="history.back()"> 취소 </button>
+			<button class="app">신청</button>
 		</div>
+		
 	</form>
+
+	<!-- bottom -->
+	<c:import url="../../main_bottom.jsp" />
+
 </body>
 </html>

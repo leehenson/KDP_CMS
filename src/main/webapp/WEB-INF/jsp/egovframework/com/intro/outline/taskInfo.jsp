@@ -92,7 +92,7 @@
 				<h2 class="intro_title">| 조직도 </h2>
 				<div class="inner2">
 					<img class="orgChart"
-						src="<c:url value='/images/egovframework/com/uat/uia/orgChart.png' />"
+						src="<c:url value='/images/egovframework/com/uat/intro/orgChart.png' />"
 						alt="조직도" />
 				</div>
 			</div>
@@ -103,7 +103,7 @@
 				<h2 class="intro_title">| 미래인재양성사업단 공동훈련센터 </h2>
 				<div class="inner2">
 					<img class="centerCall"
-						src="<c:url value='/images/egovframework/com/uat/uia/centerCall.png' />"
+						src="<c:url value='/images/egovframework/com/uat/intro/centerCall.png' />"
 						alt="센터연락처" />
 				</div>
 			</div>

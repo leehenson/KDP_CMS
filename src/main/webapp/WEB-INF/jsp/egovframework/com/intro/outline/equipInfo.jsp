@@ -6,14 +6,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> 순천대학교 K-디지털 플랫폼 </title>
+<title>순천대학교 K-디지털 플랫폼</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css"
 	href="<c:url value='/css/egovframework/com/intro.css' />">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <link rel="stylesheet"
 	href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<!-- 부트스트랩 for 그리드 -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+	integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+	crossorigin="anonymous">
+
 <script>
 	$(function() {
 		// 시작일과 종료일에 대한 Datepicker 초기화
@@ -88,29 +96,81 @@
 		<!--visual-slider end-->
 
 		<section id="tab-1" class="platform-section">
-			<div class="inner">
-				<h2 class="intro_title">| 강의실 </h2>
-				<div class="inner2">
-					<img class="orgChart"
-						src="<c:url value='/images/egovframework/com/uat/uia/orgChart.png' />"
-						alt="조직도" />
-					<img class="orgChart"
-						src="<c:url value='/images/egovframework/com/uat/uia/orgChart.png' />"
-						alt="조직도" />
-					<img class="orgChart"
-						src="<c:url value='/images/egovframework/com/uat/uia/orgChart.png' />"
-						alt="조직도" />
+			<div class="equip_inner">
+				<h2 class="intro_title">| 강의실</h2>
+				<div class="lecture_inner">
+					<img class="lectureRoom"
+						src="<c:url value='/images/egovframework/com/uat/intro/room01_pc.png' />"
+						alt="강의실1" />
+					<img class="lectureRoom"
+						src="<c:url value='/images/egovframework/com/uat/intro/room02_imag.png' />"
+						alt="강의실2" />
 				</div>
 			</div>
 		</section>
 
 		<section id="tab-2" class="platform-section">
-			<div class="inner">
-				<h2 class="intro_title">| 미래인재양성사업단 공동훈련센터 </h2>
-				<div class="inner2">
-					<img class="centerCall"
-						src="<c:url value='/images/egovframework/com/uat/uia/centerCall.png' />"
-						alt="센터연락처" />
+			<div class="equip_inner">
+				<h2 class="intro_title">| 오픈오피스</h2>
+				<div class="inner3">
+					<img class="openOffice"
+						src="<c:url value='/images/egovframework/com/uat/intro/openOffice.png' />"
+						alt="오픈오피스" />
+				</div>
+			</div>
+		</section>
+
+		<section id="tab-3" class="platform-section">
+			<div class="equip_inner">
+				<h2 class="intro_title">| 장비</h2>
+				<div class="row2">
+					<div class="img-box">
+						<img class="equip"
+							src="<c:url value='/images/egovframework/com/uat/intro/equip01_laptop.png' />"
+							alt="보유장비1" />
+					</div>
+
+					<div class="img-box">
+						<img class="equip"
+							src="<c:url value='/images/egovframework/com/uat/intro/equip02_AR_Glasses.png' />"
+							alt="보유장비2" />
+					</div>
+
+					<div class="img-box">
+						<img class="equip"
+							src="<c:url value='/images/egovframework/com/uat/intro/equip03_Oculus1.png' />"
+							alt="보유장비3" />
+					</div>
+
+					<div class="img-box">
+						<img class="equip"
+							src="<c:url value='/images/egovframework/com/uat/intro/equip04_Oculus2.png' />"
+							alt="보유장비4" />
+					</div>
+
+					<div class="img-box">
+						<img class="equip"
+							src="<c:url value='/images/egovframework/com/uat/intro/equip05_ViveFullSet1.png' />"
+							alt="보유장비5" />
+					</div>
+
+					<div class="img-box">
+						<img class="equip"
+							src="<c:url value='/images/egovframework/com/uat/intro/equip06_ViveFullSet2.png' />"
+							alt="보유장비6" />
+					</div>
+
+					<div class="img-box">
+						<img class="equip"
+							src="<c:url value='/images/egovframework/com/uat/intro/equip07_drone1.png' />"
+							alt="보유장비7" />
+					</div>
+
+					<div class="img-box">
+						<img class="equip"
+							src="<c:url value='/images/egovframework/com/uat/intro/equip08_drone2.png' />"
+							alt="보유장비8" />
+					</div>
 				</div>
 			</div>
 		</section>
