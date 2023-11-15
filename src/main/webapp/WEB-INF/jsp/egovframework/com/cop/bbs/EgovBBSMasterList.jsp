@@ -28,6 +28,7 @@
 <head>
 <title>${pageTitle} <spring:message code="title.list" /></title><!-- 게시판 목록 -->
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link type="text/css" rel="stylesheet" href="<c:url value='/css/egovframework/com/myPage.css?after' />">
 <link type="text/css" rel="stylesheet" href="<c:url value='/css/egovframework/com/com.css' />">
 <script type="text/javascript">
 /*********************************************************
@@ -65,6 +66,17 @@ function fn_egov_inquire_bbsdetail(bbsId) {
 </script>
 </head>
 <body onload="fn_egov_init()">
+<!-- header -->
+<c:import url="../../head.jsp" />
+<div class="KDPHeader">
+	<div class="inner">
+		<div class="KDPText">
+			<h2>
+				공지사항
+			</h2>
+		</div>
+	</div>
+</div>
 <!-- javascript warning tag  -->
 <noscript class="noScriptTitle"><spring:message code="common.noScriptTitle.msg" /></noscript>
 
@@ -145,6 +157,7 @@ function fn_egov_inquire_bbsdetail(bbsId) {
 <input name="bbsId" type="hidden" value="">
 <input name="pageIndex" type="hidden" value="<c:out value='${searchVO.pageIndex}'/>">
 </form>
-
+<!-- bottom -->
+<c:import url="../../main_bottom.jsp" />
 </body>
 </html>

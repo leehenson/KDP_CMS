@@ -1,0 +1,35 @@
+@font-face {
+	font-family: 'GmarketSansBold';
+	src: url('../../../font/GmarketSansBold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'GmarketSansMedium';
+	src: url('../../../font/GmarketSansMedium.otf') format('opentype');
+}
+
+.KDPHeader {
+	height: 550px;
+	width: 100%;
+	background-image:
+		url("../../../images/egovframework/com/uat/uia/solution_header_background.png");
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.KDPText {
+	font-family: GmarketSansMedium;
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 165px;
+	text-align: center;
+}
+
+.KDPText > h2 {
+	font-family: GmarketSansBold;
+	font-size: 85px;
+	color: #fff;
+	margin: 10px 0px;
+}
