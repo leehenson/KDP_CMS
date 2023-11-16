@@ -37,6 +37,20 @@
 	        if (tabContent) {
 	            tabContent.style.display = 'block';
 	        }
+	        
+	        // <h1> 내용 변경
+	        var h1 = document.querySelector('.contents h1');
+	        switch (tabId) {
+	            case 'tab1':
+	                h1.textContent = '이용 현황';
+	                break;
+	            case 'tab2':
+	                h1.textContent = '문의 내역';
+	                break;
+	            case 'tab3':
+	                h1.textContent = '계정 관리';
+	                break;
+	        }
 	    }
 	</script>
 </head>
@@ -49,44 +63,96 @@
 				<h2>
 					마이페이지
 				</h2>
-				<p>나의 정보</p>
 			</div>
 		</div>
 	</div>
 	<div class="contents">
-		<h1>계정 관리</h1>
+		<h1>이용 현황</h1>
 	 	<!-- 탭 메뉴 -->
 	 	<div>
 			<ul class="tab-menu">
-			    <li onclick="showTab('tab1')">계정 관리</li>
-			    <li onclick="showTab('tab2')">이용 현황</li>
-			    <li onclick="showTab('tab3')">문의 내역</li>
+			    <li onclick="showTab('tab1')">이용 현황</li>
+			    <li onclick="showTab('tab2')">문의 내역</li>
+			    <li onclick="showTab('tab3')">계정 관리</li>
 			</ul>
 			
-			<!-- 탭 내용 -->
 			<div id="tab1" class="tab">
+			    <table class="tabTable">
+			    	<tbody>
+				    	<tr>
+				    		<th class="col1"><span>신청 일자</span></th>
+				    		<th class="col2"><span>신청자</span></th>
+				    		<th class="col3"><span>신청 내용</span></th>
+				    		<th class="col4"><span>승인 상태</span></th>
+				    		<th class="col5"><span style="border-right: 2px solid #d2d2d2; padding-right: 0px;">사용 링크</span></th>
+				    	</tr>
+				    	<tr>
+				    		<td class="col1">2023-11-03</td>
+				    		<td class="col2">홍길동</td>
+				    		<td class="col3">Vision AI 사용 신청합니다.</td>
+				    		<td class="col4">승인</td>
+				    		<td class="col5">링크</td>
+				    	</tr>
+				    	<tr>
+				    		<td class="col1">2023-11-04</td>
+				    		<td class="col2">홍길동</td>
+				    		<td class="col3">Stable Diffusion 사용 신청합니다.</td>
+				    		<td class="col4">거부</td>
+				    		<td class="col5">링크</td>
+				    	</tr>
+			    	</tbody>
+			    </table>
+			</div>
+			
+			<div id="tab2" class="tab">
+			    <table class="tabTable">
+			    	<tbody>
+				    	<tr>
+				    		<th class="col1"><span>문의 일자</span></th>
+				    		<th class="col2"><span>서비스</span></th>
+				    		<th class="col3"><span>문의 내용</span></th>
+				    		<th class="col4"><span style="border-right: 2px solid #d2d2d2; padding-right: 0px;">답변 상태</span></th>
+				    	</tr>
+				    	<tr>
+				    		<td class="col1">2023-11-03</td>
+				    		<td class="col2">솔루션</td>
+				    		<td class="col3">Vision AI 관련하여 문의 드립니다.</td>
+				    		<td class="col4">답변 완료</td>
+				    	</tr>
+				    	<tr>
+				    		<td class="col1">2023-11-04</td>
+				    		<td class="col2">교육</td>
+				    		<td class="col3">교육 자료 관련하여 문의 드립니다.</td>
+				    		<td class="col4">답변 대기</td>
+				    	</tr>
+			    	</tbody>
+			    </table>
+			</div>
+			
+			<!-- 탭 내용 -->
+			<div id="tab3" class="tab">
 				<div class="KDPTableFrm">
-					<h2 class="user_info">기본 정보</h2>
+					<h2 class="user_info" style="border-top: 0px;">기본 정보</h2>
 				  
-					<!-- 등록폼 -->
+					<!-- 계정관리 테이블 -->
 					<table class="KDPTable1">
 						<tbody>
-							<!--신청자명, 신청 서비스 -->
+							<!--기본정보 -->
 							<tr>
 								<th>
 									<span>회원 ID</span>
 								</th>
 								<td>
-									<span>20191234</span>
+									<span style="padding-right: 40px; border-right: 2px solid #d2d2d2;" >20191234</span>
 								</td>
 								<th>
-									<span>이름</span>
+									<span style="margin-left: 40px;" >이름</span>
 								</th>
 								<td>
-									<span>홍길동</span>
+									<span style="padding-right: 40px; border-right: 2px solid #d2d2d2;" >홍길동</span>
 								</td>
 								<th>
-									<span>회원구분</span>
+									<span style="margin-left: 40px;" >회원구분</span>
 								</th>
 								<td>
 									<span>재학생</span>
@@ -95,57 +161,58 @@
 						</tbody>
 					</table>
 					
-					<h2 class="apply_info">신청 정보</h2>
-					<!-- 등록폼 -->
+					<h2 class="user_info">회원정보 변경</h2>
+					<!-- 회원정보 변경 테이블 -->
 					<table class="KDPTable2">
 						<tbody>
-							<!--신청 제목 -->
+							<!--비밀번호 변경 -->
 							<tr>
-								<th style="padding-bottom: 50px;">신청 제목</th>
-								<td style="padding-bottom: 50px;">
-									<input type="text" name="" title="신청 제목">
+								<th>비밀번호 변경<span>(필수)</span></th>
+								<td>
+									<input type="text" placeholder="비밀번호를 입력해 주세요." title="비밀번호 번경">
 								</td>
 							</tr>
-						  	<!--신청 내용 -->
+							<!--비밀번호 확인 -->
 							<tr>
-								<th style="vertical-align: top;">신청 내용</th>
-								<td style="padding-bottom: 50px;">
-									<textarea></textarea>
+								<th>비밀번호 확인<span>(필수)</span></th>
+								<td align="right">
+									<input type="text" placeholder="비밀번호를 입력해 주세요." title="비밀번호 확인">
 								</td>
 							</tr>
-							<!--파일 첨부 -->
+							<!--전화번호 -->
 							<tr>
-								<th>파일 첨부</th>
+								<th>전화번호<span>(필수)</span></th>
 								<td>
 								    <div style="display: flex; align-items: center;">
-								        <input type="file" id="file-input" style="display:none;" onchange="displayFileName()">
-								        <input type="text" id="file-name-input" readonly>
-								        <button class="solUploadBtn" onclick="triggerFileInput(event)">
-								        	<img src="<c:url value='/images/egovframework/com/cmm/icon/upload_icon.png' />" alt=""> 업로드 
+								        <input type="text" placeholder="전화번호를 입력해 주세요." title="전화번호">
+								        <button class="certBtn">
+								        	인증완료
+								        </button>
+								    </div>
+								</td>
+							</tr>
+							<!--이메일 주소 -->
+							<tr>
+								<th>이메일 주소<span>(필수)</span></th>
+								<td>
+								    <div style="display: flex; align-items: center;">
+								        <input type="text" placeholder="이메일 주소를 입력해 주세요." title="이메일 주소">
+								        <button class="certBtn">
+								        	인증완료
 								        </button>
 								    </div>
 								</td>
 							</tr>
 						</tbody>
 					</table>
+					<!-- 하단 버튼 -->
+					<div class="KDPBtn">
+						<button type="reset" class="cancle" onclick="history.back()"> 취소 </button>
+						<button class="save">제출</button>
+					</div>
 				</div>
 			</div>
-			
-			<div id="tab2" class="tab">
-			    <h2>탭 2 내용</h2>
-			    <p>이곳에 탭 2의 내용이 들어갑니다.</p>
-			</div>
-			
-			<div id="tab3" class="tab">
-			    <h2>탭 3 내용</h2>
-			    <p>이곳에 탭 3의 내용이 들어갑니다.</p>
-			</div>
 		</div>
-	</div>
-	<!-- 하단 버튼 -->
-	<div class="KDPBtn">
-		<button type="reset" class="cancle" onclick="history.back()"> 취소 </button>
-		<button class="save">제출</button>
 	</div>
 	<!-- bottom -->
 	<c:import url="../../main_bottom.jsp" />

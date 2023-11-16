@@ -27,7 +27,7 @@
 	height: 550px;
 	width: 100%;
 	background-image:
-		url("../../../images/egovframework/com/uat/uia/solution_header_background.png");
+		url("../../../images/egovframework/com/uat/uia/my_page_bg.png");
 	background-size: cover;
 	display: flex;
 	justify-content: center;
@@ -38,7 +38,7 @@
 	font-family: GmarketSansMedium;
 	font-size: 20px;
 	color: #fff;
-	margin-bottom: 65px;
+	margin-bottom: 100px;
 	text-align: center;
 }
 
@@ -47,10 +47,6 @@
 	font-size: 65px;
 	color: #fff;
 	margin: 10px 0px;
-}
-
-.KDPText > p {
-	padding-top: 36px;
 }
 
 .contents {
@@ -98,13 +94,13 @@
     width: 120px;
     height: 45px;
     display: flex;
-    align-items: center;
     justify-content: center;
+   	line-height: 2.1;
 }
 
 .KDPBtn {
 	width: 100%;
-	margin: 30px 827px;
+	margin: 80px 317px;
 	display: flex;
 	gap: 15px;
 }
@@ -134,66 +130,198 @@
 /* solution table style */
 .KDPTableFrm h2.user_info {
 	font-family: GmarketSansBold;
-	display: flex;
-    align-items: center;
+/* 	display: flex;
+    align-items: center; */
 	margin: 0px;
 	border-top: 2px solid #d2d2d2;
 	border-bottom: 2px solid #d2d2d2;
-	height: 45px;
+	height: 50px;
 	color:#666;
 	font-size:25px;
 	font-weight:bold;
 	padding-left:60px;
 	background:url(../../../images/egovframework/com/cmm/icon/user_info_icon.png) left center no-repeat;
 	background-position: 5px center;
+	line-height: 2.2;
 }
-.KDPTableFrm h2.apply_info {
-	font-family: GmarketSansBold;
-	display: flex;
-    align-items: center;
-	margin: 0px;
-	border-top: 2px solid #d2d2d2;
-	border-bottom: 2px solid #d2d2d2;
-	height: 76px;
-	color:#666;
-	font-size:30px;
-	font-weight:bold;
-	padding-left:55px;
-	background:url(../../images/egovframework/com/cmm/icon/user_info_icon.png) left center no-repeat;
-	background-position: 5px center;
-}
-.KDPTableFrm h3 { color:#333;  font-size:14px; font-weight:600; margin:50px 0 10px 0; }
-.KDPTableFrm h3 b { color:#2277d7; }
 
-.KDPTable1 { width: 100%; height:100px; padding: 0px 118px; }
-.KDPTable1 > tbody > tr > th span { font-size: 21px; color:#666; font-family: NotoSansKR-Bold; margin-right: 30px; }
-.KDPTable1 > tbody > tr > td input { font-size: 24px; color:#666; width: 472px; height: 44px; border: 1px solid #b4b4b4; border-radius: 10px; }
-.KDPTable1 > tbody > tr > td input.in { font-size: 24px; color:#666; width: 216px; height: 44px; }
-.KDPTable1 > tbody > tr > td span { font-size: 21px; color: #666; font-family: NotoSansKR-Regular; padding-right: 50px; border-right: 2px solid #d2d2d2; }
-.KDPTable2 { width: 100%; padding: 50px 20px; }
-.KDPTable2 > tbody > tr > th { font-size: 24px; color:#666; text-align: right; padding: 0px; padding-right: 10px; font-family: NotoSansKR-Medium; }
-.KDPTable2 > tbody > tr > td input { font-size: 24px; color:#666; width: 1110px; height: 44px; border: 1px solid #b4b4b4; border-radius: 10px; }
-.KDPTable2 > tbody > tr > td textarea { resize: none; font-size: 24px; color: #666; width: 1110px; height: 300px; border: 1px solid #b4b4b4; border-radius: 10px; }
-.KDPTable2 > tbody > tr > td input#file-name-input { font-size: 24px; color:#666; width: 970px; height: 44px; border: 1px solid #b4b4b4; border-radius: 10px; }
-.fileUpload {
-	width: 100%;
-	display: flex;
-    justify-content: space-between;
-    align-items: center;
+.KDPTableFrm h3 {
+	color:#333;
+	font-size:14px;
+	font-weight:600;
+	margin:50px 0 10px 0;
 }
-.solUploadBtn {
-/* 	background-image: url('../../../images/egovframework/com/cmm/icon/upload_icon.png');
-	background-repeat: no-repeat;
-    background-size: cover;
-    background-position: contain; */
+
+.KDPTable1 {
+	width: 100%;
+	height:100px;
+	padding: 0px 118px;
+
+}
+.KDPTable1 tbody tr th span {
+	font-size: 21px;
+	color:#666;
+	font-family: NotoSansKR-Bold;
+	margin-right: 30px;
+}
+
+.KDPTable1 tbody tr td span {
+	font-size: 21px;
+	color: #666;
+	font-family: NotoSansKR-Regular;
+}
+
+.KDPTable2 {
+	width: 100%;
+	padding: 40px 0px;
+	border-bottom: 2px solid #d2d2d2;
+}
+
+.KDPTable2 tbody tr {
+	margin-bottom: 15px; /* 간격의 크기 조절 */
+    display: block flex; /* tr을 블록 요소로 변환하여 margin 속성이 적용되도록 함 */
+    justify-content: space-between;
+    align-items: baseline;
+}
+.KDPTable2 tbody tr th {
+	font-size: 21px;
+	color:#666;
+	font-family: NotoSansKR-Medium;
+}
+
+.KDPTable2 tbody tr th span {
+	font-size: 16px;
+	color:#666;
+	font-family: NotoSansKR-Medium;
+}
+
+.KDPTable2 tbody tr td {
+	margin-left: auto;
+}
+
+.KDPTable2 tbody tr td input {
+	font-size: 21px;
+	color:#666;
+	width: 685px;
+	height: 28px;
+	border: 1px solid #b4b4b4;
+	border-radius: 10px;
+	font-family: NotoSansKR-Medium;
+	padding: 5px 15px;
+}
+
+.KDPTable2 tbody tr td div input {
+	font-size: 21px;
+	color:#666;
+	width: 580px;
+	height: 28px;
+	border: 1px solid #b4b4b4;
+	border-radius: 10px;
+	font-family: NotoSansKR-Medium;
+	padding: 5px 15px;
+}
+
+.certBtn {
 	background-color: #005bac;
-	padding-left: 10px;
-	width: 125px;
-	height: 48px;
+	width: 95px;
+	height: 40px;
 	border: none;
-	font-size: 24px;
+	font-size: 21px;
 	color: #fff;
 	border-radius: 10px;
 	cursor: pointer;
-	margin-left: 15px;
+	margin-left: 10px;
+	font-family: NotoSansKR-Medium;
+}
+
+.tabTable {
+	width: 100%;
+	line-height: 1.8;
+}
+
+.tabTable tr {
+    display: block;
+	height: 45px;
+	border-bottom: 2px solid #d2d2d2;
+}
+
+.tabTable th {
+	font-family: NotoSansKR-Bold;
+	font-size: 21px;
+	color: #666;
+    position: relative;
+}
+
+.tabTable th span {
+    display: inline-block;
+    width: 100%; /* th의 너비와 동일하게 설정 */
+    box-sizing: border-box; /* padding을 포함한 전체 너비로 설정 */
+    height: 21px;
+    border-left: 2px solid #d2d2d2;
+    vertical-align: middle; /* 세로 중앙 정렬을 위한 속성 추가 */
+    line-height: 0.8;
+}
+
+#tab1 .tabTable td {
+    font-family: NotoSansKR-Regular;
+    font-size: 21px;
+    color: #666;
+    text-align: center;
+    padding-left: 2px;
+}
+
+#tab2 .tabTable td {
+    font-family: NotoSansKR-Regular;
+    font-size: 21px;
+    color: #666;
+    text-align: center;
+}
+
+#tab1 .tabTable td.col3 {
+	padding-left: 20px;
+    text-align: left;
+    width: 354px !important;
+}
+
+#tab2 .tabTable td.col3 {
+	padding-left: 20px;
+    text-align: left;
+    width: 470px !important;
+}
+
+
+#tab1 .col1 {
+	width: 156px;
+}
+
+#tab1 .col2 {
+	width: 126px;
+}
+
+#tab1 .col3 {
+	width: 374px;
+}
+
+#tab1 .col4 {
+	width: 116px;
+}
+
+#tab1 .col5 {
+	width: 116px;
+}
+
+#tab2 .col1 {
+	width: 156px;
+}
+
+#tab2 .col2 {
+	width: 126px;
+}
+
+#tab2 .col3 {
+	width: 490px;
+}
+
+#tab2 .col4 {
+	width: 116px;
 }
