@@ -57,6 +57,7 @@
 
 <body topmargin="0" leftmargin="0">
 
+
 	<!-- header -->
 	<c:import url="./head.jsp" />
 
@@ -68,11 +69,11 @@
 				<div class="main-view">
 					<ul>
 						<li><img
-							src="<c:url value='../../../images/egovframework/com/uat/uia/main_banner_01.png' />" /></li>
+							src="<c:url value='/images/egovframework/com/uat/uia/main_banner_01.png' />" /></li>
 						<li><img
-							src="<c:url value='../../../images/egovframework/com/uat/uia/main_banner_02.png' />" /></li>
+							src="<c:url value='/images/egovframework/com/uat/uia/main_banner_02.png' />" /></li>
 						<li><img
-							src="<c:url value='../../../images/egovframework/com/uat/uia/main_banner_03.png' />" /></li>
+							src="<c:url value='/images/egovframework/com/uat/uia/main_banner_03.png' />" /></li>
 					</ul>
 				</div>
 			</div>
@@ -239,10 +240,9 @@
 										<strong class="col-auto">뉴스레터</strong>
 										<div class="col">
 											<h3 class="text-truncate">K-디지털플랫폼 이용 사례 10월호</h3>
-											<p class="txt-line">K-디지털플랫폼의 월간 레퍼런스 2023년
-												9월호가&nbsp;발행 되었습니다. 많은 관심 부탁 드립니다.
-												K-디지털플랫폼의 월간 레퍼런스 2023년
-												9월호가&nbsp;발행 되었습니다. 많은 관심 부탁 드립니다.</p>
+											<p class="txt-line">K-디지털플랫폼의 월간 레퍼런스 2023년 9월호가&nbsp;발행
+												되었습니다. 많은 관심 부탁 드립니다. K-디지털플랫폼의 월간 레퍼런스 2023년 9월호가&nbsp;발행
+												되었습니다. 많은 관심 부탁 드립니다.</p>
 										</div>
 										<div class="col-auto">
 											<img
@@ -270,17 +270,18 @@
 									<div class="row">
 										<strong class="col-auto">기업공지</strong>
 										<div class="col">
-											<h3 class="text-truncate">순천대학교, K-디지털플랫폼 출시 "지역 디지털 특화 기여"</h3>
+											<h3 class="text-truncate">순천대학교, K-디지털플랫폼 출시 "지역 디지털 특화
+												기여"</h3>
 											<p class="txt-line">안녕하세요. 순천대학교 K-디지털플랫폼입니다.&nbsp;
-												순천대학교가 순천시로부터&nbsp; 학생 및 교직원의 정신건강 증진 실천에
-												적극 기여한 공로를 인정받아 감사장을 받았습니다.&nbsp; 정신건강 진단 교육 키오스크(MENTAL
-												CARE KIOSK Series)&nbsp; 시스메이트와 사단법인 대한정신의료기관협회가 협력하여 개발한 멘탈
-												헬스케어 서비스로 △기관 안내 △마음건강 자가 검진 △질환별 정보 △두뇌교육게임 △병원 안내 △관리자 페이지
-												등 7개의 기능을 제공하며&nbsp; 공인된 심리분석 척도에 따라 자가검진 후 결과는 카카오톡으로 전송할 수
-												있으며, 간편하게 상담예약까지 진행할 수 있습니다.&nbsp; 시스메이트는 디지털사이니지 전문 기업으로써
-												정신건강 서비스 활성화 사업에&nbsp;앞장서며 전 국민이 언제든 필요한 정신건강서비스를 이용할 수 있는
-												서비스 제공에 노력하겠습니다.&nbsp; 감사합니다. 관련 기사 보러가기 2023년 10월 12일 주식회사
-												시스메이트 드림&nbsp; &nbsp;</p>
+												순천대학교가 순천시로부터&nbsp; 학생 및 교직원의 정신건강 증진 실천에 적극 기여한 공로를 인정받아
+												감사장을 받았습니다.&nbsp; 정신건강 진단 교육 키오스크(MENTAL CARE KIOSK
+												Series)&nbsp; 시스메이트와 사단법인 대한정신의료기관협회가 협력하여 개발한 멘탈 헬스케어 서비스로
+												△기관 안내 △마음건강 자가 검진 △질환별 정보 △두뇌교육게임 △병원 안내 △관리자 페이지 등 7개의 기능을
+												제공하며&nbsp; 공인된 심리분석 척도에 따라 자가검진 후 결과는 카카오톡으로 전송할 수 있으며, 간편하게
+												상담예약까지 진행할 수 있습니다.&nbsp; 시스메이트는 디지털사이니지 전문 기업으로써 정신건강 서비스
+												활성화 사업에&nbsp;앞장서며 전 국민이 언제든 필요한 정신건강서비스를 이용할 수 있는 서비스 제공에
+												노력하겠습니다.&nbsp; 감사합니다. 관련 기사 보러가기 2023년 10월 12일 주식회사 시스메이트
+												드림&nbsp; &nbsp;</p>
 										</div>
 										<div class="col-auto"></div>
 									</div>
