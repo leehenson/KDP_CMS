@@ -8,6 +8,21 @@
 	src: url('../../../font/GmarketSansMedium.otf') format('opentype');
 }
 
+@font-face {
+    font-family: 'NotoSansKR-Medium';
+    src: url('../../../font/NotoSansKR-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NotoSansKR-Bold';
+    src: url('../../../font/NotoSansKR-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NotoSansKR-Regular';
+    src: url('../../../font/NotoSansKR-Regular.ttf') format('truetype');
+}
+
 .KDPHeader {
 	height: 550px;
 	width: 100%;
@@ -23,13 +38,162 @@
 	font-family: GmarketSansMedium;
 	font-size: 20px;
 	color: #fff;
-	margin-bottom: 165px;
+	margin-bottom: 65px;
 	text-align: center;
 }
 
 .KDPText > h2 {
 	font-family: GmarketSansBold;
-	font-size: 85px;
+	font-size: 65px;
 	color: #fff;
 	margin: 10px 0px;
+}
+
+.KDPText > p {
+	padding-top: 36px;
+}
+
+.contents {
+	margin: 152px 510px;
+}
+
+.contents > h1 {
+	font-family: GmarketSansBold;
+	font-size: 50px;
+	color: #111;
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+/* 탭 스타일링 */
+.tab {
+    display: none; /* 초기에는 모든 탭을 숨김 */
+}
+
+.tab.active {
+	display: block;
+}
+
+/* 첫 번째 탭 활성화 */
+#tab1 {
+    display: block; /* 첫 번째 탭 보이기 */
+}
+
+/* 탭 메뉴 스타일링 */
+.tab-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    border-bottom: 2px solid #005bac;
+}
+
+.tab-menu li {
+	font-family:GmarketSansBold;
+	font-size: 25px;
+	color: #fff;
+    margin-right: 2px;
+    cursor: pointer;
+    background-color: #d2d2d2;
+    width: 120px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.KDPBtn {
+	width: 100%;
+	margin: 30px 827px;
+	display: flex;
+	gap: 15px;
+}
+.KDPBtn > button.cancle {
+	font-family: NotoSansKR-Medium;
+	border: none;
+	border-radius: 10px;
+	background-color: #d2d2d2;
+	width: 125px;
+	height: 48px;
+	font-size: 23px;
+	color: #fff;
+	cursor: pointer;
+}
+.KDPBtn > button.save {
+	font-family: NotoSansKR-Medium;
+	border: none;
+	border-radius: 10px;
+	background-color: #005bac;
+	width: 125px;
+	height: 48px;
+	font-size: 23px;
+	color: #fff;
+	cursor: pointer;
+}
+
+/* solution table style */
+.KDPTableFrm h2.user_info {
+	font-family: GmarketSansBold;
+	display: flex;
+    align-items: center;
+	margin: 0px;
+	border-top: 2px solid #d2d2d2;
+	border-bottom: 2px solid #d2d2d2;
+	height: 45px;
+	color:#666;
+	font-size:25px;
+	font-weight:bold;
+	padding-left:60px;
+	background:url(../../../images/egovframework/com/cmm/icon/user_info_icon.png) left center no-repeat;
+	background-position: 5px center;
+}
+.KDPTableFrm h2.apply_info {
+	font-family: GmarketSansBold;
+	display: flex;
+    align-items: center;
+	margin: 0px;
+	border-top: 2px solid #d2d2d2;
+	border-bottom: 2px solid #d2d2d2;
+	height: 76px;
+	color:#666;
+	font-size:30px;
+	font-weight:bold;
+	padding-left:55px;
+	background:url(../../images/egovframework/com/cmm/icon/user_info_icon.png) left center no-repeat;
+	background-position: 5px center;
+}
+.KDPTableFrm h3 { color:#333;  font-size:14px; font-weight:600; margin:50px 0 10px 0; }
+.KDPTableFrm h3 b { color:#2277d7; }
+
+.KDPTable1 { width: 100%; height:100px; padding: 0px 118px; }
+.KDPTable1 > tbody > tr > th span { font-size: 21px; color:#666; font-family: NotoSansKR-Bold; margin-right: 30px; }
+.KDPTable1 > tbody > tr > td input { font-size: 24px; color:#666; width: 472px; height: 44px; border: 1px solid #b4b4b4; border-radius: 10px; }
+.KDPTable1 > tbody > tr > td input.in { font-size: 24px; color:#666; width: 216px; height: 44px; }
+.KDPTable1 > tbody > tr > td span { font-size: 21px; color: #666; font-family: NotoSansKR-Regular; padding-right: 50px; border-right: 2px solid #d2d2d2; }
+.KDPTable2 { width: 100%; padding: 50px 20px; }
+.KDPTable2 > tbody > tr > th { font-size: 24px; color:#666; text-align: right; padding: 0px; padding-right: 10px; font-family: NotoSansKR-Medium; }
+.KDPTable2 > tbody > tr > td input { font-size: 24px; color:#666; width: 1110px; height: 44px; border: 1px solid #b4b4b4; border-radius: 10px; }
+.KDPTable2 > tbody > tr > td textarea { resize: none; font-size: 24px; color: #666; width: 1110px; height: 300px; border: 1px solid #b4b4b4; border-radius: 10px; }
+.KDPTable2 > tbody > tr > td input#file-name-input { font-size: 24px; color:#666; width: 970px; height: 44px; border: 1px solid #b4b4b4; border-radius: 10px; }
+.fileUpload {
+	width: 100%;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.solUploadBtn {
+/* 	background-image: url('../../../images/egovframework/com/cmm/icon/upload_icon.png');
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: contain; */
+	background-color: #005bac;
+	padding-left: 10px;
+	width: 125px;
+	height: 48px;
+	border: none;
+	font-size: 24px;
+	color: #fff;
+	border-radius: 10px;
+	cursor: pointer;
+	margin-left: 15px;
 }

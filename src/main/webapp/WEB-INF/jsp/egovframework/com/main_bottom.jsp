@@ -66,12 +66,6 @@
 			<!-- 190704 웹접근성 마크 추가
 						<a class="mark" href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank"><img src="/images/co/mark.gif" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)" title="국가 공인 인증기관 : 웹와치"/></a>
 						// 190704 웹접근성 마크 추가-->
-
-<!-- 			<div class="btn_top" style="display: block;"> -->
-<!-- 				<a href="#none" class="top"><img -->
-<%-- 					src="<c:url value='/images/egovframework/com/uat/uia/right_arrow_icon.png'/>" --%>
-<!-- 					alt="맨위로 가기"></a> -->
-<!-- 			</div> -->
 		</div>
 	</div>
 

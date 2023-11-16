@@ -85,6 +85,7 @@
 	font-size: 14px;
 	text-decoration: none !important;
 	padding-top: 13px;
+	min-width: 140px;
 }
 
 div.row>div.col-lg-4.align-self-center {
@@ -148,6 +149,7 @@ div.row>div.col-lg-4.align-self-center {
 	font-family: "NotoSansKR-Regular", sans-serif;
 	font-size: 14px;
 	padding-bottom: 13px;
+	min-width: 140px;
 }
 
 /* 공지사항 view more 버튼 */
