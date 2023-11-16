@@ -8,14 +8,22 @@
 <html lang="ko">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 <link type="text/css" rel="stylesheet"
 	href="<c:url value='/css/egovframework/com/main_portal.css' />">
+<link rel="shortcut icon" href="https://ssl.pstatic.net/sstatic/search/favicon/favicon_191118_pc.ico">
+
 <title>순천대학교 K-디지털 플랫폼</title>
 <!-- 아래메인 -->
 </head>
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 
 	<div class="area_footer">
+		<div class="sub_pack_btm">
+			<a href="#" class="top" onclick="window.scrollTo(0,0); document.querySelector('#wrap a').focus(); return false;">
+				<i class="spnew ico_top">맨위로</i>
+			</a>
+		</div>
 		<div class="box_footer">
 		
 			<ul class="footer_link">

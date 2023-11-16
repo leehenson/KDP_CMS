@@ -124,6 +124,43 @@ address {
     z-index: 100;
 }
 
+/* 맨위로 버튼 */
+.sub_pack_btm {
+    position: fixed;
+    right: 40px;
+    bottom: 83px;
+}
+
+.sub_pack_btm .top {
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(0,0,0,.05), 0 2px 4px rgba(0,0,0,.12);
+    box-sizing: border-box;
+    border: 1px solid;
+    border-color: #e9e9ec;
+    background-color: rgba(var(--bgBlock),1);
+    text-align: center;
+}
+
+.sub_pack_btm .top .ico_top {
+    width: 30px;
+    height: 30px;
+    background-position: -134px -213px;
+    margin-top: 8px;
+    vertical-align: top;
+}
+
+.spnew {
+    display: inline-block;
+    overflow: hidden;
+    color: transparent;
+    white-space: nowrap;
+    vertical-align: top;
+    background: url(https://ssl.pstatic.net/sstatic/search/pc/img/sp_common2_5231d069.png) 0 0 no-repeat;
+    background-size: 393px 379px;
+}
 
 /* 하단 ▲*/
 /* 하단_login ▼*/
