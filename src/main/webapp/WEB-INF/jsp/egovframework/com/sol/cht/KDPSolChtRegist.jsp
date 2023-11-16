@@ -131,7 +131,7 @@
 				<tbody>
 					<!--신청 제목 -->
 					<tr>
-						<th style="padding-bottom: 50px;">신청 제목</th>
+						<th style="padding-bottom: 50px;">신청 제목	</th>
 						<td style="padding-bottom: 50px;">
 							<input type="text" name="" title="신청 제목">
 						</td>
