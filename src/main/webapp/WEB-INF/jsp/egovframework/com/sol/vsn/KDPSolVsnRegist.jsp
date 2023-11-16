@@ -105,7 +105,7 @@
 					<!--신청자명, 신청 서비스 -->
 					<tr>
 						<th>신청자명</th>
-						<td style="padding-right: 30px; ">
+						<td>
 							<input type="text" name="" title="신청자명">
 						</td>
 						<th>신청서비스</th>
@@ -118,7 +118,7 @@
 						<th>신청기간</th>
 						<td>
 					    	<input class="in" style="margin-right:5px;" type="text" id="startDate" readonly>
-							~
+						<span class="period"> ~ </span>
 							<input class="in" style="margin-left:5px;" type="text" id="endDate" readonly>
 						</td>
 						<th>요청날짜</th>
@@ -135,15 +135,15 @@
 				<tbody>
 					<!--신청 제목 -->
 					<tr>
-						<th style="padding-bottom: 50px;">신청 제목</th>
-						<td style="padding-bottom: 50px;">
+						<th style="padding-bottom: 23px; vertical-align: middle;">신청 제목</th>
+						<td style="padding-bottom: 20px;">
 							<input type="text" name="" title="신청 제목">
 						</td>
 					</tr>
 				  	<!--신청 내용 -->
 					<tr>
-						<th style="vertical-align: top;">신청 내용</th>
-						<td style="padding-bottom: 50px;">
+						<th style="vertical-align: middle;">신청 내용</th>
+						<td style="padding-bottom: 20px;">
 							<textarea></textarea>
 						</td>
 					</tr>
@@ -155,7 +155,7 @@
 						        <input type="file" id="file-input" style="display:none;" onchange="displayFileName()">
 						        <input type="text" id="file-name-input" readonly>
 						        <button class="solUploadBtn" onclick="triggerFileInput(event)">
-						        	<img src="<c:url value='/images/egovframework/com/cmm/icon/upload_icon.png' />" alt=""> 업로드
+						        	<img class="upload_icon" src="<c:url value='/images/egovframework/com/cmm/icon/upload_icon.png' />" alt=""> 업로드
 						        </button>
 						    </div>
 						</td>
