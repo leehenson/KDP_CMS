@@ -68,11 +68,11 @@
 			<div>
 				<div class="main-view">
 					<ul>
-						<li><img
+						<li><img class="main-banner"
 							src="<c:url value='/images/egovframework/com/uat/uia/main_banner_01.png' />" /></li>
-						<li><img
+						<li><img class="main-banner"
 							src="<c:url value='/images/egovframework/com/uat/uia/main_banner_02.png' />" /></li>
-						<li><img
+						<li><img class="main-banner"
 							src="<c:url value='/images/egovframework/com/uat/uia/main_banner_03.png' />" /></li>
 					</ul>
 				</div>

@@ -12,6 +12,12 @@
     since    :2016.06.08
 */
 @charset "utf-8";
+@font-face {
+	font-family: NotoSansKR-Regular;
+	src: url(../../../font/NotoSansKR-Regular.ttf) format(woff);
+	font-weight: normal;
+	font-style: normal;
+}
 
 /* Base Style *****************************/
 * { margin:0; padding:0; border:0; }
@@ -22,12 +28,13 @@ body{
 	padding-top:0px;
 	padding-left:0px;
 	margin-bottom:0;
-	font-family:'돋움', '굴림', 'Arial', 'AppleGothic', 'sans-serif'; 
+	font-family: "NotoSansKR-Regular", sans-serif;
+/* 	font-family:'돋움', '굴림', 'Arial', 'AppleGothic', 'sans-serif';  */
 	font-size:12px;
 }
 
 div,table,em,h1,h2,h3,h4,h5,h6,form,fieldset,p,th,td,input,textarea,select,button { 
-	font-family:'돋움', '굴림', 'Arial', 'AppleGothic', 'sans-serif'; font-size:12px; color:#666; }
+	font-family: "NotoSansKR-Regular", sans-serif;; font-size:12px; color:#666; }
 
 fieldset, img { border:0; }
 textarea { width:100%; resize:none; }
@@ -367,7 +374,17 @@ width:100%;
 .pagination ul li.prev a:hover { background:url('../../../images/egovframework/com/cmm/paging/pagination_prev_on.gif') no-repeat; }
 .pagination ul li.next a:hover { background:url('../../../images/egovframework/com/cmm/paging/pagination_next_on.gif/') no-repeat; }
 .pagination ul li.current a,
-.pagination ul li a:hover { border:none; color:#fff; font-size:15px; font-weight:600; width:28px; height:28px; line-height:28px; background:#4688d2; }
+.pagination ul li a:hover {
+	border:none;
+	color:#fff;
+	font-size:15px;
+	font-weight:600;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	background: #005bac;
+    border-radius: 3px;
+}
 
 /* pagination by reply */
 .paging { float:left; display:inline; width:730px; font-size:1em; text-align:center; margin:15px 0 20px; position:relative;  }
@@ -385,7 +402,15 @@ width:100%;
 .btn_submit:hover { background:#7dabdf; }
 
 /* button style */
-button { padding:5px 12px 7px 12px; background:#4688d2; font-weight:600; color:#fff; border-radius:1px; margin-left:4px; cursor:pointer; }
+button { 
+	padding:5px 12px 7px 12px; 
+	background:#4688d2;
+/* 	font-weight:600;  */
+	color:#fff; 
+	border-radius:1px; 
+	margin-left:4px; 
+	cursor:pointer;
+}
 button:hover { background:#7dabdf; }
 
 .btn_s2 { margin:0; padding:0px 12px 2px 12px; line-height:19px; word-spacing:-2px; border-radius:1px; font-weight:normal; background:#4688d2; color:#fff; font-size:11px; cursor:pointer; text-align:right;}

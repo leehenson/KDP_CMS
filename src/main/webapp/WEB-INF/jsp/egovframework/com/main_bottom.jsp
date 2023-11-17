@@ -8,14 +8,22 @@
 <html lang="ko">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 <link type="text/css" rel="stylesheet"
 	href="<c:url value='/css/egovframework/com/main_portal.css' />">
+<link rel="shortcut icon" href="https://ssl.pstatic.net/sstatic/search/favicon/favicon_191118_pc.ico">
+
 <title>순천대학교 K-디지털 플랫폼</title>
 <!-- 아래메인 -->
 </head>
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 
 	<div class="area_footer">
+		<div class="sub_pack_btm">
+			<a href="#" class="top" onclick="window.scrollTo(0,0); document.querySelector('#wrap a').focus(); return false;">
+				<i class="spnew ico_top">맨위로</i>
+			</a>
+		</div>
 		<div class="box_footer">
 		
 			<ul class="footer_link">
@@ -58,12 +66,6 @@
 			<!-- 190704 웹접근성 마크 추가
 						<a class="mark" href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank"><img src="/images/co/mark.gif" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)" title="국가 공인 인증기관 : 웹와치"/></a>
 						// 190704 웹접근성 마크 추가-->
-
-<!-- 			<div class="btn_top" style="display: block;"> -->
-<!-- 				<a href="#none" class="top"><img -->
-<%-- 					src="<c:url value='/images/egovframework/com/uat/uia/right_arrow_icon.png'/>" --%>
-<!-- 					alt="맨위로 가기"></a> -->
-<!-- 			</div> -->
 		</div>
 	</div>
 

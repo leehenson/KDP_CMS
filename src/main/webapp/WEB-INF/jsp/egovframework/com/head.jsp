@@ -87,15 +87,15 @@
 
 						<li><a href="#"> 게시판 </a>
 							<ul class="submenu">
-								<li><a href="#"> 공지사항 </a></li>
+								<li><a href="<c:url value='/cop/bbs/selectArticleList.do'/>"> 공지사항 </a></li>
 								<li><a href="#"> 갤러리 </a></li>
-								<li><a href="#"> 자료실 </a></li>
+								<li><a href="<c:url value='/cop/bbs/selectResourceList.do'/>"> 자료실 </a></li>
 							</ul></li>
 
 						<li><a href="#"> 고객지원 </a>
 							<ul class="submenu">
 								<li><a href="#"> 1:1 문의 </a></li>
-								<li><a href="#"> FAQ </a></li>
+								<li><a href="<c:url value='/uss/olh/faq/selectFaqList.do'/>"> FAQ </a></li>
 							</ul></li>
 
 						<li style="width: 80px;"><a href="#"> </a></li>

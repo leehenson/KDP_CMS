@@ -128,6 +128,10 @@ body::-webkit-scrollbar {
 	background-size: cover;
 }
 
+img.main-banner{
+	width: 100%;
+}
+
 #visual-slider-kdpIntro{
 	height: 550px;
 	width: 100%;

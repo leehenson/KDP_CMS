@@ -145,69 +145,82 @@ public class EgovArticleController {
      * @return
      * @throws Exception
      */
+    
+    /** 231116 임시 추가 - 김현아 **/
     @RequestMapping("/cop/bbs/selectArticleList.do")
-    public String selectArticleList(@ModelAttribute("searchVO") BoardVO boardVO, ModelMap model) throws Exception {
-		LoginVO user = (LoginVO)EgovUserDetailsHelper.getAuthenticatedUser();
-		
-		Boolean isAuthenticated = EgovUserDetailsHelper.isAuthenticated();	//KISA 보안취약점 조치 (2018-12-10, 이정은)
-
-        if(!isAuthenticated) {
-            return "egovframework/com/uat/uia/EgovLoginUsr";
-        }
-	
-		BoardMasterVO vo = new BoardMasterVO();
-		
-		vo.setBbsId(boardVO.getBbsId());
-		vo.setUniqId((user == null || user.getUniqId() == null) ? "" : user.getUniqId());
-		BoardMasterVO master = egovBBSMasterService.selectBBSMasterInf(vo);
-		
-		//방명록은 방명록 게시판으로 이동
-		if(master.getBbsTyCode().equals("BBST03")){
-			return "forward:/cop/bbs/selectGuestArticleList.do";
-		}
-		
-		
-		boardVO.setPageUnit(propertyService.getInt("pageUnit"));
-		boardVO.setPageSize(propertyService.getInt("pageSize"));
-	
-		PaginationInfo paginationInfo = new PaginationInfo();
-		
-		paginationInfo.setCurrentPageNo(boardVO.getPageIndex());
-		paginationInfo.setRecordCountPerPage(boardVO.getPageUnit());
-		paginationInfo.setPageSize(boardVO.getPageSize());
-	
-		boardVO.setFirstIndex(paginationInfo.getFirstRecordIndex());
-		boardVO.setLastIndex(paginationInfo.getLastRecordIndex());
-		boardVO.setRecordCountPerPage(paginationInfo.getRecordCountPerPage());
-	
-		Map<String, Object> map = egovArticleService.selectArticleList(boardVO);
-		int totCnt = Integer.parseInt((String)map.get("resultCnt"));
-		
-		//공지사항 추출
-		List<BoardVO> noticeList = egovArticleService.selectNoticeArticleList(boardVO);
-		
-		paginationInfo.setTotalRecordCount(totCnt);
-	
-		//-------------------------------
-		// 기본 BBS template 지정 
-		//-------------------------------
-		if (master.getTmplatCours() == null || master.getTmplatCours().equals("")) {
-		    master.setTmplatCours("/css/egovframework/com/cop/tpl/egovBaseTemplate.css");
-		}
-		////-----------------------------
-	
-		if(user != null) {
-	    	model.addAttribute("sessionUniqId", user.getUniqId());
-	    }
-		
-		model.addAttribute("resultList", map.get("resultList"));
-		model.addAttribute("resultCnt", map.get("resultCnt"));
-		model.addAttribute("articleVO", boardVO);
-		model.addAttribute("boardMasterVO", master);
-		model.addAttribute("paginationInfo", paginationInfo);
-		model.addAttribute("noticeList", noticeList);
-		return "egovframework/com/cop/bbs/EgovArticleList";
+    public String BoardSelect() throws Exception {
+    	
+    	return "egovframework/com/cop/bbs/EgovArticleList";
     }
+
+    @RequestMapping("/cop/bbs/selectResourceList.do")
+    public String ResourceSelect() throws Exception {
+    	
+    	return "egovframework/com/cop/bbs/ResourceBoardList";
+    }
+//    @RequestMapping("/cop/bbs/selectArticleList.do")
+//    public String selectArticleList(@ModelAttribute("searchVO") BoardVO boardVO, ModelMap model) throws Exception {
+//		LoginVO user = (LoginVO)EgovUserDetailsHelper.getAuthenticatedUser();
+//		
+//		Boolean isAuthenticated = EgovUserDetailsHelper.isAuthenticated();	//KISA 보안취약점 조치 (2018-12-10, 이정은)
+//
+//        if(!isAuthenticated) {
+//            return "egovframework/com/uat/uia/EgovLoginUsr";
+//        }
+//	
+//		BoardMasterVO vo = new BoardMasterVO();
+//		
+//		vo.setBbsId(boardVO.getBbsId());
+//		vo.setUniqId((user == null || user.getUniqId() == null) ? "" : user.getUniqId());
+//		BoardMasterVO master = egovBBSMasterService.selectBBSMasterInf(vo);
+//		
+//		//방명록은 방명록 게시판으로 이동
+//		if(master.getBbsTyCode().equals("BBST03")){
+//			return "forward:/cop/bbs/selectGuestArticleList.do";
+//		}
+//		
+//		
+//		boardVO.setPageUnit(propertyService.getInt("pageUnit"));
+//		boardVO.setPageSize(propertyService.getInt("pageSize"));
+//	
+//		PaginationInfo paginationInfo = new PaginationInfo();
+//		
+//		paginationInfo.setCurrentPageNo(boardVO.getPageIndex());
+//		paginationInfo.setRecordCountPerPage(boardVO.getPageUnit());
+//		paginationInfo.setPageSize(boardVO.getPageSize());
+//	
+//		boardVO.setFirstIndex(paginationInfo.getFirstRecordIndex());
+//		boardVO.setLastIndex(paginationInfo.getLastRecordIndex());
+//		boardVO.setRecordCountPerPage(paginationInfo.getRecordCountPerPage());
+//	
+//		Map<String, Object> map = egovArticleService.selectArticleList(boardVO);
+//		int totCnt = Integer.parseInt((String)map.get("resultCnt"));
+//		
+//		//공지사항 추출
+//		List<BoardVO> noticeList = egovArticleService.selectNoticeArticleList(boardVO);
+//		
+//		paginationInfo.setTotalRecordCount(totCnt);
+//	
+//		//-------------------------------
+//		// 기본 BBS template 지정 
+//		//-------------------------------
+//		if (master.getTmplatCours() == null || master.getTmplatCours().equals("")) {
+//		    master.setTmplatCours("/css/egovframework/com/cop/tpl/egovBaseTemplate.css");
+//		}
+//		////-----------------------------
+//	
+//		if(user != null) {
+//	    	model.addAttribute("sessionUniqId", user.getUniqId());
+//	    }
+//		
+//		model.addAttribute("resultList", map.get("resultList"));
+//		model.addAttribute("resultCnt", map.get("resultCnt"));
+//		model.addAttribute("articleVO", boardVO);
+//		model.addAttribute("boardMasterVO", master);
+//		model.addAttribute("paginationInfo", paginationInfo);
+//		model.addAttribute("noticeList", noticeList);
+//		return "egovframework/com/cop/bbs/EgovArticleList";
+//    }
     
     
     
