@@ -132,7 +132,7 @@
 		<ul class="box-tab">
 			<li><a class="" id="g-tab"
 				href="<c:url value='/cop/bbs/selectArticleList.do'/>">공지사항</a></li>
-			<li><a class="" id="g-tab" href="#">갤러리</a></li>
+			<li><a class="" id="g-tab" href="<c:url value='/cop/bbs/GalleryList.do'/>">갤러리</a></li>
 			<li><a class="on" id="p-tab"
 				href="<c:url value='/cop/bbs/selectResourceList.do'/>">자료실</a></li>
 		</ul>

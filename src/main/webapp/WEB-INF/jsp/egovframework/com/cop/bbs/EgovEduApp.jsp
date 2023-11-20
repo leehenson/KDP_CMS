@@ -72,7 +72,9 @@
 						<tr>
 							<th>신청기간</th>
 							<td><input class="in" style="margin-right: 5px;" type="text"
-								id="startDate" readonly> ~ <input class="in"
+								id="startDate" readonly> 
+							<span class="period"> ~ </span>
+								<input class="in"
 								style="margin-left: 5px;" type="text" id="endDate" readonly>
 							</td>
 							<th>요청날짜</th>
@@ -84,7 +86,7 @@
 
 				<h2 class="apply_info">자원 할당</h2>
 
-				<table class="solTable1">
+				<table class="solTable1" style="height: 150px;">
 					<tbody>
 						<!--디스크 크기, 서비스 유형 -->
 						<tr>
@@ -192,14 +194,14 @@
 					<tbody>
 						<!--신청 제목 -->
 						<tr>
-							<th style="padding-bottom: 50px;">신청 제목</th>
-							<td style="padding-bottom: 50px;"><input type="text" name=""
+							<th style="padding-bottom: 20px;">신청 제목</th>
+							<td style="padding-bottom: 20px;"><input type="text" name=""
 								title="신청 제목"></td>
 						</tr>
 						<!--신청 내용 -->
 						<tr>
 							<th style="vertical-align: top;">신청 내용</th>
-							<td style="padding-bottom: 50px;"><textarea></textarea></td>
+							<td style="padding-bottom: 20px;"><textarea></textarea></td>
 						</tr>
 						<!--파일 첨부 -->
 						<tr>

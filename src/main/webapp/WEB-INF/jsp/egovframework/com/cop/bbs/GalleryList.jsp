@@ -29,7 +29,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>${pageTitle}<spring:message code="title.list" /></title>
+<title> 순천대학교 K-디지털플랫폼 | 갤러리 </title>
 <!-- 게시글 목록 -->
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <link type="text/css" rel="stylesheet"
@@ -146,6 +146,43 @@
 				공지사항 </span>
 		</h1>
 
+		<!-- 게시판 페이지 정보 및 버튼 시작 -->
+		<div id="gal_sch_wrap">
+			<div id="bo_list_total">
+				<span>Total 10건</span> 1 페이지
+			</div>
+
+			<!-- 게시판 검색 시작  -->
+			<div class="sch_wrap">
+				<div class="bo_sch">
+					<form class="sch_form" name="fsearch" method="get">
+						<div>
+							<input type="hidden" name="bo_table" value="notice"> <input
+								type="hidden" name="sca" value=""> <input type="hidden"
+								name="sop" value="and"> <select name="sfl" id="sfl">
+								<option value="wr_subject">제목</option>
+								<option value="wr_content">내용</option>
+								<option value="wr_subject||wr_content">제목+내용</option>
+								<option value="wr_name,1">글쓴이</option>
+								<option value="wr_name,0">글쓴이(코)</option>
+							</select>
+						</div>
+
+						<div class="sch_bar">
+							<input type="text" name="stx" value="" required="" id="stx"
+								class="sch_input" size="25" maxlength="20"
+								placeholder=" 검색어를 입력해주세요">
+							<button type="submit" value="검색" class="sch_btn">
+								<i class="fa fa-search" aria-hidden="true"></i> <span
+									class="sound_only">검색</span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- 게시판 페이지 정보 및 버튼 끝 -->
+
 		<form name="fboardlist" id="fboardlist"
 			action="http://skkukdp.re.kr/bbs/board_list_update.php"
 			onsubmit="return fboardlist_submit(this);" method="post">
@@ -160,11 +197,6 @@
 				value="">
 
 			<div id="bo_btn_top">
-				<!-- 게시판 페이지 정보 및 버튼 시작 -->
-				<div id="bo_list_total">
-					<span>Total 8건</span> 1 페이지
-				</div>
-				<!-- 게시판 페이지 정보 및 버튼 끝 -->
 
 				<!-- 갤러리 게시판 -->
 				<div class="gallery">
@@ -262,34 +294,34 @@
 		</form>
 
 		<!-- 게시판 검색 시작 -->
-		<div class="sch_wrap">
-			<div class="bo_sch">
-				<form class="sch_form" name="fsearch" method="get">
-					<div>
-						<input type="hidden" name="bo_table" value="notice"> <input
-							type="hidden" name="sca" value=""> <input type="hidden"
-							name="sop" value="and"> <select name="sfl" id="sfl">
-							<option value="wr_subject">제목</option>
-							<option value="wr_content">내용</option>
-							<option value="wr_subject||wr_content">제목+내용</option>
-							<option value="wr_name,1">글쓴이</option>
-							<option value="wr_name,0">글쓴이(코)</option>
-						</select>
-					</div>
+<!-- 		<div class="sch_wrap"> -->
+<!-- 			<div class="bo_sch"> -->
+<!-- 				<form class="sch_form" name="fsearch" method="get"> -->
+<!-- 					<div> -->
+<!-- 						<input type="hidden" name="bo_table" value="notice"> <input -->
+<!-- 							type="hidden" name="sca" value=""> <input type="hidden" -->
+<!-- 							name="sop" value="and"> <select name="sfl" id="sfl"> -->
+<!-- 							<option value="wr_subject">제목</option> -->
+<!-- 							<option value="wr_content">내용</option> -->
+<!-- 							<option value="wr_subject||wr_content">제목+내용</option> -->
+<!-- 							<option value="wr_name,1">글쓴이</option> -->
+<!-- 							<option value="wr_name,0">글쓴이(코)</option> -->
+<!-- 						</select> -->
+<!-- 					</div> -->
 
-					<div class="sch_bar">
-						<input type="text" name="stx" value="" required="" id="stx"
-							class="sch_input" size="25" maxlength="20"
-							placeholder=" 검색어를 입력해주세요">
-						<button type="submit" value="검색" class="sch_btn">
-							<i class="fa fa-search" aria-hidden="true"></i> <span
-								class="sound_only">검색</span>
-						</button>
-					</div>
-				</form>
-			</div>
-			<div class="bo_sch_bg"></div>
-		</div>
+<!-- 					<div class="sch_bar"> -->
+<!-- 						<input type="text" name="stx" value="" required="" id="stx" -->
+<!-- 							class="sch_input" size="25" maxlength="20" -->
+<!-- 							placeholder=" 검색어를 입력해주세요"> -->
+<!-- 						<button type="submit" value="검색" class="sch_btn"> -->
+<!-- 							<i class="fa fa-search" aria-hidden="true"></i> <span -->
+<!-- 								class="sound_only">검색</span> -->
+<!-- 						</button> -->
+<!-- 					</div> -->
+<!-- 				</form> -->
+<!-- 			</div> -->
+<!-- 			<div class="bo_sch_bg"></div> -->
+<!-- 		</div> -->
 		<script>
 			jQuery(function($) {
 				// 게시판 검색
