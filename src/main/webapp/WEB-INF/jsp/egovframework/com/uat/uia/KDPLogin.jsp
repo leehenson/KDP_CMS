@@ -15,7 +15,7 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <link rel="stylesheet"
 	href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<title>Login Page</title>
+<title> 순천대학교 K-디지털플랫폼 | 로그인 </title>
 </head>
 <body>
 	<div class="header-background">

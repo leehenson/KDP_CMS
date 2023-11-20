@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>순천대학교 K-디지털 플랫폼</title>
+<title> 순천대학교 K-디지털플랫폼 | 시설 및 장비 </title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css"

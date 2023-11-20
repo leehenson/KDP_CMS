@@ -46,6 +46,13 @@ body {
 	font-size: 85px;
 	color: #fff;
 	margin: 10px 0px;
+	/* 글 쏟아짐 방지 */
+	min-width: 400px;
+}
+
+.solText>p {
+	padding-top: 36px;
+	line-height: 25px;
 }
 
 /* solution table style */
@@ -107,7 +114,7 @@ body {
 	font-size: 25px;
 	padding-left: 55px;
 	background:
-		url(../../images/egovframework/com/cmm/icon/user_info_icon.png) left
+		url(../../../images/egovframework/com/cmm/icon/apply_info_icon.png) left
 		center no-repeat;
 	background-position: 5px center;
 	width: 850px;
@@ -203,11 +210,11 @@ body {
 	font-size: 16px;
 	font-family: NotoSansKR-Regular;
 	color: #666;
-	width: 675px;
-	height: 230px;
+	width: 667px;
+	height: 210px;
 	border: 1px solid #b4b4b4;
 	border-radius: 10px;
-	padding-inline-start: 10px;
+	padding: 10px;
 }
 
 .solTable2>tbody>tr>td input#file-name-input {

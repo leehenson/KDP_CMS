@@ -27,6 +27,7 @@
 <title>달력</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link type="text/css" rel="stylesheet" href="<c:url value='/css/egovframework/com/sym/cal/cal.css' />" />
+<link type="text/css" rel="stylesheet" href="<c:url value='/css/egovframework/com/qna.css' />">
 <script type="text/javaScript" language="javascript">
 <!--
 
@@ -86,8 +87,20 @@ function fnReturnDay(day){
 <!--
 <body onLoad=javascript:fnInit();>
  -->
-
 <body>
+
+	<!-- header -->
+		<c:import url="../../head.jsp" />
+		<div class="KDPHeader">
+			<div class="inner">
+				<div class="KDPText">
+					<h2> 공유 및 개방 </h2>
+				</div>
+			</div>
+		</div>
+
+<div id="cal-wrap">
+
 <form name="Form" action ="<c:url value='/sym/cal/callCal.do'/>" method="post">
 <input type="hidden" name="init" value="${init}" />
 <input type="hidden" name="year" value="${resultList[0].year}" />
@@ -97,26 +110,32 @@ function fnReturnDay(day){
 	 <thead>
 	  <tr>
 	    <th class="title" width="36" nowrap colspan=1>
-	    	<a href="javascript:fnChangeCalendar(${resultList[0].year-1},${resultList[0].month});"  style="selector-dummy:expression(this.hideFocus=false);cursor:pointer;cursor:hand;"><img src="<c:url value='/images/egovframework/com/sym/cal/icon_pre_year.gif' />" alt="이전년도"></a>
+	    	<a href="javascript:fnChangeCalendar(${resultList[0].year-1},${resultList[0].month});"  style="selector-dummy:expression(this.hideFocus=false);cursor:pointer;cursor:hand;">
+	    		<img src="<c:url value='/images/egovframework/com/sym/cal/icon_pre_year.gif' />" alt="이전년도">
+	    	</a>
 	    </th>
 	    <th class="title" width="36" nowrap colspan=1>
-	    	<a href="javascript:fnChangeCalendar(${resultList[0].year},${resultList[0].month-1});"  style="selector-dummy:expression(this.hideFocus=false);cursor:pointer;cursor:hand;"><img src="<c:url value='/images/egovframework/com/sym/cal/icon_pre_month.gif' />" alt="이전달"></a>
+	    	<a href="javascript:fnChangeCalendar(${resultList[0].year},${resultList[0].month-1});"  style="selector-dummy:expression(this.hideFocus=false);cursor:pointer;cursor:hand;">
+	    		<img src="<c:url value='/images/egovframework/com/sym/cal/icon_pre_month.gif' />" alt="이전달">
+	    	</a>
 	    </th>
 	    <th class="title" width="108" nowrap colspan=3>${resultList[0].year}년${resultList[0].month}월</th>
 	    <th class="title" width="36" nowrap colspan=1>
-	    	<a href="javascript:fnChangeCalendar(${resultList[0].year},${resultList[0].month+1});"  style="selector-dummy:expression(this.hideFocus=false);cursor:pointer;cursor:hand;"><img src="<c:url value='/images/egovframework/com/sym/cal/icon_aft_month.gif' />" alt="다음달"></a>
+	    	<a href="javascript:fnChangeCalendar(${resultList[0].year},${resultList[0].month+1});"  style="selector-dummy:expression(this.hideFocus=false);cursor:pointer;cursor:hand;">
+	    		<img src="<c:url value='/images/egovframework/com/sym/cal/icon_aft_month.gif' />" alt="다음달">
+	    	</a>
 	    </th>
 	    <th class="title" width="36" nowrap colspan=1>
 	    	<a href="javascript:fnChangeCalendar(${resultList[0].year+1},${resultList[0].month});"  style="selector-dummy:expression(this.hideFocus=false);cursor:pointer;cursor:hand;"><img src="<c:url value='/images/egovframework/com/sym/cal/icon_aft_year.gif' />" alt="다음년도"></a>
 	  </tr>
 	  <tr>
-	    <th class="title" width="36" nowrap>일</th>
+	    <th class="title" width="36" nowrap style="color: red;">일</th>
 	    <th class="title" width="36" nowrap>월</th>
 	    <th class="title" width="36" nowrap>화</th>
 	    <th class="title" width="36" nowrap>수</th>
 	    <th class="title" width="36" nowrap>목</th>
 	    <th class="title" width="36" nowrap>금</th>
-	    <th class="title" width="36" nowrap>토</th>
+	    <th class="title" width="36" nowrap style="color: blue;">토</th>
 	  </tr>
 	 </thead>
 	 <tbody>
@@ -133,13 +152,26 @@ function fnReturnDay(day){
 				<c:otherwise>
 			 		<c:choose>
 			 		<c:when test='${result.restAt == "Y" }'>
-					    <td class="lt_text3" nowrap STYLE="color:red;cursor:pointer;cursor:hand" onClick="javascript:fnReturnDay(${result.day});">
+					    <td class="lt_text3" nowrap STYLE="color:red;" onClick="javascript:fnReturnDay(${result.day});">
 					    	${result.day}
 					    </td>
 					</c:when>
 					<c:otherwise>
-					    <td class="lt_text3" nowrap STYLE="color:black;cursor:pointer;cursor:hand" onClick="javascript:fnReturnDay(${result.day});">
+					    <td class="lt_text3" nowrap STYLE="color:black;" onClick="javascript:fnReturnDay(${result.day});">
 					    	${result.day}
+					    	
+						    	<!-- Add a conditional statement for the div -->
+								<c:if test="${result.day eq 9}">
+								    <div class="share-regist-btn nextCoding">
+								      <a href="#"> NextCoding </a>
+								    </div>
+								</c:if>
+								<!-- Add a conditional statement for the div -->
+								<c:if test="${result.day eq 9}">
+								    <div class="share-regist-btn XR-VR">
+								      <a href="#"> XR/VR 강의장 </a>
+								    </div>
+								</c:if>
 					    </td>
 					</c:otherwise>
 					</c:choose>
@@ -156,5 +188,10 @@ function fnReturnDay(day){
 	 </tbody>
 	</table>
 </form>
+
+</div>
+
+	<!-- bottom -->
+	<c:import url="../../main_bottom.jsp" />
 </body>
 </html>

@@ -45,6 +45,10 @@ body::-webkit-scrollbar {
 	display: none;
 }
 
+li {
+	list-style: none !important;
+}
+
 #header {
 	height: 64px;
 	/* 	width: 95%; */

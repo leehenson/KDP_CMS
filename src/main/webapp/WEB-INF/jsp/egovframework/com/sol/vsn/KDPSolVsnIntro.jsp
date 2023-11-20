@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> 순천대학교 K-디지털플랫폼 </title>
+	<title> 순천대학교 K-디지털플랫폼 | Vision AI 이용 안내 </title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<link type="text/css" rel="stylesheet" href="<c:url value='/css/egovframework/com/solIntro.css?after' />">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

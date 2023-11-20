@@ -28,7 +28,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>순천대학교 K-디지털 플랫폼</title>
+<title> 순천대학교 K-디지털플랫폼 | FAQ 목록 </title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <link type="text/css" rel="stylesheet"
 	href="<c:url value='/css/egovframework/com/com.css' />">

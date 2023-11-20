@@ -94,7 +94,7 @@
 
 						<li><a href="#"> 고객지원 </a>
 							<ul class="submenu">
-								<li><a href="#"> 1:1 문의 </a></li>
+								<li><a href="<c:url value='/uss/olh/qna/insertQnaView.do'/>"> 1:1 문의 </a></li>
 								<li><a href="<c:url value='/uss/olh/faq/selectFaqList.do'/>"> FAQ </a></li>
 							</ul></li>
 
