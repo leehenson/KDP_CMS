@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'GmarketSansBold';
+	src: url('../../../../../font/GmarketSansBold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'GmarketSansMedium';
+	src: url('../../../../../font/GmarketSansMedium.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'NotoSansKR-Medium';
+	src: url('../../../../../font/NotoSansKR-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NotoSansKR-Bold';
+	src: url('../../../../../font/NotoSansKR-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NotoSansKR-Regular';
+	src: url('../../../../../font/NotoSansKR-Regular.ttf')
+		format('truetype');
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    margin: 0 auto;
+    max-width: calc(100% - 600px);
+    overflow: hidden;
+}
+
+.EduIntroHeader {
+	height: 550px;
+	width: 100%;
+	background-image:
+		url("../../../../../images/egovframework/com/uat/uia/support_bg.png");
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.KDPText>h3 {
+	font-family: GmarketSansBold;
+	font-size: 85px;
+	color: #fff;
+	margin: 10px 0px;
+	min-width: 328px;
+	padding-bottom: 70px;
+}
+
+main {
+	display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+	margin: 20px;
+}
+
+.main-container main {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.training-content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* 검색 박스  */
+.search_box {
+    display: flex;
+    align-items: center;
+}
+
+#searchStat,
+#searchCondition {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+   	width: 115px;
+}
+
+#searchKeyword {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    margin-right: 10px;
+}
+
+.search_btn {
+    background-color: #005bac;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search_btn span {
+    margin-right: 5px;
+}
+
+.search_btn:hover {
+    background-color: #007bff;
+}
+
+/* 교육 신청 부분 */
+
+.table_st2 {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.table_st2 th, .table_st2 td {
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    text-align: left;
+}
+
+.table_st2 th {
+    background-color: #005bac;
+    color: #ffffff;
+}
+
+.table_st2 tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.btn_st4 {
+    background-color: #005bac;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn_st4:hover {
+    background-color: #218838;
+}

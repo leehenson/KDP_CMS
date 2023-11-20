@@ -158,6 +158,12 @@ public class EgovArticleController {
     	
     	return "egovframework/com/cop/bbs/ResourceBoardList";
     }
+    
+    @RequestMapping("/cop/bbs/GalleryList.do")
+    public String GalleryList() throws Exception {
+    	
+    	return "egovframework/com/cop/bbs/GalleryList";
+    }
 //    @RequestMapping("/cop/bbs/selectArticleList.do")
 //    public String selectArticleList(@ModelAttribute("searchVO") BoardVO boardVO, ModelMap model) throws Exception {
 //		LoginVO user = (LoginVO)EgovUserDetailsHelper.getAuthenticatedUser();

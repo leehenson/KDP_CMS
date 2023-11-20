@@ -1,0 +1,390 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'GmarketSansBold';
+	src: url('../../../../../font/GmarketSansBold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'GmarketSansMedium';
+	src: url('../../../../../font/GmarketSansMedium.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'NotoSansKR-Medium';
+	src: url('../../../../../font/NotoSansKR-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NotoSansKR-Bold';
+	src: url('../../../../../font/NotoSansKR-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NotoSansKR-Regular';
+	src: url('../../../../../font/NotoSansKR-Regular.ttf')
+		format('truetype');
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.main-container {
+	margin: 0 auto;
+	max-width: calc(100% - 600px);
+	overflow: hidden;
+}
+
+.EduIntroHeader {
+	height: 550px;
+	width: 100%;
+	background-image:
+		url("../../../../../images/egovframework/com/uat/uia/support_bg.png");
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.KDPText>h3 {
+	font-family: GmarketSansBold;
+	font-size: 85px;
+	color: #fff;
+	margin: 10px 0px;
+	min-width: 328px;
+	padding-bottom: 70px;
+}
+
+main {
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	align-items: flex-end;
+	margin: 20px;
+}
+
+body {
+	margin: 0px !important;
+}
+
+.main-container {
+	margin: auto;
+	max-width: 1500px;
+	overflow: hidden;
+}
+
+solution table style
+.solTableFrm {
+	margin: 100px 300px;
+	margin-bottom: 0px; 가운데 정렬 추가 display : flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	가로폭
+	반응형
+	제거
+	min-width
+	:
+	900px;
+}
+
+.solTableFrm h1 {
+	width: 100%;
+	text-align: center;
+	color: #111;
+	font-size: 50px;
+	margin-bottom: 50px;
+	font-family: GmarketSansBold; 글씨 예쁘게 쏟아지게 하기 위함 line-height : 54px;
+	min-width: 300px;
+}
+
+.solTableFrm h2.user_info {
+	font-family: GmarketSansBold;
+	display: flex;
+	align-items: center;
+	margin: 0px;
+	border-top: 2px solid #d2d2d2;
+	border-bottom: 2px solid #d2d2d2;
+	height: 45px;
+	color: #666;
+	font-size: 25px;
+	font-weight: bold;
+	padding-left: 60px;
+	background:
+		url(../../../images/egovframework/com/cmm/icon/user_info_icon.png)
+		left center no-repeat;
+	background-position: 5px center;
+	리사이징 width: 850px;
+	padding-top: 10px;
+}
+
+.solTableFrm h2.apply_info {
+	font-family: GmarketSansBold;
+	display: flex;
+	align-items: center;
+	margin: 0px;
+	border-top: 2px solid #d2d2d2;
+	border-bottom: 2px solid #d2d2d2;
+	height: 45px;
+	color: #666;
+	font-size: 25px;
+	padding-left: 55px;
+	background:
+		url(../../images/egovframework/com/cmm/icon/user_info_icon.png) left
+		center no-repeat;
+	background-position: 5px center;
+	width: 850px;
+	padding-top: 10px;
+}
+
+.solTableFrm h3 {
+	color: #333;
+	font-size: 14px;
+	font-weight: 600;
+	margin: 50px 0 10px 0;
+}
+
+.solTableFrm h3 b {
+	color: #2277d7;
+}
+
+.solTable1 {
+	width: 100%;
+	리사이징 width: 900px;
+	height: 170px;
+	top
+	right
+	bottom
+	left
+	padding
+	:
+	25px
+	10px
+	25px
+	40px;
+}
+
+.solTable1>tbody>tr>th {
+	font-size: 21px;
+	color: #666;
+	text-align: center;
+	padding: 0px;
+	padding-right: 10px;
+	font-family: NotoSansKR-Regular;
+}
+
+.period {
+	font-size: 24px;
+	color: #666;
+	font-family: NotoSansKR-Regular;
+}
+
+.solTable1>tbody>tr>td input {
+	font-size: 16px;
+	font-family: NotoSansKR-Regular;
+	color: #666;
+	width: 238px;
+	height: 40px;
+	border: 1px solid #b4b4b4;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.solTable1>tbody>tr>td input.in {
+	font-size: 16px;
+	color: #666;
+	width: 100px;
+	height: 40px;
+	text-align: center;
+}
+
+.solTableFrm input[type="radio"] {
+	width: 20px;
+	height: 20px;
+}
+
+.solTableFrm input[type="checkbox"] {
+	width: 20px;
+	height: 20px;
+}
+
+.solTable2 {
+	width: 100%;
+	padding: 30px 40px; 가운데 정렬 추가 display : flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.solTable2>tbody>tr>th {
+	font-size: 21px;
+	font-family: NotoSansKR-Regular;
+	color: #666;
+	text-align: right;
+	padding: 0px;
+	padding-right: 10px;
+}
+
+.solTable2>tbody>tr>td input {
+	font-size: 16px;
+	font-family: NotoSansKR-Regular;
+	color: #666;
+	width: 675px;
+	height: 40px;
+	border: 1px solid #b4b4b4;
+	border-radius: 10px;
+	padding-inline-start: 10px;
+}
+
+.solTable2>tbody>tr>td textarea {
+	resize: none;
+	font-size: 16px;
+	font-family: NotoSansKR-Regular;
+	color: #666;
+	width: 675px;
+	height: 230px;
+	border: 1px solid #b4b4b4;
+	border-radius: 10px;
+	padding-inline-start: 10px;
+}
+
+.solTable2>tbody>tr>td input#file-name-input {
+	font-size: 16px;
+	font-family: NotoSansKR-Regular;
+	color: #666;
+	width: 560px;
+	height: 40px;
+	border: 1px solid #b4b4b4;
+	border-radius: 10px;
+	padding-inline-start: 10px;
+}
+
+.fileUpload {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+img.upload_icon {
+	vertical-align: sub;
+}
+
+.solUploadBtn {
+	background-image:
+		url('../../../images/egovframework/com/cmm/icon/upload_icon.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: contain;
+	background-color: #005bac;
+	padding-left: 10px;
+	width: 100px;
+	height: 40px;
+	border: none;
+	font-size: 17px;
+	font-family: NotoSansKR-Regular;
+	color: #fff;
+	border-radius: 10px;
+	cursor: pointer;
+	margin-left: 15px;
+}
+
+.solBtn {
+	width: 100%;
+	margin: 30px 827px;
+	gap: 15px; 가운데 정렬 추가 display : flex;
+	justify-content: center;
+}
+
+.solBtn>button.cancle {
+	font-family: NotoSansKR-Bold;
+	border: none;
+	border-radius: 10px;
+	background-color: #d2d2d2;
+	width: 110px;
+	height: 40px;
+	font-size: 20px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.solBtn>button.app {
+	font-family: NotoSansKR-Bold;
+	border: none;
+	border-radius: 10px;
+	background-color: #005bac;
+	width: 110px;
+	height: 40px;
+	font-size: 20px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.solTable1 label[for^="diskSize"], .solTable1 label[for^="docker"],
+	.solTable1 label[for^="container"] {
+	font-family: NotoSansKR-Regular, sans-serif;
+	font-size: 16px;
+	color: #666;
+}
+
+.solTable1 label[for^="osCentOS"], .solTable1 label[for^="osWindows"] {
+	font-family: NotoSansKR-Regular, sans-serif;
+	font-size: 16px;
+	color: #666;
+}
+
+/* 서버유형 선택*/
+.server-type-container label {
+	font-family: NotoSansKR-Regular, sans-serif;
+	font-size: 16px;
+	color: #666;
+}
+
+.server-type-container label[for^="option"], .server-type-container label[for^="gpuOption"]
+	{
+	font-family: NotoSansKR-Regular, sans-serif;
+	font-size: 16px;
+	color: #666;
+}
+
+label[for="standard"], label[for="gpu"] {
+	font-family: 'NotoSansKR-Regular', sans-serif;
+	font-size: 18px;
+	color: #666;
+}
+
+#standardOptions label {
+	font-family: 'NotoSansKR-Regular', sans-serif;
+	font-size: 18px;
+	color: #666;
+}
+
+#standardOptions select {
+	font-family: 'NotoSansKR-Regular', sans-serif;
+	font-size: 16px;
+	color: #666;
+}
+
+#standardOptions select {
+	width: 550px;
+}
+
+#gpuOptions label {
+	font-family: 'NotoSansKR-Regular', sans-serif;
+	font-size: 18px;
+	color: #666;
+}
+
+#gpuOptions select {
+	font-family: 'NotoSansKR-Regular', sans-serif;
+	font-size: 16px;
+	color: #666;
+}
+
+#gpuOptions select {
+	width: 550px;
+}
