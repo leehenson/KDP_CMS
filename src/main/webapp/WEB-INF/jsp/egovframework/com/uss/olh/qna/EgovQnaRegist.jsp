@@ -93,13 +93,34 @@ $(document).ready(function () {
     });
 });
 function submitForm() {
-    // 여기에서 실제로 제출 동작을 수행할 수 있습니다.
+    // 필수 입력 필드의 값 가져오기
+    var email = document.querySelector('input[name="email"]').value;
+    var phoneNumber = document.querySelector('input[name="phoneNumber"]').value;
+    var inquiryType = document.querySelector('input[name="inquiryType"]').value;
+    var title = document.querySelector('input[name="title"]').value;
+    var content = document.querySelector('textarea[name="content"]').value;
+	
+ 	// 개인정보 수집 동의 체크 확인
+    var agreeCheckbox = document.querySelector('.agreeBox');
+    if (!agreeCheckbox.checked) {
+        // 개인정보 수집에 동의해주세요. 알림 띄우기
+        alert('개인정보 수집에 동의해주세요.');
+        return; // 동의하지 않았으면 더 이상 진행하지 않음
+    }
+    
+    // 필수 입력 필드가 비어 있는지 확인
+    if (!email || !phoneNumber || !inquiryType || !title || !content) {
+        // 필수 항목을 입력해주세요. 알림 띄우기
+        alert('필수 항목을 입력해주세요.');
+    } else {
+        // 여기에서 실제로 제출 동작을 수행할 수 있습니다.
 
-    // 제출이 완료되었습니다. 알림 띄우기
-    alert('제출이 완료되었습니다.');
+        // 제출이 완료되었습니다. 알림 띄우기
+        alert('제출이 완료되었습니다.\n문의 내역은 마이페이지에서 확인이 가능합니다.');
 
-    // 이전 페이지로 이동
-    history.back();
+        // 이전 페이지로 이동
+        history.back();
+    }
 }
 </script>
 </head>
@@ -130,7 +151,7 @@ function submitForm() {
 					<tr>
 						<th>이메일 주소<span>(필수)</span></th>
 						<td class="tdDiv">
-							<input type="text" placeholder="example@example.com">
+							<input type="text" name="email" placeholder="example@example.com">
 						</td>
 						<td rowspan="3">
 							<div class="agreement">
@@ -157,25 +178,25 @@ function submitForm() {
 						<th>전화번호<span>(필수)</span></th>
 						<td class="tdDiv" style="display: flex; align-items: center;">
 							<input style="width:120px; margin-right:15px;" type="text" value="한국(+82)" readonly>
-							<input style="width:290px;" type="text" placeholder="10-1234-5678">
+							<input style="width:290px;" type="text" name="phoneNumber" placeholder="10-1234-5678">
 						</td>
 					</tr>
 					<tr>
 						<th>문의유형<span>(필수)</span></th>
 						<td class="tdDiv">
-							<input type="text" placeholder="Vision AI">
+							<input type="text" name="inquiryType" placeholder="Vision AI">
 						</td>
 					</tr>
 					<tr>
 						<th>제목<span>(필수)</span></th>
 						<td colspan="2">
-							<input type="text" placeholder="제목을 입력해 주세요.">
+							<input type="text" name="title" placeholder="제목을 입력해 주세요.">
 						</td>
 					</tr>
 					<tr>
 						<th class="detail">내용<span>(필수)</span></th>
 						<td colspan="2">
-							<textarea placeholder="내용을 입력해 주세요."></textarea>
+							<textarea name="content" placeholder="내용을 입력해 주세요."></textarea>
 						</td>
 					</tr>
 					<tr>

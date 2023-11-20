@@ -52,6 +52,28 @@
 	                break;
 	        }
 	    }
+	    
+	    function saveChanges() {
+	        // 필수 입력 필드의 값 가져오기
+	        var password = document.querySelector('input[name="password"]').value;
+	        var passwordConfirm = document.querySelector('input[name="passwordConfirm"]').value;
+	        var phoneNumber = document.querySelector('input[name="phoneNumber"]').value;
+	        var email = document.querySelector('input[name="email"]').value;
+	        
+	        // 필수 입력 필드가 비어 있는지 확인
+	        if (!password || !passwordConfirm || !phoneNumber || !email) {
+	            // 필수 항목을 입력해주세요. 알림 띄우기
+	            alert('필수 항목을 입력해주세요.');
+	        } else {
+	            // 여기에서 실제로 제출 동작을 수행할 수 있습니다.
+
+	            // 제출이 완료되었습니다. 알림 띄우기
+	            alert('저장이 완료되었습니다.');
+
+	            // 페이지 리프레시
+	            location.reload();
+	        }
+	    }
 	</script>
 </head>
 <body>
@@ -169,14 +191,14 @@
 							<tr>
 								<th>비밀번호 변경<span>(필수)</span></th>
 								<td>
-									<input type="text" placeholder="비밀번호를 입력해 주세요." title="비밀번호 번경">
+									<input type="text" placeholder="비밀번호를 입력해 주세요." title="비밀번호 번경" name="password">
 								</td>
 							</tr>
 							<!--비밀번호 확인 -->
 							<tr>
 								<th>비밀번호 확인<span>(필수)</span></th>
 								<td align="right">
-									<input type="text" placeholder="비밀번호를 입력해 주세요." title="비밀번호 확인">
+									<input type="text" placeholder="비밀번호를 입력해 주세요." title="비밀번호 확인" name="passwordConfirm">
 								</td>
 							</tr>
 							<!--전화번호 -->
@@ -184,7 +206,7 @@
 								<th>전화번호<span>(필수)</span></th>
 								<td>
 								    <div style="display: flex; align-items: center;">
-								        <input type="text" placeholder="전화번호를 입력해 주세요." title="전화번호">
+								        <input type="text" placeholder="전화번호를 입력해 주세요." title="전화번호" name="phoneNumber">
 								        <button class="certBtn">
 								        	인증완료
 								        </button>
@@ -196,7 +218,7 @@
 								<th>이메일 주소<span>(필수)</span></th>
 								<td>
 								    <div style="display: flex; align-items: center;">
-								        <input type="text" placeholder="이메일 주소를 입력해 주세요." title="이메일 주소">
+								        <input type="text" placeholder="이메일 주소를 입력해 주세요." title="이메일 주소" name="email">
 								        <button class="certBtn">
 								        	인증완료
 								        </button>
@@ -208,7 +230,7 @@
 					<!-- 하단 버튼 -->
 					<div class="KDPBtn">
 						<button type="reset" class="cancle" onclick="history.back()"> 취소 </button>
-						<button class="save">제출</button>
+						<button class="save" onclick="saveChanges()">저장</button>
 					</div>
 				</div>
 			</div>
