@@ -35,6 +35,9 @@
 	integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
 	crossorigin="anonymous"></script>
 
+<style>@-webkit-keyframes marqueeAnimation-8716406 {100%
+{transform:translateX(-2219px)}}</style>
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script language="javascript">
 	function chk_all(val) {
@@ -130,8 +133,7 @@
 								aria-label="1 / 4" style="width: 300.195px; margin-right: 32px;">
 								<div class="box">
 									<!-- 추후 경로 수정 -->
-									<a href="<c:url value='/sol/cht/mpm/EgovMainMenuHome.do'/>">
-										<%-- 								<a href="<c:url value='/sym/mnu/mpm/EgovMainMenuHome.do'/>"> --%>
+									<a href="<c:url value='/sol/vsn/showSolVsn.do' />">
 										<p class="sol_img">
 											<img
 												src="<c:url value='/images/egovframework/com/uat/uia/Vision_AI_3x.png' />"
@@ -146,7 +148,7 @@
 								aria-label="2 / 4" style="width: 300.195px; margin-right: 32px;">
 								<div class="box">
 									<!-- 추후 경로 수정 -->
-									<a href="<c:url value='/sym/mnu/mpm/EgovMainMenuHome.do'/>">
+									<a href="<c:url value='/sol/cht/showSolCht.do' />">
 										<p class="sol_img">
 											<img
 												src="<c:url value='/images/egovframework/com/uat/uia/ChatBot_AI_3x.png' />"
@@ -161,7 +163,7 @@
 								style="width: 300.195px; margin-right: 32px;">
 								<div class="box">
 									<!-- 추후 경로 수정 -->
-									<a href="<c:url value='/sym/mnu/mpm/EgovMainMenuHome.do'/>">
+									<a href="<c:url value='/sol/sd/showSolSd.do' />">
 										<p class="sol_img">
 											<img
 												src="<c:url value='/images/egovframework/com/uat/uia/Stable_Diffusion_3x.png' />"
@@ -176,7 +178,7 @@
 								style="width: 300.195px; margin-right: 32px;">
 								<div class="box">
 									<!-- 추후 경로 수정 -->
-									<a href="<c:url value='/sym/mnu/mpm/EgovMainMenuHome.do'/>">
+									<a href="<c:url value='/sol/jpt/showSolJpt.do' />">
 										<p class="sol_img">
 											<img
 												src="<c:url value='/images/egovframework/com/uat/uia/Jupyter_noteBook_3x.png' />"
@@ -225,7 +227,6 @@
 					<div class="col-lg-4">
 						<h2 class="main_title">
 							소식
-							<!-- <br class="d-none d-lg-block">we are -->
 						</h2>
 						<h2 class="main_sub_title">KDP News</h2>
 						<p class="main_underbar">ㅡ</p>
@@ -340,6 +341,51 @@
 		<%-- 								<c:param name="atchFileId" value="${banner.bannerImageFile}" /> --%>
 		<%-- 							</c:import> --%>
 		<!-- 						</div> -->
+		
+		<div class="marquee_wrap">
+		<div class="marquee_row">
+					<div class="partners_wrap">
+					<div class="partners">
+						<h2 class="main_title">
+							협약기업
+						</h2>
+						<h2 class="main_sub_title">Partners</h2>
+						<p class="main_underbar">ㅡ</p>
+					</div>
+			<div style="width: 100000px; transform: translateX(0px); animation: 21.7036s linear 0.5s infinite normal none running marqueeAnimation-8716406;" class="js-marquee-wrapper">
+				<div class="js-marquee" style="margin-right: 0px; float: left;">
+	                <div class="marquee_top">
+	                    <ul class="marquee_list">
+	                    	<li><img src="<c:url value='/images/egovframework/com/uat/partners/SCNU_3x.png' />" alt="국립순천대학교"></li>
+	                    	<li><img src="<c:url value='/images/egovframework/com/uat/partners/Suncheon_3x.png' />" alt="순천시"></li>
+	                    	<li><img src="<c:url value='/images/egovframework/com/uat/partners/Yeosu_3x.png' />" alt="여수시"></li>
+	                    	<li><img src="<c:url value='/images/egovframework/com/uat/partners/Gwangyang_3x.png' />" style="max-width: 9rem" alt="광양시"></li>
+	                    	<li><img src="<c:url value='/images/egovframework/com/uat/partners/Goheung_3x.png' />" style="max-width: 8rem" alt="고흥군"></li>
+	                    	<li><img src="<c:url value='/images/egovframework/com/uat/partners/YGPA_3x.png' />" alt="여수광양항만공사"></li>
+	                    	<li><img src="<c:url value='/images/egovframework/com/uat/partners/Hanyeong_univ_3x.png' />" alt="한영대학교"></li>	                        
+	                     </ul>
+	                </div>
+	            </div>
+				<div class="js-marquee" style="margin-right: 0px; float: left;">
+	                <div class="marquee_top">
+	                    <ul class="marquee_list">
+	                    	<li><img src="<c:url value='/images/egovframework/com/uat/partners/SCNU_3x.png' />" alt="국립순천대학교"></li>
+	                    	<li><img src="<c:url value='/images/egovframework/com/uat/partners/Suncheon_3x.png' />" alt="순천시"></li>
+	                    	<li><img src="<c:url value='/images/egovframework/com/uat/partners/Yeosu_3x.png' />" alt="여수시"></li>
+	                    	<li><img src="<c:url value='/images/egovframework/com/uat/partners/Gwangyang_3x.png' />" style="max-width: 9rem" alt="광양시"></li>
+	                    	<li><img src="<c:url value='/images/egovframework/com/uat/partners/Goheung_3x.png' />" style="max-width: 8rem" alt="고흥군"></li>
+	                    	<li><img src="<c:url value='/images/egovframework/com/uat/partners/YGPA_3x.png' />" alt="여수광양항만공사"></li>
+	                    	<li><img src="<c:url value='/images/egovframework/com/uat/partners/Hanyeong_univ_3x.png' />" alt="한영대학교"></li>
+	                     </ul>
+	                </div>
+	            </div>
+			</div>
+			</div>
+        </div>
+		</div>
+		
+		
+		
 	</div>
 
 	<!-- bottom -->

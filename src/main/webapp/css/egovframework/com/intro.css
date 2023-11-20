@@ -19,7 +19,7 @@ img.taskPurpose {
 	padding-top: 120px;
 }
 
-#tab-4>div.inner {
+#tab-4>div.inner, #tab-5>div.inner {
 	padding-top: 90px;
 }
 
@@ -138,4 +138,19 @@ img.openOffice {
 	font-family: "NotoSansKR-Bold", sans-serif;
 	font-size: 28px;
 	color: #666666;
+}
+
+/* map */
+#map {
+    width: 100%;
+    height: 350px;
+}
+
+.map_outer {
+    padding: 20px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    width: min-content;
+    margin-top: 30px;
 }

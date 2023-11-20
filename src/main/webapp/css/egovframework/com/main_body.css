@@ -266,3 +266,55 @@ img {
 	vertical-align: middle;
 	border-style: none;
 }
+
+/* 협약기업 슬라이딩 */
+.marquee_wrap {
+    overflow: hidden;
+/*     height: 100%; */
+	width: 1250px;
+    margin-left: 300px;
+    padding-top: 100px;	
+}
+
+.marquee_top {
+    margin-top: 2rem;
+}
+
+.marquee_bottom {
+    margin-top: 6rem;
+}
+
+.marquee_list {
+    display: flex;
+    align-items: center;
+}
+
+.marquee_list li {
+    margin: 0 3rem;
+}
+
+.marquee_list li img {
+    width: 100%;
+    max-width: 11rem;
+}
+
+div.marquee_wrap > div.marquee_row > div.col-lg-4{
+	padding-left: 200px;
+}
+
+.marquee_row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+}
+
+.partners{
+    width: 385px;
+    display: flex;
+    flex-direction: column;
+}
+
+.partners_wrap{
+	display: flex;
+    flex-direction: column;
+}

@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> 순천대학교 K-디지털 플랫폼 </title>
+<title>순천대학교 K-디지털 플랫폼</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css"
 	href="<c:url value='/css/egovframework/com/intro.css' />">
@@ -14,6 +14,11 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <link rel="stylesheet"
 	href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<!-- map -->
+<script
+	src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
 <script>
 	$(function() {
 		// 시작일과 종료일에 대한 Datepicker 초기화
@@ -130,6 +135,45 @@
 				</div>
 			</div>
 		</section>
+		
+		<!-- 카카오맵 -->
+		<section id="tab-5" class="platform-section">
+				<div class="inner">
+					<h2 class="intro_title">| 찾아오시는길</h2>
+			<div class="map_outer">
+				<!-- 지도를 표시할 div -->
+				<div id="map" style="width: 950px; height: 350px;"></div>
+
+				<script type="text/javascript"
+					src="//dapi.kakao.com/v2/maps/sdk.js?appkey=72a2d81cb64d9a706dada1f96e07a585"></script>
+				<script>
+								
+				var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+					mapOption = {
+						center : new kakao.maps.LatLng(34.968552675452, 127.48378695003), // 지도의 중심좌표
+						level : 3
+					// 지도의 확대 레벨
+					};
+
+					// 지도를 표시할 div와 지도 옵션으로  지도 생성
+					var map = new kakao.maps.Map(mapContainer, mapOption);
+				
+					// 마커가 표시될 위치
+					var markerPosition  = new kakao.maps.LatLng(34.968552675452, 127.48378695003); 
+					
+					// 마커 생성
+					var marker = new kakao.maps.Marker({
+					    position: markerPosition
+					});
+					
+					// 마커가 지도 위에 표시되도록 설정
+					marker.setMap(map);
+				</script>
+				
+				</div>
+			</div>
+		</section>
+
 
 	</form>
 
