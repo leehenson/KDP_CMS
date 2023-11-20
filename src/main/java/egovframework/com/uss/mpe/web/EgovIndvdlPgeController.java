@@ -205,5 +205,11 @@ public class EgovIndvdlPgeController {
     	  
     	  return "egovframework/com/uss/mpe/KDPMyPage";
       }
+      
+      @RequestMapping("/uss/managerPage.do")
+      public String managerPage() throws Exception{
+    	  
+    	  return "egovframework/com/uss/KDPManagerPage";
+      }
 	
 }

@@ -31,8 +31,12 @@
 <title>${pageTitle} <spring:message code="title.create" /></title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <link type="text/css" rel="stylesheet" href="<c:url value='/css/egovframework/com/com.css' />">
+<link type="text/css" rel="stylesheet" href="<c:url value='/css/egovframework/com/qna.css' />">
 <script type="text/javascript" src="<c:url value="/validator.do"/>"></script>
 <validator:javascript formName="qnaVO" staticJavascript="false" xhtml="true" cdata="false"/>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <script type="text/javascript">
 /* ********************************************************
  * 초기화
@@ -56,15 +60,146 @@ function fn_egov_regist_qna(form){
 		}
 	} 
 }
-</script>
+function displayFileName() {
+    const fileInput = document.getElementById('file-input');
+    const fileNameInput = document.getElementById('file-name-input');
 
+    if (fileInput.files.length > 0) {
+        const fileName = fileInput.files[0].name;
+        fileNameInput.value = fileName;
+    } else {
+        fileNameInput.value = '';
+    }
+}
+
+function triggerFileInput(event) {
+    // 이벤트의 기본 동작을 중단시킴
+    event.preventDefault();
+    
+    document.getElementById('file-input').click();
+}
+function changeFont(element) {
+    // 클릭한 span의 글꼴을 변경
+    element.style.fontFamily = "NotoSansKR-Bold";
+}
+ 
+$(document).ready(function () {
+    $(".KDPCategory span").click(function () {
+        // 모든 span에 대한 font-family를 초기화합니다.
+        $(".KDPCategory span").css("font-family", "NotoSansKR-Regular");
+
+        // 클릭한 span에 대해 font-family를 NotoSansKR-Bold로 설정합니다.
+        $(this).css("font-family", "NotoSansKR-Bold");
+    });
+});
+function submitForm() {
+    // 여기에서 실제로 제출 동작을 수행할 수 있습니다.
+
+    // 제출이 완료되었습니다. 알림 띄우기
+    alert('제출이 완료되었습니다.');
+
+    // 이전 페이지로 이동
+    history.back();
+}
+</script>
 </head>
 <body onLoad="fn_egov_init();">
+	<!-- header -->
+	<c:import url="../../../head.jsp" />
+	<div class="KDPHeader">
+		<div class="inner">
+			<div class="KDPText">
+				<h2> 고객지원 </h2>
+			</div>
+		</div>
+	</div>
+	<!-- javascript warning tag  -->
+	<noscript class="noScriptTitle"><spring:message code="common.noScriptTitle.msg" /></noscript>
 
-<!-- javascript warning tag  -->
-<noscript class="noScriptTitle"><spring:message code="common.noScriptTitle.msg" /></noscript>
-
-<form:form commandName="qnaVO" action="${pageContext.request.contextPath}/uss/olh/qna/insertQna.do" method="post" onSubmit="fn_egov_regist_qna(document.forms[0]); return false;"> 
+	<div class="contents">
+		<h1>1:1 문의</h1>
+		<div class="KDPCategory">
+			<span>솔루션</span>
+			<span>공유 및 개방</span>
+			<span>교육</span>
+			<span style="border-right: 2px solid #d2d2d2;">영업</span>
+		</div>
+		<div class="KDPmain">
+			<table>
+				<tbody>
+					<tr>
+						<th>이메일 주소<span>(필수)</span></th>
+						<td class="tdDiv">
+							<input type="text" placeholder="example@example.com">
+						</td>
+						<td rowspan="3">
+							<div class="agreement">
+								<div class="agreeTitle">
+									※ 개인정보 수집 동의
+									<div class="agreeCheck">
+										<input class="agreeBox" type="checkbox">
+										개인정보 수집에 동의합니다.
+									</div>
+								</div>
+								<div class="agreeDetail">
+									귀하의 소중한 개인정보는 개인정보보호법의 관련 규정에 의하여 예약 및 조회 등 아래의 목적으로 수집 및 이용됩니다.<br>
+									1. 개인정보의 수집·이용 목적 - 예약, 조회를 위한 본인 확인 절차<br>
+									2. 갱니정보 수집 항목 - 예약자명, 핸드폰, 이메일<br>
+									3. 개인정보의 보유 및 이용기간 - 이용자의 개인정보는 원칙적으로 개인정보의 처리목적이 달성되면 지체 없이 파기합니다.<br>
+									예약을 위하여 수집된 개인정보는 '전자상거래 등에서의 소비자보호에 관한 법률' 제6조에 의거 정해진 기간동안 보유됩니다.<br>
+									※ 상기 내용은 고객님께 예약서비스를 제공하는데 필요한 최소한의 정보입니다.<br>
+									※ 상기 내용에 대하여 본인이 동의하지 않을 수 있으나, 그러할 경우 예약 서비스 제공에 차질이 발생할 수 있습니다.<br>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>전화번호<span>(필수)</span></th>
+						<td class="tdDiv" style="display: flex; align-items: center;">
+							<input style="width:120px; margin-right:15px;" type="text" value="한국(+82)" readonly>
+							<input style="width:290px;" type="text" placeholder="10-1234-5678">
+						</td>
+					</tr>
+					<tr>
+						<th>문의유형<span>(필수)</span></th>
+						<td class="tdDiv">
+							<input type="text" placeholder="Vision AI">
+						</td>
+					</tr>
+					<tr>
+						<th>제목<span>(필수)</span></th>
+						<td colspan="2">
+							<input type="text" placeholder="제목을 입력해 주세요.">
+						</td>
+					</tr>
+					<tr>
+						<th class="detail">내용<span>(필수)</span></th>
+						<td colspan="2">
+							<textarea placeholder="내용을 입력해 주세요."></textarea>
+						</td>
+					</tr>
+					<tr>
+						<th>파일첨부</th>
+						<td colspan="2">
+							<div style="display: flex; align-items: center;">
+						        <input type="file" id="file-input" style="display:none;" onchange="displayFileName()">
+						        <input type="text" id="file-name-input" placeholder="※ 첨부파일은 각  10MB 이내의 파일로 최대 5개까지 가능합니다." readonly>
+						        <button class="UploadBtn" onclick="triggerFileInput(event)">
+						        	<img src="<c:url value='/images/egovframework/com/cmm/icon/upload_icon.png' />" alt=""> 업로드 
+						        </button>
+						    </div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!--버튼 -->
+			<div class="qnaBtn">
+				<button type="reset" class="cancle" onclick="history.back()">취소 </button>
+				<button class="submit" onclick="submitForm()">문의하기</button>
+			</div>
+		</div>
+	</div>
+<%-- <form:form commandName="qnaVO" action="${pageContext.request.contextPath}/uss/olh/qna/insertQna.do" method="post" onSubmit="fn_egov_regist_qna(document.forms[0]); return false;"> 
 <div class="wTableFrm">
 	<!-- 타이틀 -->
 	<h2>${pageTitle} <spring:message code="title.create" /></h2>
@@ -150,7 +285,7 @@ function fn_egov_regist_qna(form){
 
 <input name="answerCn" type="hidden" value="<c:out value='answer'/>">
 <input name="cmd" type="hidden" value="<c:out value='save'/>">
-</form:form>
+</form:form> --%>
 
 </body>
 </html>

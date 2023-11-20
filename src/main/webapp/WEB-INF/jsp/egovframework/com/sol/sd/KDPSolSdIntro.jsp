@@ -41,7 +41,7 @@
 	    </div>
 		    
 		    <div class="button-container">
-	      		<a href="<c:url value='/sol/vsn/addSolVsn.do' />" class="button-style">이용 신청하기</a>
+	      		<a href="<c:url value='/sol/sd/addSolSd.do' />" class="button-style">이용 신청하기</a>
 		    </div>
 		
 			<div class="subTitle-container">
