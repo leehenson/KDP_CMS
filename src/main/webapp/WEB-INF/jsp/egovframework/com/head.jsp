@@ -80,16 +80,17 @@
 							</ul></li>
 
 						<li><a href="#"> 교육 </a>
-							<ul class="submenu">
-								<li><a href="#"> 교육 지원 안내 </a></li>
-								<li><a href="#"> 교육 지원 신청</a></li>
+							<ul class="submenu">								
+								<li><a href="<c:url value='/com/cop/bbs/EgovEduIntro.do'/>"> 교육 지원 안내 </a></li>
+								<li><a href="<c:url value='/com/cop/bbs/EgovEduApp.do'/>"> 교육 지원 신청 </a></li>
 							</ul></li>
 
 						<li><a href="#"> 게시판 </a>
 							<ul class="submenu">
 								<li><a href="<c:url value='/cop/bbs/selectArticleList.do'/>"> 공지사항 </a></li>
-								<li><a href="#"> 갤러리 </a></li>
+								<li><a href="<c:url value='/cop/bbs/GalleryList.do'/>"> 갤러리 </a></li>
 								<li><a href="<c:url value='/cop/bbs/selectResourceList.do'/>"> 자료실 </a></li>
+								
 							</ul></li>
 
 						<li><a href="#"> 고객지원 </a>
