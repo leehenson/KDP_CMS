@@ -74,9 +74,9 @@
 
 						<li><a href="#"> 공유 및 개방 </a>
 							<ul class="submenu">
-								<li><a href="#"> Next Coding </a></li>
-								<li><a href="#"> AR/VR 교육장 </a></li>
-								<li><a href="#"> 리소스 신청 </a></li>
+								<li><a href="<c:url value='/res/resList.do' />"> Next Coding </a></li>
+								<li><a href="<c:url value='/res/resList.do' />"> AR/VR 교육장 </a></li>
+								<li><a href="<c:url value='/res/ResourceApp.do' />"> 리소스 신청 </a></li>
 							</ul></li>
 
 						<li><a href="#"> 교육 </a>

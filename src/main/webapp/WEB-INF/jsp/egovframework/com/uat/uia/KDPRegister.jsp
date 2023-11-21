@@ -31,16 +31,16 @@
 						src="<c:url value='/images/egovframework/com/uat/uia/login_box_logo.png'/>"
 						class="login-image">
 					<p class="register-title">회원가입</p>
-					<p class="register-id">아이디</p>
+					<p class="input-title">아이디</p>
 					<input type="text" id="register-id" name="register-id"
 						placeholder="이메일인증" required />
-					<p class="register-pw">비밀번호</p>
+					<p class="input-title">비밀번호</p>
 					<input type="text" id="register-pw" name="register-pw" required />
-					<p class="register-pwre">비밀번호 확인</p>
+					<p class="input-title">비밀번호 확인</p>
 					<input type="text" id="register-pwre" name="register-pwre" required />
-					<p class="register-pwre">이름</p>
+					<p class="input-title">이름</p>
 					<input type="text" id="register-pwre" name="register-pwre" required />
-					<p class="register-member">회원구분</p>
+					<p class="input-title">회원구분</p>
 					<input type="text" id="register-member" name="register-member"
 						required />
 					<div class="horizontal-line3"></div>

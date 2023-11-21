@@ -57,14 +57,14 @@
 
 .FAQtext {
 	position: relative;
-	top: 152px;
+	top: 130px;
 	text-align: center;
 	margin-left: 0px;
 	font-family: GmarketSansBold;
 	font-size: 75px;
 	color: #111111;
 	min-width: 380px;
-	padding-bottom: 55px;
+	padding-bottom: 100px;
 }
 
 /* 탭 부분 */

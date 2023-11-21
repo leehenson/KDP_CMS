@@ -81,7 +81,7 @@ function fnReturnDay(day){
 }
 -->
 </script>
-<title>달력</title>
+<title> 순천대학교 K-디지털플랫폼 | 공유 시설 이용 신청 </title>
 </head>
 
 <!--

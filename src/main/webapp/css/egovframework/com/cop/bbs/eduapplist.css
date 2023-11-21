@@ -42,20 +42,11 @@ body {
 	height: 550px;
 	width: 100%;
 	background-image:
-		url("../../../../../images/egovframework/com/uat/uia/support_bg.png");
+		url("../../../../../images/egovframework/com/uat/uia/resource_app_bg.png");
 	background-size: cover;
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
-}
-
-.KDPText>h3 {
-	font-family: GmarketSansBold;
-	font-size: 85px;
-	color: #fff;
-	margin: 10px 0px;
-	min-width: 328px;
-	padding-bottom: 70px;
 }
 
 main {

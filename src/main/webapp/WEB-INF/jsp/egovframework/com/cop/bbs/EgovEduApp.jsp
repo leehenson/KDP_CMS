@@ -28,8 +28,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>교육 지원 신청</title>
-<!-- 게시글 목록 -->
+<title> 순천대학교 K-디지털플랫폼 | 교육 지원 신청 </title>
+
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <link type="text/css" rel="stylesheet"
 	href="<c:url value='/css/egovframework/com/cop/bbs/eduapp.css?after' />">
@@ -44,8 +44,8 @@
 	<c:import url="../../head.jsp" />
 	<div class="EduIntroHeader">
 		<div class="inner">
-			<div class="KDPText">
-				<h3>교육 지원 신청</h3>
+			<div class="solText">
+				<h2>교육 지원 신청</h2>
 			</div>
 		</div>
 	</div>

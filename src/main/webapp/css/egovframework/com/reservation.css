@@ -1,0 +1,224 @@
+.ShareHeader {
+	height: 550px;
+	width: 100%;
+	background-image:
+		url("../../../images/egovframework/com/uat/uia/share_bg.png");
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.solText {
+	font-family: GmarketSansMedium;
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 65px;
+	text-align: center;
+}
+
+.solText>h2 {
+	font-family: GmarketSansBold;
+	font-size: 85px;
+	color: #fff;
+	margin: 10px 0px;
+	/* 글 쏟아짐 방지 */
+	min-width: 400px;
+}
+
+.sub_content_area {
+	display: table-cell;
+	padding-left: 30px;
+}
+
+.sub_cont_header {
+	position: relative;
+}
+
+.container {
+	max-width: 1580px !important;
+}
+
+.sub_cont_body {
+	width: 100%;
+	position: relative;
+}
+
+/* 예약 방법 */
+@media ( min-width : 992px) {
+	.mg-lg-b-30 {
+		margin-bottom: 30px;
+	}
+}
+
+.justify-content-center {
+	justify-content: center !important;
+}
+
+.d-flex {
+	display: flex !important;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+@media ( min-width : 992px) {
+	.col-lg-8 {
+		flex: 0 0 66.66667%;
+		max-width: 66.66667%;
+	}
+}
+
+.equip-card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #fff;
+	background-clip: border-box;
+	box-shadow: 1px 1px 3px 1px rgba(179, 198, 212, 0.2);
+	border: 1px solid rgba(72, 94, 144, 0.1);
+}
+
+.grid-card {
+	height: 100%;
+}
+
+.pd-25 {
+	padding: 25px;
+}
+
+.mg-b-20 {
+	margin-bottom: 20px;
+}
+
+.steps {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	align-items: flex-start;
+}
+
+.step-link {
+	display: flex;
+	align-items: center;
+	font-weight: 500;
+	font-size: 12px;
+	color: #1b2e4b;
+}
+
+.step-item {
+	display: inline-block;
+	position: relative;
+}
+
+.step-item.active .step-link {
+	color: #003399;
+}
+
+@media ( min-width : 992px) {
+	.step-link {
+		font-size: 14px;
+	}
+}
+
+.step-item.active .step-number, .step-item.active .step-icon {
+	background-color: #003399;
+	border-color: #003399;
+	color: #fff;
+}
+
+@media ( min-width : 768px) {
+	.step-number {
+		width: 32px;
+		height: 32px;
+	}
+}
+
+@media ( min-width : 768px) {
+	.step-title {
+		width: auto;
+		overflow: visible;
+		text-overflow: inherit;
+	}
+}
+
+@media ( min-width : 576px) {
+	.step-title {
+		margin-left: 10px;
+		width: auto;
+		white-space: normal;
+	}
+}
+
+.step-number {
+	width: 25px;
+	height: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	font-family: 'NotoSansKR-Regular';
+	color: #8392a5;
+	border: 1px solid #8392a5;
+	border-radius: 100%;
+}
+
+@media ( min-width : 768px) {
+	.step-item+.step-item {
+		margin-left: 36px;
+	}
+}
+
+@media ( min-width : 768px) {
+	.step-item+.step-item::before {
+		display: block;
+	}
+}
+
+/* 대여 장비 리스트 */
+.rental_list{
+	display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 30px;
+}
+
+.rental_list li:hover {
+    background: #eee;
+    border-radius: 8px;
+}
+
+.rental_list li {
+    padding: 15px 0 15px 15px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.rental_list li img {
+	width: 100px;
+}
+
+.equipList{
+	gap: 20px;
+}
+
+.rental_list li.on {
+    border: 2px solid #005bac;
+    border-radius: 8px;
+}
+
+.equipList-body {
+	display: inline-block;
+	overflow: auto;
+    height: 500px;
+    overflow-y: scroll !important; /* 세로 스크롤 사용 */
+}

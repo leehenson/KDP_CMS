@@ -33,7 +33,7 @@ body{
 	font-size:12px;
 }
 
-div,table,em,h1,h2,h3,h4,h5,h6,form,fieldset,p,th,td,input,textarea,select,button { 
+div,table,em,h1,h2,h3,h4,h5,h6,form,fieldset,th,td,input,textarea,select,button { 
 	font-family: "NotoSansKR-Regular", sans-serif;; font-size:12px; color:#666; }
 
 fieldset, img { border:0; }
