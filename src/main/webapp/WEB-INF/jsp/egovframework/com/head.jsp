@@ -32,6 +32,95 @@
 		//top.document.location.href = "<c:url value='/j_spring_security_logout'/>";
 	}
 </script>
+<!-- head.jsp -->
+
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+	    // "KDPuser" 쿠키가 있는지 확인합니다.
+	    var userCookie = getCookie("KDPuser");
+	    var adminCookie = getCookie("KDPadmin");
+	
+	    // "KDPuser" 쿠키가 존재하면 로그인 버튼을 숨깁니다.
+	    if (userCookie) {
+	        var loginBtn = document.querySelector(".header_login_btn");
+	        var logoutBtn = document.querySelector(".header_logout_btn");
+	        var mypageBtn = document.querySelector(".header_mypage_btn");
+	        var iconContainer = document.querySelector(".header_icon_container");
+	        if (loginBtn) {
+	        	iconContainer.style.width = "280px";
+	            loginBtn.style.display = "none";
+	        }
+	        if (logoutBtn) {
+	            logoutBtn.style.display = "flex"; // 또는 "inline" 등으로 설정
+	            logoutBtn.addEventListener("click", function() {
+	                // 로그아웃 버튼 클릭 시 "KDPuser" 쿠키를 삭제하고 로그인 버튼을 보여줍니다.
+	                document.cookie = "KDPuser=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+	                loginBtn.style.display = "flex";
+	                logoutBtn.style.display = "none";
+	                mypageBtn.style.display = "none";
+	                
+	             	// 현재 페이지가 "/uss/mpe/myPage.do"이면 새로운 위치로 이동
+	                if (window.location.pathname === "/uss/mpe/myPage.do") {
+	                	event.preventDefault();
+	                    window.location.href = "/sym/mnu/mpm/EgovMainMenuHome.do";
+	                }
+	            });
+	        }
+	
+ 	        if (mypageBtn) {
+	            mypageBtn.style.display = "flex"; // 또는 "inline" 등으로 설정
+	        }
+	    }
+	    
+	 	// "KDPadmin" 쿠키가 존재하면 로그인 버튼을 숨깁니다.
+	    if (adminCookie) {
+	        var loginBtn = document.querySelector(".header_login_btn");
+	        var logoutBtn = document.querySelector(".header_logout_btn");
+	        var adminBtn = document.querySelector(".header_admin_btn");
+	        var iconContainer = document.querySelector(".header_icon_container");
+	        if (loginBtn) {
+	        	iconContainer.style.width = "280px";
+	            loginBtn.style.display = "none";
+	        }
+	        if (logoutBtn) {
+	            logoutBtn.style.display = "flex"; // 또는 "inline" 등으로 설정
+	            logoutBtn.addEventListener("click", function() {
+	                // 로그아웃 버튼 클릭 시 "KDPuser"와 "KDPadmin" 쿠키를 삭제하고 로그인 버튼을 보여줍니다.
+	                document.cookie = "KDPuser=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+	                document.cookie = "KDPadmin=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+	                loginBtn.style.display = "flex";
+	                logoutBtn.style.display = "none";
+	                adminBtn.style.display = "none";
+	                
+	             	// 현재 페이지가 "/uss/managePager.do"이면 새로운 위치로 이동
+	                if (window.location.pathname === "/uss/managerPage.do") {
+	                	event.preventDefault();
+	                    window.location.href = "/sym/mnu/mpm/EgovMainMenuHome.do";
+	                }
+	            });
+	        }
+
+	        if (adminBtn) {
+	            adminBtn.style.display = "flex"; // 또는 "inline" 등으로 설정
+	        }
+	    }
+	});
+
+    // 쿠키 이름으로 쿠키의 값을 가져오는 함수
+    function getCookie(name) {
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = cookies[i].trim();
+            // 쿠키 이름으로 시작하는지 확인
+            if (cookie.indexOf(name + "=") === 0) {
+                return cookie.substring(name.length + 1, cookie.length);
+            }
+        }
+        return null;
+    }
+</script>
+
+<!-- 기존의 head.jsp 내용 계속... -->
 
 <form name="selectOne">
 	<input name="menuNo" type="hidden" /> <input name="chkURL"
@@ -99,13 +188,28 @@
 								<li><a href="<c:url value='/uss/olh/faq/selectFaqList.do'/>"> FAQ </a></li>
 							</ul></li>
 
-						<li style="width: 80px;"><a href="#"> </a></li>
+						<li style="width: 20px;"></li>
 
 						<li style="padding-top: 8px;">
 							<div class="header_icon_container">
 								<div class="header_login_btn">
 									<a href="<c:url value='/uat/uia/KDPLogin.do'/>">
 									<span style="font-size: 16px"> 로그인 </span>
+									</a>
+								</div>
+								<div class="header_logout_btn">
+									<a href="">
+									<span style="font-size: 16px"> 로그아웃 </span>
+									</a>
+								</div>
+								<div class="header_mypage_btn">
+									<a href="<c:url value='/uss/mpe/myPage.do'/>">
+									<span style="font-size: 16px"> 마이페이지 </span>
+									</a>
+								</div>
+								<div class="header_admin_btn">
+									<a href="<c:url value='/uss/managerPage.do'/>">
+									<span style="font-size: 16px"> 관리페이지 </span>
 									</a>
 								</div>
 
