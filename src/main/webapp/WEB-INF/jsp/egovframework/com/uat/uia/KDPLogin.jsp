@@ -16,6 +16,41 @@
 <link rel="stylesheet"
 	href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <title> 순천대학교 K-디지털플랫폼 | 로그인 </title>
+<script>
+$(document).ready(function() {
+    // Submit 버튼 클릭 이벤트 처리
+    $(".login-button-submit").click(function(e) {
+        // 폼이 실제로 서버로 전송되지 않도록 막음
+        e.preventDefault();
+
+        // 사용자 아이디와 비밀번호를 가져옴
+        var username = $("#username").val();
+        var password = $("#password").val();
+
+        // 실제로는 서버에서 사용자 인증을 수행해야 함
+        // 여기서는 간단히 사용자 아이디와 비밀번호가 "user"와 "password"인지 확인
+        if (username === "user" && password === "password") {
+            // 사용자 인증 성공 시 쿠키 생성
+            document.cookie = "KDPuser=" + username + "; path=/";
+            // 여기서 path는 쿠키의 적용 경로를 설정합니다.
+            // "/"로 설정하면 전체 사이트에 쿠키가 적용됩니다.
+            // 로그인 폼 제출
+            $("form").submit();
+            window.location.href = '/sym/mnu/mpm/EgovMainMenuHome.do';
+        } else if (username === "admin" && password === "password") {
+        	// 사용자 인증 성공 시 쿠키 생성
+            document.cookie = "KDPadmin=" + username + "; path=/";
+            // 여기서 path는 쿠키의 적용 경로를 설정합니다.
+            // "/"로 설정하면 전체 사이트에 쿠키가 적용됩니다.        
+            // 로그인 폼 제출
+            $("form").submit();
+            window.location.href = '/sym/mnu/mpm/EgovMainMenuHome.do';
+        } else {
+        	alert('아이디와 비밀번호를 확인해주세요.');
+        }
+    });
+});
+</script>
 </head>
 <body>
 	<div class="header-background">
