@@ -46,6 +46,7 @@
 	src="<c:url value='/js/egovframework/com/cmm/jquery.js'/>"></script>
 <link href="<c:url value='${brdMstrVO.tmplatCours}' />" rel="stylesheet"
 	type="text/css">
+<script src="/js/egovframework/com/loginConfirm.js"></script>
 <c:choose>
 	<c:when test="${preview == 'true'}">
 		<script type="text/javascript">
@@ -136,8 +137,7 @@
 		</div>
 
 		<div class="button-container" style="margin-top: 60px">
-			<a href="<c:url value='/com/cop/bbs/EgovEduApp.do'/>"
-				class="button-style">이용 신청하기</a>
+			<button class="button-style" onclick="loginConfirmEdu()">이용 신청하기</button>
 		</div>
 						
 		<div class="subTitle-container">

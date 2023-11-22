@@ -185,6 +185,7 @@ header {
   color: #fff;
   font-family: "GmarketSansBold", sans-serif;
   font-size: 22px;
+  cursor: pointer;
 }
 
 .additional-links {

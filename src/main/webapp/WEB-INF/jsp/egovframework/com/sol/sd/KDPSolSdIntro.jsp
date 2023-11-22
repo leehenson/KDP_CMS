@@ -12,9 +12,7 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-	<script>
-		
-	</script>
+	<script src="/js/egovframework/com/loginConfirm.js"></script>
 </head>
 <body>
 	<!-- header -->
@@ -41,7 +39,7 @@
 	    </div>
 		    
 		    <div class="button-container">
-	      		<a href="<c:url value='/sol/sd/addSolSd.do' />" class="button-style">이용 신청하기</a>
+	      		<button class="button-style" onclick="loginConfirmSd()">이용 신청하기</button>
 		    </div>
 		
 			<div class="subTitle-container">

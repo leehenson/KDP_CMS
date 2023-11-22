@@ -119,10 +119,11 @@ body {
 	font-family: "NotoSansKR-ExtraBold", sans-serif;
 	font-size: 18px;
 	text-align: center;
-	line-height: 50px;
+	line-height: 40px;
 	text-decoration: none;
 	border-radius: 15px;
 	cursor: pointer;
+	border: none;
 }
 
 .button-style:hover {
