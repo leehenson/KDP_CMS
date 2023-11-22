@@ -26,22 +26,37 @@
 <head>
 <title>순천대학교 K-디지털플랫폼 | 공유 시설 예약</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 <link rel="stylesheet" type="text/css"
 	href="<c:url value='/css/egovframework/com/bootstrap.css' />">
 <link type="text/css" rel="stylesheet"
-	href="<c:url value='/css/egovframework/com/qna.css' />">
-<link type="text/css" rel="stylesheet"
 	href="<c:url value='/css/egovframework/com/reservation.css' />">
+<link type="text/css" rel="stylesheet"
+	href="<c:url value='/css/egovframework/com/qna.css' />">
 
 <!-- Date Picker -->
 <link rel="stylesheet"
 	href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-<script type="text/javaScript" language="javascript">
-	
+<script type="text/javascript">
+		// 예약할 장비 선택 시, 선택된 장비 css
+		$(document).on("click", ".rental_list > li", function () {
+			 // Remove 'on' class from all elements with 'rental_list' class
+		    $(".rental_list > li").removeClass('on');
+		    // Add 'on' class only to the clicked element
+		    $(this).addClass('on');
+		    
+// 			 // Extract text value of the selected element
+// 		    var selectedText = $(this).text();
+
+// 		    // Display the text in another div area (replace 'targetDiv' with the actual ID or class of your target div)
+// 		    $(".rental-target").text(selectedText);
+	});
 </script>
+
 </head>
 
 <body>
@@ -76,19 +91,6 @@
 		<section class="container mb-5 credit_intro">
 			<div class="d-xl-table w-100">
 			
-<script type="text/javascript">
-		//서브 레프트 메뉴
-		$('.rental_list > li').click(function () {
-			console.log("click");
-			
-		    if ($(this).hasClass('on')) {
-		        $(this).removeClass('on');
-		
-		    } else {
-		        $(this).addClass('on');
-		    }
-		});
-</script>
 				<section class="sub_content_area_2">
 
 					<!--서브 콘텐츠 바디부분-->
@@ -137,7 +139,7 @@
 										
 										<ul class="rental_list">
 
-											<li class="d-flex equipList pointer " id="22"><img
+											<li class="d-flex equipList pointer" id="22"><img
 												src="<c:url value='/images/egovframework/com/uat/intro/room01_pc.png' />"
 												class="mr-3" alt="넥스트코딩(NextCoding)"
 												title="넥스트코딩(NextCoding)">
@@ -150,7 +152,7 @@
 											<input type="hidden" id="day22" name="dayOff"
 												value="2023-03-01,2023-12-31">
 
-											<li class="d-flex equipList pointer " id="6"><img
+											<li class="d-flex equipList pointer" id="6"><img
 												src="<c:url value='/images/egovframework/com/uat/intro/openOffice.png' />"
 												class="mr-3" alt="AR/VR 교육장" title="AR/VR 교육장">
 												<div class="my-auto w-100 equip-name">AR/VR 교육장</div></li>
@@ -160,7 +162,7 @@
 												value="1,2,3,4,5">
 											<input type="hidden" id="day6" name="dayOff" value="">
 
-											<li class="d-flex equipList pointer " id="5"><img
+											<li class="d-flex equipList pointer" id="5"><img
 												src="<c:url value='/images/egovframework/com/uat/intro/room02_imag.png' />"
 												class="mr-3" alt="Lecture Room" title="강의실">
 												<div class="my-auto w-100 equip-name">강의실</div></li>
@@ -169,7 +171,7 @@
 											<input type="hidden" id="week5" name="weekOff" value="6,0">
 											<input type="hidden" id="day5" name="dayOff" value="">
 
-											<li class="d-flex equipList pointer " id="4"><img
+											<li class="d-flex equipList pointer" id="4"><img
 												src="<c:url value='/images/egovframework/com/uat/intro/openOffice.png' />"
 												class="mr-3" alt="Open Office"
 												onerror="this.src='/images/front/etc_defult.png'"
@@ -180,7 +182,7 @@
 											<input type="hidden" id="week4" name="weekOff" value="6,0">
 											<input type="hidden" id="day4" name="dayOff" value="">
 
-											<li class="d-flex equipList pointer " id="3"><img
+											<li class="d-flex equipList pointer" id="3"><img
 												src="<c:url value='/images/egovframework/com/uat/intro/openOffice.png' />"
 												class="mr-3" alt="기타 장비"
 												onerror="this.src='/images/front/etc_defult.png'"
@@ -246,7 +248,7 @@
 											</div>
 											</div>
 										</div>
-										
+											
 											<div class="col-12 mb-2 step2-wrap">
 												<h6 class="mr-2"> 예약자명 </h6>
 											<div class="col-xl-4 col-4 pr-0">

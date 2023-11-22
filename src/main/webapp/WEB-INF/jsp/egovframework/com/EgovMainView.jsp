@@ -232,7 +232,7 @@
 						<p class="main_underbar">ㅡ</p>
 						<p class="notice_ment">K-디지털 플랫폼의</p>
 						<p class="notice_ment_2">소식을 확인해 보세요</p>
-						<a class="btn" href="/promotion/notice"> MORE </a>
+						<a class="btn" href="<c:url value='/cop/bbs/selectArticleList.do'/>"> MORE </a>
 					</div>
 					<div class="col-lg-8">
 						<ul>

@@ -244,7 +244,7 @@
 }
 
 .rental_list li.on div {
-    color: #005BAA;
+    color: #005bac;
     font-weight: 600;
 }
 
@@ -298,6 +298,12 @@
 
 .mr-2{
 	font-family: 'NotoSansKR-Medium';
+}
+
+.rental-target{
+	font-family: 'NotoSansKR-Bold';
+    font-size: 20px;
+    width: fit-content;
 }
 
 .rental-btn{
