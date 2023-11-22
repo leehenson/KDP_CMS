@@ -109,17 +109,17 @@
 				    		<th class="col5"><span style="border-right: 2px solid #d2d2d2; padding-right: 0px;">사용 링크</span></th>
 				    	</tr>
 				    	<tr>
-				    		<td class="col1">2023-11-03</td>
+				    		<td class="col1">2023-11-22</td>
 				    		<td class="col2">홍길동</td>
-				    		<td class="col3">Vision AI 사용 신청합니다.</td>
-				    		<td class="col4">승인</td>
+				    		<td class="col3">교육용 리소스 사용 신청합니다.</td>
+				    		<td class="col4">대기</td>
 				    		<td class="col5">링크</td>
 				    	</tr>
 				    	<tr>
-				    		<td class="col1">2023-11-04</td>
+				    		<td class="col1">2023-11-22</td>
 				    		<td class="col2">홍길동</td>
-				    		<td class="col3">Stable Diffusion 사용 신청합니다.</td>
-				    		<td class="col4">거부</td>
+				    		<td class="col3">Vision AI 사용 신청합니다.</td>
+				    		<td class="col4">대기</td>
 				    		<td class="col5">링크</td>
 				    	</tr>
 			    	</tbody>

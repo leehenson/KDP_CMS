@@ -125,11 +125,11 @@
 					<tr>
 						<th>신청자명</th>
 						<td style="padding-right: 30px; ">
-							<input type="text" name="name" title="신청자명">
+							<input type="text" name="name" title="신청자명" value="홍길동">
 						</td>
 						<th>신청서비스</th>
 						<td>
-							<input type="text" name="service" title="신청 서비스">
+							<input type="text" name="service" title="신청 서비스" value="Stable Diffusion">
 						</td>
 					</tr>
 					<!--신청 기간, 요청 날짜 -->
