@@ -48,6 +48,7 @@
 
 	<!-- header -->
 	<c:import url="../head.jsp" />
+	
 	<div class="ShareHeader">
 		<div class="inner">
 			<div class="solText">
@@ -64,11 +65,10 @@
 			
 		</script>
 		<!--콘텐츠 상단 바-->
-		<section>
-			<div class="sub_cont_header">
-				<h3 class="">시설대여</h3>
+		<section id="tab-1" class="platform-section">
+			<div class="inner">
+				<h2 class="intro_title">| 장비 및 시설 이용 예약</h2>
 			</div>
-			<hr>
 		</section>
 		<!--콘텐츠 상단 바-->
 
@@ -103,8 +103,8 @@
 												<li class="step-item active">
 													<div class="step-link">
 														<span class="step-number">1</span> <span
-															class="step-title" style="color: #1d1d1f">예약을 원하는
-															장비 선택</span>
+															class="step-title" style="color: #1d1d1f">
+															장비 및 시설 선택</span>
 													</div>
 												</li>
 												<li class="step-item active">
@@ -127,8 +127,7 @@
 								</div>
 							</div>
 						</div>
-						<!--하단 선-->
-						<div class="border w-100 my-3"></div>
+						
 						<input type="hidden" id="searchNo" value="">
 						<div class="row">
 							<div class="col-xl-4 mb-3">
@@ -152,7 +151,7 @@
 												value="2023-03-01,2023-12-31">
 
 											<li class="d-flex equipList pointer " id="6"><img
-												src="<c:url value='/images/egovframework/com/uat/intro/equip02_AR_Glasses.png' />"
+												src="<c:url value='/images/egovframework/com/uat/intro/openOffice.png' />"
 												class="mr-3" alt="AR/VR 교육장" title="AR/VR 교육장">
 												<div class="my-auto w-100 equip-name">AR/VR 교육장</div></li>
 											<input type="hidden" id="facility6" name="facility6"
@@ -182,7 +181,7 @@
 											<input type="hidden" id="day4" name="dayOff" value="">
 
 											<li class="d-flex equipList pointer " id="3"><img
-												src="<c:url value='/images/egovframework/com/uat/intro/equip01_laptop.png' />"
+												src="<c:url value='/images/egovframework/com/uat/intro/openOffice.png' />"
 												class="mr-3" alt="기타 장비"
 												onerror="this.src='/images/front/etc_defult.png'"
 												title="기타 장비">
@@ -210,19 +209,19 @@
 												type="hidden" id="printStrTm" name="printStrTm"> <input
 												type="hidden" id="printEndTm" name="printEndTm"> <input
 												type="hidden" id="impossible" name="impossible" value="0">
-											<div class="col-6 mb-3">
-												<h6 class="mr-2 mb-2">대여날짜</h6>
+											
+											<div class="col-6 mb-3" style="margin-top: 9px; margin-bottom: 9px !important;">
+												<h6 class="mr-2 mb-2">이용 예약일</h6>
 												<input type="text" name="eduRange" id="eduRange"
-													class="form-control date-picker"
-													placeholder="대여기간을 선택해주세요." readonly="readonly">
+													class="form-control date-picker" style="color: #666666; border-color: #b4b4b4;" readonly="readonly">
 											</div>
-											<div class="col-xl-4 "></div>
-											<div class="col-12 mb-2">
-												<h6 class="mr-2">대여시간</h6>
-											</div>
-											<div class="col-xl-4 col-4 pr-0">
+											
+											<div class="col-12 mb-2 step2-wrap">
+												<h6 class="mr-2">이용 예약 시간</h6>
+											<div class="time-wrap">
+											<div class="col-xl-4 col-4 pr-0" style="width: fit-content;">
 												<select class="custom-select" id="strTm" name="strTm">
-													<option value="e">시작시간</option>
+													<option value="e">시작 시간</option>
 													<option value="1000">10:00</option>
 													<option value="1100">11:00</option>
 													<option value="1200">12:00</option>
@@ -232,9 +231,10 @@
 													<option value="1600">16:00</option>
 												</select>
 											</div>
+											
 											<div class="col-xl-4 col-4 pr-0">
 												<select class="custom-select" id="endTm" name="endTm">
-													<option value="e">종료시간</option>
+													<option value="e">종료 시간</option>
 													<option value="1100">11:00</option>
 													<option value="1200">12:00</option>
 													<option value="1300">13:00</option>
@@ -244,11 +244,45 @@
 													<option value="1700">17:00</option>
 												</select>
 											</div>
+											</div>
 										</div>
-										<div class="row">
-											<div class="col-md-6 col-12 text-right mt-md-0 mt-3">
-												<button class="btn btn-info" type="submit" id="nextBtn"
-													disabled="disabled">대여 신청하기</button>
+										
+											<div class="col-12 mb-2 step2-wrap">
+												<h6 class="mr-2"> 예약자명 </h6>
+											<div class="col-xl-4 col-4 pr-0">
+												<input type="text" class="rent-input" id="resName" name="resName" value="홍길동">
+											</div>
+											</div>
+										
+											<div class="col-12 mb-2 step2-wrap">
+												<h6 class="mr-2"> 예약자 연락처 </h6>
+											<div class="col-xl-4 col-4 pr-0">
+												<input type="tel" class="rent-input" oninput="oninputPhone(this)" id="resName" name="resName" value="">
+											</div>
+											</div>
+											
+											<div class="col-12 mb-2 step2-wrap">
+												<h6 class="mr-2">인원수</h6>
+											<div class="col-xl-4 col-4 pr-0">
+												<select class="custom-select" id="headCnt" name="headCnt">
+													<option value="headCnt">0명</option>
+													<option value="1"> 1명 </option>
+													<option value="2"> 2명 </option>
+													<option value="3"> 3명</option>
+													<option value="4"> 4명 </option>
+													<option value="5"> 5명 </option>
+													<option value="6"> 6명 </option>
+													<option value="7"> 7명 </option>
+													<option value="8"> 8명 </option>
+													<option value="9"> 9명 </option>
+													<option value="10"> 10명 </option>
+												</select>
+											</div>
+											</div>
+										
+										<div class="res-submit">
+											<div class="col-md-6 col-12 text-right mt-md-0 mt-3 res-submit-btn">
+												<button class="btn rental-btn" type="submit" id="nextBtn">대여 신청하기</button>
 											</div>
 										</div>
 									</div>
@@ -264,26 +298,41 @@
 
 	<script>
       $(function(){
-    	  
+
     	//input을 datepicker로 선언
           $(".date-picker").datepicker({
               dateFormat: 'yy-mm-dd' //달력 날짜 형태
               ,showOtherMonths: true //빈 공간에 현재월의 앞뒤월의 날짜를 표시
               ,showMonthAfterYear:true // 월- 년 순서가아닌 년도 - 월 순서
               ,changeYear: true //option값 년 선택 가능
-              ,changeMonth: true //option값  월 선택 가능                        
+              ,changeMonth: true //option값  월 선택 가능
               ,yearSuffix: "년" //달력의 년도 부분 뒤 텍스트
               ,monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 텍스트
               ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip
               ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 텍스트
               ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 Tooltip
               ,minDate: "-5Y" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
-              ,maxDate: "+5y" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)  
+              ,maxDate: "+5y" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)
+              ,beforeShowDay: disableWeekends // 주말 선택 비활성화
           });                    
           
           //초기값을 오늘 날짜로 설정해줘야 합니다.
-          $('.date-picker').datepicker('setDate', 'today'); //(-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)            
+          $('.date-picker').datepicker('setDate', 'today'); //(-1D:하루전, -1M:한달전, -1Y:일년전), (+1D:하루후, -1M:한달후, -1Y:일년후)
+          
+       // 주말만 비활성화(토, 일 disable)
+          function disableWeekends(date) {
+              var noWeekend = jQuery.datepicker.noWeekends(date);
+              return noWeekend[0] ? [true] : noWeekend;
+          }
+          
       });
+      
+      // 전화번호 포맷 맞춰주는 function
+      function oninputPhone(target) {
+    	    target.value = target.value
+    	        .replace(/[^0-9]/g, '')
+    	        .replace(/(^02.{0}|^01.{1}|[0-9]{3,4})([0-9]{3,4})([0-9]{4})/g, "$1-$2-$3");
+    	}
 
 	</script>
 
