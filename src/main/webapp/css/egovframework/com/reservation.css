@@ -26,9 +26,16 @@
 	min-width: 400px;
 }
 
+.intro_title {
+	font-family: "NotoSansKR-Bold", sans-serif;
+	font-size: 28px;
+	color: #666666;
+}
+
 .sub_content_area {
+	padding-top: 93px;
 	display: table-cell;
-	padding-left: 30px;
+	padding-left: 400px;
 }
 
 .sub_cont_header {
@@ -42,6 +49,8 @@
 .sub_cont_body {
 	width: 100%;
 	position: relative;
+	display: flex;
+	flex-direction: column;
 }
 
 /* 예약 방법 */
@@ -64,6 +73,8 @@
 	flex-wrap: wrap;
 	margin-right: -15px;
 	margin-left: -15px;
+	padding-left: 60px;
+	row-gap: 10px;
 }
 
 @media ( min-width : 992px) {
@@ -71,6 +82,11 @@
 		flex: 0 0 66.66667%;
 		max-width: 66.66667%;
 	}
+}
+
+.card-header, .my-auto {
+	font-size: 18px;
+	font-family: "NotoSansKR-Medium", sans-serif;
 }
 
 .equip-card {
@@ -86,7 +102,8 @@
 }
 
 .grid-card {
-	height: 100%;
+	height: 80%;
+	margin-top: 45px;
 }
 
 .pd-25 {
@@ -94,7 +111,12 @@
 }
 
 .mg-b-20 {
-	margin-bottom: 20px;
+	margin-bottom: 30px;
+}
+
+.dash-mge {
+	font-family: "NotoSansKR-Medium", sans-serif;
+	font-size: 22px;
 }
 
 .steps {
@@ -183,42 +205,122 @@
 }
 
 /* 대여 장비 리스트 */
-.rental_list{
+.rental_list {
 	display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 30px;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	gap: 30px;
 }
 
 .rental_list li:hover {
-    background: #eee;
-    border-radius: 8px;
+	background: #eee;
+	border-radius: 8px;
 }
 
 .rental_list li {
-    padding: 15px 0 15px 15px;
+	padding: 15px 0 15px 15px;
+}
+
+.rental_appli{
+	width: 650px;
 }
 
 .pointer {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .rental_list li img {
-	width: 100px;
+	width: 125px;
+	height: 80px;
 }
 
-.equipList{
+.equipList {
 	gap: 20px;
 }
 
 .rental_list li.on {
-    border: 2px solid #005bac;
-    border-radius: 8px;
+	border: 2px solid #005bac;
+	border-radius: 8px;
+}
+
+.rental_list li.on div {
+    color: #005bac;
+    font-weight: 600;
 }
 
 .equipList-body {
 	display: inline-block;
 	overflow: auto;
-    height: 500px;
-    overflow-y: scroll !important; /* 세로 스크롤 사용 */
+	height: 500px;
+	overflow-y: scroll !important; /* 세로 스크롤 사용 */
+}
+
+.time-wrap {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	gap: 20px;
+}
+
+.res-submit {
+	display: flex;
+	justify-content: flex-end;
+	width: 95%;
+}
+
+.res-submit-btn {
+	width: fit-content;
+}
+
+.step2-wrap {
+	display: flex;
+	flex-direction: column;
+	row-gap: 8px;
+}
+
+.custom-select {
+	border-color: #b4b4b4;
+	border-radius: 5px;
+	width: 150px;
+	height: 37px;
+	color: #666666;
+	text-align: center;
+}
+
+.rent-input{
+	width: 150px;
+	height: 37px;
+	color: #666666;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid #b4b4b4;
+}
+
+.mr-2{
+	font-family: 'NotoSansKR-Medium';
+}
+
+.rental-target{
+	font-family: 'NotoSansKR-Bold';
+    font-size: 20px;
+    width: fit-content;
+}
+
+.rental-btn{
+	background-color: #005bac;
+	color: white;
+	font-size: 18px;
+    font-family: 'NotoSansKR-Bold';
+    width: 180px;
+    height: 46px;
+}
+
+.rental-btn:hover {
+    background-color: #005bacad !important;
+    border-color: var(--bs-btn-hover-border-color) !important;
+}
+
+.form-control {
+	width: 150px !important;
+	text-align: center;
 }
